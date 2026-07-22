@@ -1,0 +1,156 @@
+table fact_capital_finance
+
+	column project_program_name
+		dataType: string
+		sourceColumn: project_program_name
+		summarizeBy: none
+
+	column account_key
+		dataType: int64
+		sourceColumn: account_key
+		summarizeBy: none
+
+	column period_key
+		dataType: int64
+		sourceColumn: period_key
+		summarizeBy: none
+
+	column costcenter_key
+		dataType: int64
+		sourceColumn: costcenter_key
+		summarizeBy: none
+
+	column business_unit_key
+		dataType: int64
+		sourceColumn: business_unit_key
+		summarizeBy: none
+
+	column scenario
+		dataType: string
+		sourceColumn: scenario
+		summarizeBy: none
+
+	column amount
+		dataType: double
+		sourceColumn: amount
+		summarizeBy: sum
+
+	/// Total amount across the current filter context. Foundation for all variance work.
+	measure 'Total Amount' = SUM ( fact_capital_finance[amount] )
+		formatString: "$#,0;-$#,0;$0"
+
+	/// Actuals - filtered to scenario=AC
+	measure Actual = CALCULATE ( [Total Amount], dim_scenario[scenario_code] = "AC" )
+		formatString: "$#,0;-$#,0;$0"
+
+	/// Budget / Plan - filtered to scenario=PL
+	measure Plan = CALCULATE ( [Total Amount], dim_scenario[scenario_code] = "PL" )
+		formatString: "$#,0;-$#,0;$0"
+
+	/// Forecast - filtered to scenario=FC
+	measure Forecast = CALCULATE ( [Total Amount], dim_scenario[scenario_code] = "FC" )
+		formatString: "$#,0;-$#,0;$0"
+
+	/// Prior year actual = Actual shifted one fiscal year back. Explicit shift on
+	/// dim_period[period_key] because this model is year-grain only (no Date table),
+	/// so DATEADD / SAMEPERIODLASTYEAR are not available.
+	measure 'Prior Year' =
+			CALCULATE (
+			    [Actual],
+			    FILTER (
+			        ALL ( dim_period[period_key] ),
+			        dim_period[period_key] = MAX ( dim_period[period_key] ) - 1
+			    )
+			)
+		formatString: "$#,0;-$#,0;$0"
+
+	/// YTD actual - period-to-date sum (sums all years up to and including the selected one)
+	measure 'Actual YTD' =
+			CALCULATE (
+			    [Actual],
+			    FILTER ( ALL ( dim_period[period_key] ), dim_period[period_key] <= MAX ( dim_period[period_key] ) )
+			)
+		formatString: "$#,0;-$#,0;$0"
+
+	/// Same-period-last-year for the variance pages
+	measure 'Actual SPLY' =
+			CALCULATE (
+			    [Actual],
+			    FILTER ( ALL ( dim_period[period_key] ), dim_period[period_key] = MAX ( dim_period[period_key] ) - 1 )
+			)
+		formatString: "$#,0;-$#,0;$0"
+
+	/// Actual minus Plan (absolute variance). Sign is the actual difference.
+	measure 'Variance Abs (AC vs PL)' = [Actual] - [Plan]
+		formatString: "$#,0;-$#,0;$0"
+
+	/// Relative variance Actual vs Plan, percent.
+	measure 'Variance Pct (AC vs PL)' = DIVIDE ( [Actual] - [Plan], [Plan] )
+		formatString: "0.0%;-0.0%;0.0%"
+
+	/// Actual minus Prior Year (absolute, year-over-year)
+	measure 'Variance Abs (AC vs PY)' = [Actual] - [Prior Year]
+		formatString: "$#,0;-$#,0;$0"
+
+	/// Same but relative
+	measure 'Variance Pct (AC vs PY)' = DIVIDE ( [Actual] - [Prior Year], [Prior Year] )
+		formatString: "0.0%;-0.0%;0.0%"
+
+	/// Returns "good" or "bad" based on variance direction AND metric polarity.
+	/// For capital expenditure, UNDER budget = good (less spent). Color the bar
+	/// green when variance < 0 (spent less), red when > 0 (spent more).
+	measure 'Variance Color (Cost AC vs PL)' =
+			VAR v = [Variance Abs (AC vs PL)]
+			RETURN
+			    IF ( v < 0, "good", IF ( v > 0, "bad", "neutral" ) )
+
+	/// Year label for axis (so we can show "FY2026" not just "2026")
+	measure 'Year Label' = SELECTEDVALUE ( dim_period[label] )
+
+	/// Scenario label for column headers (Actual / Plan / Forecast)
+	measure 'Scenario Label' = SELECTEDVALUE ( dim_scenario[scenario_label] )
+
+	/// What share of total this category contributes
+	measure 'Category Share Pct' = DIVIDE ( [Actual], CALCULATE ( [Actual], ALL ( dim_costcenter ) ) )
+		formatString: "0.0%;-0.0%;0.0%"
+
+	/// Running total across the service-category hierarchy (Pareto-style)
+	measure 'Cumulative Share Pct' =
+			VAR currentTotal = [Actual]
+			VAR cumulative =
+			    CALCULATE (
+			        [Actual],
+			        FILTER (
+			            ALL ( dim_costcenter ),
+			            CALCULATE ( [Actual] ) >= currentTotal
+			        )
+			    )
+			RETURN
+			    DIVIDE ( cumulative, CALCULATE ( [Actual], ALL ( dim_costcenter ) ) )
+		formatString: "0.0%;-0.0%;0.0%"
+
+	/// Hindsight check - how close was last cycle's Plan to this cycle's Actual
+	measure 'Forecast Accuracy Pct' =
+			VAR plan = [Plan]
+			VAR actual = [Actual]
+			RETURN
+			    DIVIDE ( actual, plan ) - 1
+		formatString: "0.0%;-0.0%;0.0%"
+
+	partition fact_capital_finance = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataFolder & "\fact_capital_finance.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				Typed = Table.TransformColumnTypes(Promoted, {
+					{"project_program_name", type text},
+					{"account_key", Int64.Type},
+					{"period_key", Int64.Type},
+					{"costcenter_key", Int64.Type},
+					{"business_unit_key", Int64.Type},
+					{"scenario", type text},
+					{"amount", type number}
+				})
+			in
+				Typed

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "IBCS variance table with inline bars. One faceted row per service category; bar length = capital $; Actual vs Plan stacked within the row. Page 1 (Income statement explorer). Deneb dataset fields required: service_category_1, scenario, amount. NOT PUBLISHED for the City of Vancouver dataset: no fiscal year carries both an Actual and a Plan (AC=2023-25, PL=2026 never overlap), so this renders blank or as a 3yr-vs-1yr artifact here; kept for a source that has same-period AC+PL. See 09-yoy-plan-vs-actual for the honest year-over-year comparison this data supports.",
+  "data": { "name": "dataset" },
+  "title": {
+    "text": "Where the capital dollars sit: Actual vs Plan by service category",
+    "subtitle": "One row per program  ·  bar length = capital $  ·  Actual = black, Plan = outlined",
+    "anchor": "start",
+    "fontSize": 13,
+    "subtitleColor": "#666666",
+    "subtitleFontSize": 10
+  },
+  "transform": [
+    { "filter": "datum.scenario === 'AC' || datum.scenario === 'PL'" }
+  ],
+  "facet": {
+    "row": {
+      "field": "service_category_1",
+      "type": "nominal",
+      "title": null,
+      "sort": { "op": "sum", "field": "amount", "order": "descending" },
+      "header": { "labelAngle": 0, "labelAlign": "left", "labelAnchor": "start", "labelFontSize": 10 }
+    }
+  },
+  "spec": {
+    "width": 360,
+    "height": 34,
+    "mark": { "type": "bar", "stroke": "#000000", "strokeWidth": 1 },
+    "encoding": {
+      "x": {
+        "aggregate": "sum",
+        "field": "amount",
+        "type": "quantitative",
+        "title": null,
+        "axis": { "format": "$,.0s" }
+      },
+      "y": {
+        "field": "scenario",
+        "type": "nominal",
+        "title": null,
+        "sort": ["AC", "PL"]
+      },
+      "color": {
+        "field": "scenario",
+        "type": "nominal",
+        "scale": { "domain": ["AC", "PL"], "range": ["#000000", "#FFFFFF"] },
+        "legend": null
+      },
+      "tooltip": [
+        { "field": "service_category_1", "title": "Program" },
+        { "field": "scenario", "title": "Scenario" },
+        { "aggregate": "sum", "field": "amount", "title": "Amount", "format": "$,.0f" }
+      ]
+    }
+  }
+}

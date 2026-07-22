@@ -1,0 +1,27 @@
+relationship f2a2421e-8620-47df-8b80-bf66cf55ca98
+	fromColumn: fact_capital_finance.account_key
+	toColumn: dim_account.account_key
+
+relationship 1b35e827-a39e-4d27-978a-9f626f74fbec
+	fromColumn: fact_capital_finance.period_key
+	toColumn: dim_period.period_key
+
+relationship 7019892f-548e-4507-a54a-f401cbc65cc8
+	fromColumn: fact_capital_finance.costcenter_key
+	toColumn: dim_costcenter.costcenter_key
+
+relationship 6e5dd611-df5c-49ee-87b6-805844cabe14
+	fromColumn: fact_capital_finance.business_unit_key
+	toColumn: dim_business_unit.business_unit_key
+
+relationship b9145cb1-dde6-45c1-9c90-78c82e4ff2f2
+	fromColumn: fact_capital_finance.scenario
+	toColumn: dim_scenario.scenario_code
+
+/// Inactive to avoid an ambiguous path to dim_business_unit. The fact table
+/// already joins dim_business_unit directly; this dim-to-dim link is kept for
+/// reference and can be activated with USERELATIONSHIP if needed.
+relationship 9e9ba4bf-2732-48eb-8ecb-89948d19b501
+	isActive: false
+	fromColumn: dim_costcenter.business_unit_key
+	toColumn: dim_business_unit.business_unit_key

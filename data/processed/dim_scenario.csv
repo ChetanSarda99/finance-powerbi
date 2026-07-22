@@ -1,0 +1,5 @@
+scenario_code,scenario_label,fill_style
+AC,Actual,solid_black
+PL,Plan,outlined
+FC,Forecast,hatched
+PY,Prior Year,solid_grey

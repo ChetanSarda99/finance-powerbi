@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "IBCS bridge / waterfall. Builds the total Actual capital budget up from each service category's contribution (opening 0 -> +cat -> ... -> total). Page 1 (net-income / budget progression). Deneb dataset fields required: service_category_1, scenario, amount. Filtered to Actual.",
+  "data": { "name": "dataset" },
+  "title": {
+    "text": "How each program builds the Actual capital total (2023-2025)",
+    "subtitle": "Floating bars = each program's contribution  ·  connectors trace the running total",
+    "anchor": "start",
+    "fontSize": 13,
+    "subtitleColor": "#666666",
+    "subtitleFontSize": 10
+  },
+  "width": 600,
+  "height": 320,
+  "transform": [
+    { "filter": "datum.scenario === 'AC'" },
+    { "aggregate": [{ "op": "sum", "field": "amount", "as": "amount" }], "groupby": ["service_category_1"] },
+    { "window": [{ "op": "sum", "field": "amount", "as": "sum" }], "sort": [{ "field": "amount", "order": "descending" }] },
+    { "window": [{ "op": "lead", "field": "service_category_1", "as": "lead" }], "sort": [{ "field": "amount", "order": "descending" }] },
+    { "calculate": "datum.lead === null ? datum.service_category_1 : datum.lead", "as": "lead" },
+    { "calculate": "datum.sum - datum.amount", "as": "previous_sum" },
+    { "calculate": "(datum.sum + datum.previous_sum) / 2", "as": "center" },
+    { "calculate": "datum.amount > 1000000 ? format(datum.amount / 1000000, '.0f') + 'M' : format(datum.amount / 1000, '.0f') + 'K'", "as": "label" }
+  ],
+  "encoding": {
+    "x": {
+      "field": "service_category_1",
+      "type": "ordinal",
+      "sort": { "op": "sum", "field": "amount", "order": "descending" },
+      "title": null,
+      "axis": { "labelAngle": -40 }
+    }
+  },
+  "layer": [
+    {
+      "mark": { "type": "bar", "size": 38, "color": "#000000" },
+      "encoding": {
+        "y": { "field": "previous_sum", "type": "quantitative", "title": "Cumulative capital $ (CAD)", "axis": { "format": "$,.2s" } },
+        "y2": { "field": "sum" }
+      }
+    },
+    {
+      "mark": { "type": "rule", "color": "#9E9E9E", "strokeWidth": 1, "xOffset": -19, "x2Offset": 19 },
+      "encoding": {
+        "x2": { "field": "lead" },
+        "y": { "field": "sum", "type": "quantitative" }
+      }
+    },
+    {
+      "mark": { "type": "text", "dy": -6, "fontSize": 9, "color": "#333333" },
+      "encoding": {
+        "y": { "field": "sum", "type": "quantitative" },
+        "text": { "field": "label" }
+      }
+    }
+  ]
+}

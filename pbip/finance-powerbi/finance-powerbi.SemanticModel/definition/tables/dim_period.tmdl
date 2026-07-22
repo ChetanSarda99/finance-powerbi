@@ -1,0 +1,31 @@
+table dim_period
+
+	column period_key
+		dataType: int64
+		isKey
+		sourceColumn: period_key
+		summarizeBy: none
+
+	column year
+		dataType: int64
+		sourceColumn: year
+		summarizeBy: none
+
+	column label
+		dataType: string
+		sourceColumn: label
+		summarizeBy: none
+
+	partition dim_period = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataFolder & "\dim_period.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				Typed = Table.TransformColumnTypes(Promoted, {
+					{"period_key", Int64.Type},
+					{"year", Int64.Type},
+					{"label", type text}
+				})
+			in
+				Typed

@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "IBCS scenario column. Capital $ by year, split Actual / Plan / Forecast. Pages 1 & 3. Deneb dataset fields required: year, scenario, amount. AC=solid black, PL=outlined (white fill + black stroke), FC=hatch-grey, PY=solid grey.",
+  "data": { "name": "dataset" },
+  "title": {
+    "text": "Vancouver capital budget by year and IBCS scenario",
+    "subtitle": "PY 2022 = cumulative prior-window bucket  ·  AC 2023-25  ·  PL 2026  ·  FC 2027-30  (IBCS scenario fills: Actual solid black, Plan outlined, Forecast grey)",
+    "anchor": "start",
+    "fontSize": 13,
+    "subtitleColor": "#666666",
+    "subtitleFontSize": 10
+  },
+  "width": 560,
+  "height": 320,
+  "mark": { "type": "bar", "stroke": "#000000", "strokeWidth": 1 },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "title": null,
+      "axis": { "labelAngle": 0 }
+    },
+    "xOffset": {
+      "field": "scenario",
+      "type": "nominal",
+      "sort": ["PY", "AC", "PL", "FC"]
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "amount",
+      "type": "quantitative",
+      "title": "Capital $ (CAD)",
+      "axis": { "format": "$,.2s" }
+    },
+    "color": {
+      "field": "scenario",
+      "type": "nominal",
+      "scale": {
+        "domain": ["PY", "AC", "PL", "FC"],
+        "range": ["#9E9E9E", "#000000", "#FFFFFF", "#BDBDBD"]
+      },
+      "legend": { "title": "Scenario", "orient": "top" }
+    },
+    "tooltip": [
+      { "field": "year", "title": "Year" },
+      { "field": "scenario", "title": "Scenario" },
+      { "aggregate": "sum", "field": "amount", "title": "Amount", "format": "$,.0f" }
+    ]
+  }
+}

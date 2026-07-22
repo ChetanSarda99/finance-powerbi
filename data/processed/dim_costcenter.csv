@@ -1,0 +1,121 @@
+costcenter_key,service_category_1,service_category_2,service_category_3,business_unit_key
+1,"Arts, culture & heritage",Cultural facilities,Grants,1
+2,"Arts, culture & heritage",Cultural facilities,Programs,1
+3,"Arts, culture & heritage",Cultural facilities,Projects,1
+4,"Arts, culture & heritage",Entertainment & exhibition,Programs,1
+5,"Arts, culture & heritage",Entertainment & exhibition,Projects,1
+6,"Arts, culture & heritage",Heritage,Grants,1
+7,"Arts, culture & heritage",Heritage,Other,1
+8,"Arts, culture & heritage",Prior Capital Plan Items,,1
+9,"Arts, culture & heritage",Public art,Programs,1
+10,Childcare,Full day care (0-4 years old),Other,2
+11,Childcare,Full day care (0-4 years old),Projects,2
+12,Childcare,Prior Capital Plan Items,,2
+13,Childcare,Programs,Childcare facility programs,2
+14,Childcare,School age (5-12 years old),Other,2
+15,Childcare,School age (5-12 years old),Projects,2
+16,Civic facilities & equipment,Administrative facilities,Programs,3
+17,Civic facilities & equipment,Administrative facilities,Projects,3
+18,Civic facilities & equipment,All City facilities,Programs,3
+19,Civic facilities & equipment,All City facilities,Projects,3
+20,Civic facilities & equipment,Prior Capital Plan Items,,3
+21,Civic facilities & equipment,Service yards,Programs,3
+22,Civic facilities & equipment,Service yards,Projects,3
+23,Civic facilities & equipment,Vehicles & equipment,Programs,3
+24,Community facilities,Archives,Programs,4
+25,Community facilities,Archives,Projects,4
+26,Community facilities,Cemetery,Programs,4
+27,Community facilities,Libraries,Programs,4
+28,Community facilities,Libraries,Projects,4
+29,Community facilities,Prior Capital Plan Items,,4
+30,Community facilities,Recreation facilities,Programs,4
+31,Community facilities,Recreation facilities,Projects,4
+32,Community facilities,School,Projects,4
+33,Community facilities,Social facilities,Grants,4
+34,Community facilities,Social facilities,Programs,4
+35,Community facilities,Social facilities,Projects,4
+36,"Emerging priorities, contingency & p",Climate Adaptation,Climate adaptation,5
+37,"Emerging priorities, contingency & p",Climate adaptation,Climate adaptation,5
+38,"Emerging priorities, contingency & p",Delivery,Overhead,5
+39,Housing,Land acquisition,Land acquisition program,6
+40,Housing,Low-income housing,SROs,6
+41,Housing,Low-income housing,Shelters,6
+42,Housing,Non-market housing,Programs,6
+43,Housing,Non-market housing,Projects,6
+44,Housing,Prior Capital Plan Items,,6
+45,Housing,Programs,Housing facility programs,6
+46,Housing,Purpose built rental housing,Programs,6
+47,Parks & public open spaces,"Decolonization, arts & culture",Decolonization & policy development,7
+48,Parks & public open spaces,Park amenities,Ball diamonds & playfields,7
+49,Parks & public open spaces,Park amenities,Dog off-leash areas,7
+50,Parks & public open spaces,Park amenities,Existing parks,7
+51,Parks & public open spaces,Park amenities,New parks,7
+52,Parks & public open spaces,Park amenities,Other amenities,7
+53,Parks & public open spaces,Park amenities,Other sports amenities,7
+54,Parks & public open spaces,Park amenities,Park planning,7
+55,Parks & public open spaces,Park amenities,Playgrounds & spray parks,7
+56,Parks & public open spaces,Park amenities,Sport courts & skate parks,7
+57,Parks & public open spaces,"Park buildings, infrastructure & vehi",Park buildings,7
+58,Parks & public open spaces,"Park buildings, infrastructure & vehi",Park infrastructure,7
+59,Parks & public open spaces,"Park buildings, infrastructure & vehi",Park pathways,7
+60,Parks & public open spaces,"Park buildings, infrastructure & vehi",Park roads & parking lots,7
+61,Parks & public open spaces,"Park buildings, infrastructure & vehi",Park vehicles & equipment,7
+62,Parks & public open spaces,Park land,Land acquired by City,7
+63,Parks & public open spaces,Prior Capital Plan Items,,7
+64,Parks & public open spaces,Project management & overhead,Project management & overhead,7
+65,Parks & public open spaces,Seawall & waterfront,Marine structures,7
+66,Parks & public open spaces,Seawall & waterfront,Seawall & shoreline,7
+67,Parks & public open spaces,Seawall & waterfront,Waterfront walkway-bikeway,7
+68,Parks & public open spaces,Urban forest & natural areas,Natural areas,7
+69,Parks & public open spaces,Urban forest & natural areas,Urban agriculture,7
+70,Parks & public open spaces,Urban forest & natural areas,Urban forest,7
+71,Public Safety,Animal control,Programs,8
+72,Public Safety,Animal control,Projects,8
+73,Public Safety,Fire & rescue,Programs,8
+74,Public Safety,Fire & rescue,Projects,8
+75,Public Safety,Police,Programs,8
+76,Public Safety,Police,Projects,8
+77,Public Safety,Prior Capital Plan Items,,8
+78,Renewable energy,Community electrification,Green buildings,9
+79,Renewable energy,Community electrification,Zero emission vehicles,9
+80,Renewable energy,Neighbourhood Energy Utility,Distribution,9
+81,Renewable energy,Neighbourhood Energy Utility,Generation,9
+82,Renewable energy,Neighbourhood Energy Utility,Programs,9
+83,Renewable energy,Prior Capital Plan Items,,9
+84,Streets,Building a resilient network,Bridges & structures,10
+85,Streets,Building a resilient network,Pavement rehabilitation,10
+86,Streets,Building a resilient network,Programs,10
+87,Streets,Building a resilient network,Sidewalks & pathways,10
+88,Streets,Building a resilient network,Street lighting,10
+89,Streets,Building a resilient network,Traffic signals,10
+90,Streets,Building a resilient network,Vehicles & equipment,10
+91,Streets,Improving mobility,Active transportation corridors & comple,10
+92,Streets,Improving mobility,Active transportation corridors & complete streets,10
+93,Streets,Improving mobility,Neighbourhood transportation,10
+94,Streets,Improving mobility,Transit integration & reliability,10
+95,Streets,Improving mobility,Transportation safety & accessibility,10
+96,Streets,Prior Capital Plan Items,,10
+97,Streets,Supporting public life,Commercial high street corridors,10
+98,Streets,Supporting public life,Curbside vehicle management,10
+99,Streets,Supporting public life,Public gathering & place making,10
+100,Streets,Supporting public life,Streetscape amenities,10
+101,Streets,Supporting public life,Washrooms,10
+102,Technology,Prior Capital Plan Items,,11
+103,Technology,Technology,Technology programs,11
+104,"Waste collection, diversion & dispos",Collection & cleaning,Collection & public realm cleaning progr,12
+105,"Waste collection, diversion & dispos",Collection & cleaning,Collection & public realm cleaning programs,12
+106,"Waste collection, diversion & dispos",Collection & cleaning,Public realm infrastructure,12
+107,"Waste collection, diversion & dispos",Disposal,Landfill closure,12
+108,"Waste collection, diversion & dispos",Disposal,Landfill non-closure,12
+109,"Waste collection, diversion & dispos",Disposal,Transfer station,12
+110,"Waste collection, diversion & dispos",Disposal,Vehicles & equipment,12
+111,"Waste collection, diversion & dispos",Diversion,Zero waste initiatives,12
+112,"Water, sewers & drainage",Potable water,Infrastructure renewal / Asset managemen,13
+113,"Water, sewers & drainage",Potable water,Infrastructure renewal / Asset management,13
+114,"Water, sewers & drainage",Potable water,Resilience & climate adaptation,13
+115,"Water, sewers & drainage",Potable water,Supporting growth & development,13
+116,"Water, sewers & drainage",Potable water,Vehicles & equipment,13
+117,"Water, sewers & drainage",Rainwater & sanitary water,Asset management & planning,13
+118,"Water, sewers & drainage",Rainwater & sanitary water,Connections,13
+119,"Water, sewers & drainage",Rainwater & sanitary water,Core network,13
+120,"Water, sewers & drainage",Rainwater & sanitary water,Vehicles & equipment,13

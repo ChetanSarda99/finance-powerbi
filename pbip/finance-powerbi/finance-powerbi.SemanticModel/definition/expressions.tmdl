@@ -1,0 +1,5 @@
+/// Folder that holds the six processed CSV files. Set this once after opening
+/// in Power BI Desktop: Transform data, then Manage parameters, then point
+/// DataFolder at the data/processed folder you downloaded from the repo.
+/// Use a full local path, for example: C:\Users\you\finance-powerbi\data\processed
+expression DataFolder = "C:\data\processed" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]

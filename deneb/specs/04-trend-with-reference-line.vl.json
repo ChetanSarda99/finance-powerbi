@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "IBCS trend with reference line. Actual capital spend as a solid black line over a dashed grey Plan reference (IBCS rule: never a single series alone). Page 2 (Cash flow / working capital trend). Deneb dataset fields required: year, scenario, amount. NOT PUBLISHED for the City of Vancouver dataset: no fiscal year carries both an Actual and a Plan (AC=2023-25, PL=2026 never overlap), so this renders blank or as a 3yr-vs-1yr artifact here; kept for a source that has same-period AC+PL. See 09-yoy-plan-vs-actual for the honest year-over-year comparison this data supports.",
+  "data": { "name": "dataset" },
+  "title": {
+    "text": "Actual capital spend versus plan, 2023 to 2026",
+    "subtitle": "Actual = solid black line  ·  Plan = dashed grey reference line",
+    "anchor": "start",
+    "fontSize": 13,
+    "subtitleColor": "#666666",
+    "subtitleFontSize": 10
+  },
+  "width": 560,
+  "height": 300,
+  "transform": [
+    { "filter": "datum.scenario === 'AC' || datum.scenario === 'PL'" }
+  ],
+  "encoding": {
+    "x": { "field": "year", "type": "ordinal", "title": null, "axis": { "labelAngle": 0 } }
+  },
+  "layer": [
+    {
+      "transform": [{ "filter": "datum.scenario === 'PL'" }],
+      "mark": { "type": "line", "strokeDash": [5, 3], "color": "#9E9E9E", "point": { "color": "#9E9E9E", "filled": false, "fill": "#FFFFFF" } },
+      "encoding": {
+        "y": { "aggregate": "sum", "field": "amount", "type": "quantitative", "title": "Capital $ (CAD)", "axis": { "format": "$,.2s" } }
+      }
+    },
+    {
+      "transform": [{ "filter": "datum.scenario === 'AC'" }],
+      "mark": { "type": "line", "color": "#000000", "point": { "color": "#000000", "filled": true } },
+      "encoding": {
+        "y": { "aggregate": "sum", "field": "amount", "type": "quantitative" },
+        "tooltip": [
+          { "field": "year", "title": "Year" },
+          { "aggregate": "sum", "field": "amount", "title": "Actual", "format": "$,.0f" }
+        ]
+      }
+    }
+  ]
+}

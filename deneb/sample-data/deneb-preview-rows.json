@@ -1,0 +1,356 @@
+[
+  {
+    "service_category_1": "Utilities",
+    "year": 2023,
+    "year_label": "FY2023",
+    "scenario": "PL",
+    "amount": 18000000
+  },
+  {
+    "service_category_1": "Utilities",
+    "year": 2023,
+    "year_label": "FY2023",
+    "scenario": "AC",
+    "amount": 16750800,
+    "business_unit": "Engineering Services"
+  },
+  {
+    "service_category_1": "Utilities",
+    "year": 2024,
+    "year_label": "FY2024",
+    "scenario": "PL",
+    "amount": 19080000
+  },
+  {
+    "service_category_1": "Utilities",
+    "year": 2024,
+    "year_label": "FY2024",
+    "scenario": "AC",
+    "amount": 17935200,
+    "business_unit": "Engineering Services"
+  },
+  {
+    "service_category_1": "Utilities",
+    "year": 2025,
+    "year_label": "FY2025",
+    "scenario": "PL",
+    "amount": 20160000
+  },
+  {
+    "service_category_1": "Utilities",
+    "year": 2025,
+    "year_label": "FY2025",
+    "scenario": "AC",
+    "amount": 19139904,
+    "business_unit": "Engineering Services"
+  },
+  {
+    "service_category_1": "Utilities",
+    "year": 2026,
+    "year_label": "FY2026",
+    "scenario": "PL",
+    "amount": 21240000
+  },
+  {
+    "service_category_1": "Utilities",
+    "year": 2027,
+    "year_label": "FY2027",
+    "scenario": "FC",
+    "amount": 21600000
+  },
+  {
+    "service_category_1": "Transportation",
+    "year": 2023,
+    "year_label": "FY2023",
+    "scenario": "PL",
+    "amount": 14500000
+  },
+  {
+    "service_category_1": "Transportation",
+    "year": 2023,
+    "year_label": "FY2023",
+    "scenario": "AC",
+    "amount": 15503400,
+    "business_unit": "Engineering Services"
+  },
+  {
+    "service_category_1": "Transportation",
+    "year": 2024,
+    "year_label": "FY2024",
+    "scenario": "PL",
+    "amount": 15370000
+  },
+  {
+    "service_category_1": "Transportation",
+    "year": 2024,
+    "year_label": "FY2024",
+    "scenario": "AC",
+    "amount": 16599600,
+    "business_unit": "Engineering Services"
+  },
+  {
+    "service_category_1": "Transportation",
+    "year": 2025,
+    "year_label": "FY2025",
+    "scenario": "PL",
+    "amount": 16240000
+  },
+  {
+    "service_category_1": "Transportation",
+    "year": 2025,
+    "year_label": "FY2025",
+    "scenario": "AC",
+    "amount": 17714592,
+    "business_unit": "Engineering Services"
+  },
+  {
+    "service_category_1": "Transportation",
+    "year": 2026,
+    "year_label": "FY2026",
+    "scenario": "PL",
+    "amount": 17110000
+  },
+  {
+    "service_category_1": "Transportation",
+    "year": 2027,
+    "year_label": "FY2027",
+    "scenario": "FC",
+    "amount": 17400000
+  },
+  {
+    "service_category_1": "Parks and Recreation",
+    "year": 2023,
+    "year_label": "FY2023",
+    "scenario": "PL",
+    "amount": 9200000
+  },
+  {
+    "service_category_1": "Parks and Recreation",
+    "year": 2023,
+    "year_label": "FY2023",
+    "scenario": "AC",
+    "amount": 8834760,
+    "business_unit": "Park Board"
+  },
+  {
+    "service_category_1": "Parks and Recreation",
+    "year": 2024,
+    "year_label": "FY2024",
+    "scenario": "PL",
+    "amount": 9752000
+  },
+  {
+    "service_category_1": "Parks and Recreation",
+    "year": 2024,
+    "year_label": "FY2024",
+    "scenario": "AC",
+    "amount": 9459440,
+    "business_unit": "Park Board"
+  },
+  {
+    "service_category_1": "Parks and Recreation",
+    "year": 2025,
+    "year_label": "FY2025",
+    "scenario": "PL",
+    "amount": 10304000
+  },
+  {
+    "service_category_1": "Parks and Recreation",
+    "year": 2025,
+    "year_label": "FY2025",
+    "scenario": "AC",
+    "amount": 10094829,
+    "business_unit": "Park Board"
+  },
+  {
+    "service_category_1": "Parks and Recreation",
+    "year": 2026,
+    "year_label": "FY2026",
+    "scenario": "PL",
+    "amount": 10856000
+  },
+  {
+    "service_category_1": "Parks and Recreation",
+    "year": 2027,
+    "year_label": "FY2027",
+    "scenario": "FC",
+    "amount": 11040000
+  },
+  {
+    "service_category_1": "Housing",
+    "year": 2023,
+    "year_label": "FY2023",
+    "scenario": "PL",
+    "amount": 7600000
+  },
+  {
+    "service_category_1": "Housing",
+    "year": 2023,
+    "year_label": "FY2023",
+    "scenario": "AC",
+    "amount": 8652600,
+    "business_unit": "Arts Culture and Community Services"
+  },
+  {
+    "service_category_1": "Housing",
+    "year": 2024,
+    "year_label": "FY2024",
+    "scenario": "PL",
+    "amount": 8056000
+  },
+  {
+    "service_category_1": "Housing",
+    "year": 2024,
+    "year_label": "FY2024",
+    "scenario": "AC",
+    "amount": 9264400,
+    "business_unit": "Arts Culture and Community Services"
+  },
+  {
+    "service_category_1": "Housing",
+    "year": 2025,
+    "year_label": "FY2025",
+    "scenario": "PL",
+    "amount": 8512000
+  },
+  {
+    "service_category_1": "Housing",
+    "year": 2025,
+    "year_label": "FY2025",
+    "scenario": "AC",
+    "amount": 9886688,
+    "business_unit": "Arts Culture and Community Services"
+  },
+  {
+    "service_category_1": "Housing",
+    "year": 2026,
+    "year_label": "FY2026",
+    "scenario": "PL",
+    "amount": 8968000
+  },
+  {
+    "service_category_1": "Housing",
+    "year": 2027,
+    "year_label": "FY2027",
+    "scenario": "FC",
+    "amount": 9120000
+  },
+  {
+    "service_category_1": "Public Safety",
+    "year": 2023,
+    "year_label": "FY2023",
+    "scenario": "PL",
+    "amount": 4100000
+  },
+  {
+    "service_category_1": "Public Safety",
+    "year": 2023,
+    "year_label": "FY2023",
+    "scenario": "AC",
+    "amount": 3571920,
+    "business_unit": "Arts Culture and Community Services"
+  },
+  {
+    "service_category_1": "Public Safety",
+    "year": 2024,
+    "year_label": "FY2024",
+    "scenario": "PL",
+    "amount": 4346000
+  },
+  {
+    "service_category_1": "Public Safety",
+    "year": 2024,
+    "year_label": "FY2024",
+    "scenario": "AC",
+    "amount": 3824480,
+    "business_unit": "Arts Culture and Community Services"
+  },
+  {
+    "service_category_1": "Public Safety",
+    "year": 2025,
+    "year_label": "FY2025",
+    "scenario": "PL",
+    "amount": 4592000
+  },
+  {
+    "service_category_1": "Public Safety",
+    "year": 2025,
+    "year_label": "FY2025",
+    "scenario": "AC",
+    "amount": 4081370,
+    "business_unit": "Arts Culture and Community Services"
+  },
+  {
+    "service_category_1": "Public Safety",
+    "year": 2026,
+    "year_label": "FY2026",
+    "scenario": "PL",
+    "amount": 4838000
+  },
+  {
+    "service_category_1": "Public Safety",
+    "year": 2027,
+    "year_label": "FY2027",
+    "scenario": "FC",
+    "amount": 4920000
+  },
+  {
+    "service_category_1": "Community Facilities",
+    "year": 2023,
+    "year_label": "FY2023",
+    "scenario": "PL",
+    "amount": 3300000
+  },
+  {
+    "service_category_1": "Community Facilities",
+    "year": 2023,
+    "year_label": "FY2023",
+    "scenario": "AC",
+    "amount": 3365010,
+    "business_unit": "Real Estate and Facilities"
+  },
+  {
+    "service_category_1": "Community Facilities",
+    "year": 2024,
+    "year_label": "FY2024",
+    "scenario": "PL",
+    "amount": 3498000
+  },
+  {
+    "service_category_1": "Community Facilities",
+    "year": 2024,
+    "year_label": "FY2024",
+    "scenario": "AC",
+    "amount": 3602940,
+    "business_unit": "Real Estate and Facilities"
+  },
+  {
+    "service_category_1": "Community Facilities",
+    "year": 2025,
+    "year_label": "FY2025",
+    "scenario": "PL",
+    "amount": 3696000
+  },
+  {
+    "service_category_1": "Community Facilities",
+    "year": 2025,
+    "year_label": "FY2025",
+    "scenario": "AC",
+    "amount": 3844949,
+    "business_unit": "Real Estate and Facilities"
+  },
+  {
+    "service_category_1": "Community Facilities",
+    "year": 2026,
+    "year_label": "FY2026",
+    "scenario": "PL",
+    "amount": 3894000
+  },
+  {
+    "service_category_1": "Community Facilities",
+    "year": 2027,
+    "year_label": "FY2027",
+    "scenario": "FC",
+    "amount": 3960000
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "IBCS relative-variance pin / lollipop. Percent variance of Actual vs Plan per service category, green = under plan (good for a cost/capital line), red = over plan (bad). Page 3 (Budget vs Actual). Deneb dataset fields required: service_category_1, scenario, amount. NOT PUBLISHED for the City of Vancouver dataset: no fiscal year carries both an Actual and a Plan (AC=2023-25, PL=2026 never overlap), so this renders blank or as a 3yr-vs-1yr artifact here; kept for a source that has same-period AC+PL. See 09-yoy-plan-vs-actual for the honest year-over-year comparison this data supports.",
+  "data": { "name": "dataset" },
+  "title": {
+    "text": "Which programs ran over or under their capital plan",
+    "subtitle": "% variance Actual vs Plan  ·  green = under plan (good)  ·  red = over plan (bad)",
+    "anchor": "start",
+    "fontSize": 13,
+    "subtitleColor": "#666666",
+    "subtitleFontSize": 10
+  },
+  "width": 460,
+  "height": 320,
+  "transform": [
+    { "filter": "datum.scenario === 'AC' || datum.scenario === 'PL'" },
+    { "aggregate": [{ "op": "sum", "field": "amount", "as": "amount" }], "groupby": ["service_category_1", "scenario"] },
+    { "pivot": "scenario", "value": "amount", "groupby": ["service_category_1"] },
+    { "calculate": "datum.PL ? (datum.AC - datum.PL) / datum.PL : 0", "as": "var_pct" },
+    { "calculate": "datum.var_pct <= 0 ? 'Under plan (good)' : 'Over plan (bad)'", "as": "vcolor" }
+  ],
+  "encoding": {
+    "y": {
+      "field": "service_category_1",
+      "type": "nominal",
+      "title": null,
+      "sort": { "field": "var_pct", "order": "ascending" }
+    }
+  },
+  "layer": [
+    {
+      "mark": { "type": "rule", "color": "#BDBDBD" },
+      "encoding": {
+        "x": { "field": "var_pct", "type": "quantitative", "title": "Variance vs plan (%)", "axis": { "format": ".0%" } },
+        "x2": { "datum": 0 }
+      }
+    },
+    {
+      "mark": { "type": "point", "filled": true, "size": 130 },
+      "encoding": {
+        "x": { "field": "var_pct", "type": "quantitative" },
+        "color": {
+          "field": "vcolor",
+          "type": "nominal",
+          "scale": { "domain": ["Under plan (good)", "Over plan (bad)"], "range": ["#2E7D32", "#C62828"] },
+          "legend": { "title": null, "orient": "top" }
+        },
+        "tooltip": [
+          { "field": "service_category_1", "title": "Program" },
+          { "field": "var_pct", "title": "Variance", "format": ".1%" },
+          { "field": "AC", "title": "Actual", "format": "$,.0f" },
+          { "field": "PL", "title": "Plan", "format": "$,.0f" }
+        ]
+      }
+    }
+  ]
+}

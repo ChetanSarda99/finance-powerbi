@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "IBCS small multiples. One mini Actual-vs-Plan column chart per service category, same scale across panels for honest comparison. Page 4 (Cost-center attribution). Deneb dataset fields required: service_category_1, year, scenario, amount.",
+  "data": { "name": "dataset" },
+  "title": {
+    "text": "Actual vs Plan by program, side by side",
+    "subtitle": "Shared scale across panels  ·  Actual = black, Plan = outlined",
+    "anchor": "start",
+    "fontSize": 13,
+    "subtitleColor": "#666666",
+    "subtitleFontSize": 10
+  },
+  "transform": [
+    { "filter": "datum.scenario === 'AC' || datum.scenario === 'PL'" }
+  ],
+  "columns": 4,
+  "facet": {
+    "field": "service_category_1",
+    "type": "nominal",
+    "title": null,
+    "sort": { "op": "sum", "field": "amount", "order": "descending" },
+    "header": { "labelFontSize": 9, "labelLimit": 140 }
+  },
+  "spec": {
+    "width": 120,
+    "height": 90,
+    "mark": { "type": "bar", "stroke": "#000000", "strokeWidth": 0.5 },
+    "encoding": {
+      "x": { "field": "year", "type": "ordinal", "title": null, "axis": { "labelAngle": 0, "labelFontSize": 8 } },
+      "xOffset": { "field": "scenario", "type": "nominal", "sort": ["AC", "PL"] },
+      "y": { "aggregate": "sum", "field": "amount", "type": "quantitative", "title": null, "axis": { "format": "$,.0s", "labelFontSize": 8 } },
+      "color": {
+        "field": "scenario",
+        "type": "nominal",
+        "scale": { "domain": ["AC", "PL"], "range": ["#000000", "#FFFFFF"] },
+        "legend": null
+      },
+      "tooltip": [
+        { "field": "service_category_1", "title": "Program" },
+        { "field": "year", "title": "Year" },
+        { "field": "scenario", "title": "Scenario" },
+        { "aggregate": "sum", "field": "amount", "title": "Amount", "format": "$,.0f" }
+      ]
+    }
+  }
+}

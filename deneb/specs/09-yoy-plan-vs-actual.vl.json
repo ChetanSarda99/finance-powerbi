@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Honest year-over-year capital comparison the dataset actually supports: 2025 Actual vs 2026 Plan, by program. (This dataset has no single year with both an Actual and a Plan, so a same-period AC-vs-PL variance is not possible; the defensible comparison is the last elapsed Actual year against the current Plan year.) Deneb dataset fields required: service_category_1, year, scenario, amount. Filtered to (AC, 2025) and (PL, 2026). AC=solid black, PL=outlined.",
+  "data": { "name": "dataset" },
+  "title": {
+    "text": "2026 Plan vs 2025 Actual capital, by program",
+    "subtitle": "Actual 2025 = solid black  ·  Plan 2026 = outlined  ·  the 2026 plan is about 2x the 2025 actual run-rate ($1.59B vs $778M)",
+    "anchor": "start",
+    "fontSize": 13,
+    "subtitleColor": "#666666",
+    "subtitleFontSize": 10
+  },
+  "width": 520,
+  "height": 360,
+  "mark": { "type": "bar" },
+  "transform": [
+    { "filter": "(datum.scenario === 'AC' && datum.year === 2025) || (datum.scenario === 'PL' && datum.year === 2026)" },
+    { "aggregate": [{ "op": "sum", "field": "amount", "as": "amount" }], "groupby": ["service_category_1", "scenario"] }
+  ],
+  "encoding": {
+    "y": {
+      "field": "service_category_1",
+      "type": "nominal",
+      "title": null,
+      "sort": { "op": "max", "field": "amount", "order": "descending" }
+    },
+    "x": {
+      "field": "amount",
+      "type": "quantitative",
+      "title": "Capital $ (CAD)",
+      "axis": { "format": "$,.2s" }
+    },
+    "yOffset": {
+      "field": "scenario",
+      "type": "nominal",
+      "sort": ["AC", "PL"]
+    },
+    "color": {
+      "field": "scenario",
+      "type": "nominal",
+      "scale": {
+        "domain": ["AC", "PL"],
+        "range": ["#000000", "#FFFFFF"]
+      },
+      "legend": {
+        "title": "Scenario",
+        "orient": "top",
+        "labelExpr": "datum.label === 'AC' ? 'Actual 2025' : 'Plan 2026'"
+      }
+    },
+    "tooltip": [
+      { "field": "service_category_1", "title": "Program" },
+      { "field": "scenario", "title": "Scenario" },
+      { "field": "amount", "title": "Amount", "format": "$,.0f" }
+    ]
+  }
+}

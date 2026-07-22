@@ -1,0 +1,1982 @@
+project_program_name,account_key,period_key,costcenter_key,business_unit_key,scenario,amount
+Demolition & other land preparation costs,3,2023,39,6,AC,2750000.0
+Demolition & other land preparation costs,3,2024,39,6,AC,1065992.0
+Demolition & other land preparation costs,3,2025,39,6,AC,4094911.0
+Demolition & other land preparation costs,3,2026,39,6,PL,7500000.0
+Demolition & other land preparation costs,4,2022,39,6,PY,13570403.0
+SRO upgrade program,3,2023,40,6,AC,500000.0
+SRO upgrade program,3,2026,40,6,PL,1500000.0
+SRO upgrade program,4,2022,40,6,PY,8500000.0
+Gresham Residences Retrofit,3,2024,43,6,AC,1632000.0
+Gresham Residences Retrofit,4,2022,43,6,PY,1632000.0
+Housing - Coal Harbour School,4,2022,43,6,PY,44005000.0
+Rental Protection & Relocation Grants,4,2022,46,6,PY,1450000.0
+Capital maintenance & renovations - Housing,3,2023,45,6,AC,860000.0
+Capital maintenance & renovations - Housing,3,2024,45,6,AC,1350000.0
+Capital maintenance & renovations - Housing,3,2025,45,6,AC,1650000.0
+Capital maintenance & renovations - Housing,4,2022,45,6,PY,10584526.0
+Capital maintenance & renovations - Housing - VAHEF,3,2024,45,6,AC,500000.0
+Capital maintenance & renovations - Housing - VAHEF,3,2025,45,6,AC,-123424.0
+Capital maintenance & renovations - Housing - VAHEF,3,2026,45,6,PL,250000.0
+Capital maintenance & renovations - Housing - VAHEF,4,2022,45,6,PY,376576.0
+Planning & studies - Housing - VAHEF,3,2023,45,6,AC,300000.0
+Planning & studies - Housing - VAHEF,3,2026,45,6,PL,920000.0
+Planning & studies - Housing - VAHEF,4,2022,45,6,PY,3540159.0
+Conversion of part-day spaces to full day (0-4) care,3,2023,10,2,AC,50000.0
+Conversion of part-day spaces to full day (0-4) care,3,2024,10,2,AC,435000.0
+Conversion of part-day spaces to full day (0-4) care,3,2025,10,2,AC,511000.0
+Conversion of part-day spaces to full day (0-4) care,4,2022,10,2,PY,996000.0
+Childcare - 3575 Kaslo,4,2022,11,2,PY,11030000.0
+Childcare - Little Mountain (cash to in-kind),4,2022,11,2,PY,2300000.0
+Childcare - West Fraser Lands,4,2022,11,2,PY,16900000.0
+Childcare at Urban Native Youth Centre - new full day (0-4) spaces,3,2023,11,2,AC,200000.0
+Childcare at Urban Native Youth Centre - new full day (0-4) spaces,3,2026,11,2,PL,3310000.0
+Childcare at Urban Native Youth Centre - new full day (0-4) spaces,4,2022,11,2,PY,200000.0
+Stanley Park Temporary Bike Lane,3,2023,67,7,AC,140000.0
+Convert park land to healthy habitat,3,2023,68,7,AC,500000.0
+Convert park land to healthy habitat,3,2024,68,7,AC,1600000.0
+Convert park land to healthy habitat,3,2025,68,7,AC,1990000.0
+Convert park land to healthy habitat,3,2026,68,7,PL,1850000.0
+Convert park land to healthy habitat,4,2022,68,7,PY,7974000.0
+Local food assets,3,2024,69,7,AC,260000.0
+Local food assets,3,2025,69,7,AC,100000.0
+Local food assets,4,2022,69,7,PY,360000.0
+Street trees - replacement,3,2023,70,7,AC,933300.0
+Street trees - replacement,3,2024,70,7,AC,1900000.0
+Street trees - replacement,3,2025,70,7,AC,1330000.0
+Street trees - replacement,3,2026,70,7,PL,836700.0
+Street trees - replacement,4,2022,70,7,PY,4463300.0
+Renewal of dog off-leash areas,3,2023,49,7,AC,150000.0
+Renewal of dog off-leash areas,3,2024,49,7,AC,153000.0
+Renewal of dog off-leash areas,4,2022,49,7,PY,818000.0
+General Brock Park Renewal,3,2024,50,7,AC,1750000.0
+General Brock Park Renewal,4,2022,50,7,PY,2820000.0
+Park renewal programs - Existing parks,3,2023,50,7,AC,400000.0
+Park renewal programs - Existing parks,3,2024,50,7,AC,300000.0
+Park renewal programs - Existing parks,4,2022,50,7,PY,2700000.0
+Expansion of Burrard Slopes Park (phase 1),3,2025,51,7,AC,214490.0
+Expansion of Burrard Slopes Park (phase 1),3,2026,51,7,PL,800000.0
+Expansion of Burrard Slopes Park (phase 1),4,2022,51,7,PY,2050000.0
+Expansion of Delamont Park (phase 1),3,2023,51,7,AC,100000.0
+Expansion of Delamont Park (phase 1),3,2025,51,7,AC,100000.0
+Expansion of Delamont Park (phase 1),3,2026,51,7,PL,600000.0
+Expansion of Delamont Park (phase 1),4,2022,51,7,PY,400000.0
+New park at Alberni & Nicola,3,2023,51,7,AC,100000.0
+New park at Alberni & Nicola,4,2022,51,7,PY,100000.0
+New parks in East Fraser Land,3,2024,51,7,AC,500000.0
+New parks in East Fraser Land,4,2022,51,7,PY,17575000.0
+New 'wedge park' at Little Mountain site,3,2026,51,7,PL,25000.0
+New 'wedge park' at Little Mountain site,4,2022,51,7,PY,950000.0
+Renewal of other amenities,3,2023,52,7,AC,188000.0
+Renewal of other amenities,3,2024,52,7,AC,2350000.0
+Renewal of other amenities,3,2025,52,7,AC,330000.0
+Renewal of other amenities,4,2022,52,7,PY,2868000.0
+Teaching Garden at VanDusen Garden,3,2023,52,7,AC,220000.0
+Teaching Garden at VanDusen Garden,3,2024,52,7,AC,150000.0
+Teaching Garden at VanDusen Garden,3,2025,52,7,AC,-72552.0
+Teaching Garden at VanDusen Garden,4,2022,52,7,PY,317448.0
+Planning for the Synthetic Turf Renewal (3 Sites),3,2026,53,7,PL,400000.0
+Renewal & upgrades of playgrounds & spray parks,3,2023,55,7,AC,2000000.0
+Renewal & upgrades of playgrounds & spray parks,3,2024,55,7,AC,425000.0
+Renewal & upgrades of playgrounds & spray parks,3,2025,55,7,AC,923500.0
+Renewal & upgrades of playgrounds & spray parks,3,2026,55,7,PL,1780000.0
+Renewal & upgrades of playgrounds & spray parks,4,2022,55,7,PY,12994104.0
+New park buildings,3,2023,57,7,AC,900000.0
+New park buildings,3,2025,57,7,AC,2433000.0
+New park buildings,4,2022,57,7,PY,8478797.0
+New park electrical & water infrastructure,3,2023,58,7,AC,1000000.0
+New park electrical & water infrastructure,3,2024,58,7,AC,1000000.0
+New park electrical & water infrastructure,3,2025,58,7,AC,675000.0
+New park electrical & water infrastructure,4,2022,58,7,PY,2675000.0
+Potable water reduction/reuse program,3,2023,58,7,AC,500000.0
+Potable water reduction/reuse program,3,2024,58,7,AC,500000.0
+Potable water reduction/reuse program,3,2025,58,7,AC,1000000.0
+Potable water reduction/reuse program,4,2022,58,7,PY,2000000.0
+Stanley Park cliff maintenance (Prospect Pt.- 3rd Beach),3,2023,58,7,AC,125000.0
+Stanley Park cliff maintenance (Prospect Pt.- 3rd Beach),3,2024,58,7,AC,175000.0
+Stanley Park cliff maintenance (Prospect Pt.- 3rd Beach),3,2025,58,7,AC,150000.0
+Stanley Park cliff maintenance (Prospect Pt.- 3rd Beach),3,2026,58,7,PL,50000.0
+Stanley Park cliff maintenance (Prospect Pt.- 3rd Beach),4,2022,58,7,PY,450000.0
+New vehicles & equipment - Parks,3,2023,61,7,AC,1410000.0
+New vehicles & equipment - Parks,3,2025,61,7,AC,700000.0
+New vehicles & equipment - Parks,3,2026,61,7,PL,990000.0
+New vehicles & equipment - Parks,4,2022,61,7,PY,2110000.0
+Cultural capital grant program,3,2023,1,1,AC,1250000.0
+Cultural capital grant program,3,2024,1,1,AC,3000000.0
+Cultural capital grant program,3,2025,1,1,AC,1250000.0
+Cultural capital grant program,3,2026,1,1,PL,1250000.0
+Cultural capital grant program,4,2022,1,1,PY,14589230.0
+Capital maintenance - Cultural facilities,3,2023,2,1,AC,3500000.0
+Capital maintenance - Cultural facilities,3,2024,2,1,AC,143000.0
+Capital maintenance - Cultural facilities,3,2025,2,1,AC,7800000.0
+Capital maintenance - Cultural facilities,3,2026,2,1,PL,3194298.0
+Capital maintenance - Cultural facilities,4,2022,2,1,PY,11451380.0
+FireHall Theatre - Capital Maintenance,3,2025,2,1,AC,500000.0
+FireHall Theatre - Capital Maintenance,4,2022,2,1,PY,500000.0
+Planning & studies - Cultural facilities,3,2023,2,1,AC,100000.0
+Planning & studies - Cultural facilities,3,2024,2,1,AC,60000.0
+Planning & studies - Cultural facilities,3,2025,2,1,AC,215000.0
+Planning & studies - Cultural facilities,4,2022,2,1,PY,405704.0
+PNE Amphitheatre renewal & expansion,3,2023,5,1,AC,92900000.0
+PNE Amphitheatre renewal & expansion,3,2025,5,1,AC,79760000.0
+PNE Amphitheatre renewal & expansion,4,2022,5,1,PY,183700000.0
+Heritage Facade Program,3,2026,6,1,PL,1200000.0
+Heritage Facade Program,4,2022,6,1,PY,100000.0
+Heritage Incentive Program,3,2023,6,1,AC,4000000.0
+Heritage Incentive Program,3,2026,6,1,PL,7600000.0
+Heritage Incentive Program,4,2022,6,1,PY,13758889.0
+,3,2024,8,1,AC,235196.0
+,4,2022,8,1,PY,5813653.0
+Capital maintenance - Libraries,3,2023,27,4,AC,1500000.0
+Capital maintenance - Libraries,3,2024,27,4,AC,970000.0
+Capital maintenance - Libraries,3,2025,27,4,AC,-2470000.0
+Capital maintenance - Libraries,3,2026,27,4,PL,84500.0
+Capital maintenance - Libraries,4,2022,27,4,PY,15632192.0
+Library Square - IT and Communications Cooling Systems and Backup Power,3,2025,27,4,AC,2000000.0
+Library Square - IT and Communications Cooling Systems and Backup Power,4,2022,27,4,PY,2000000.0
+Marpole Library renewal & expansion,3,2024,28,4,AC,700000.0
+Marpole Library renewal & expansion,3,2025,28,4,AC,1000000.0
+Marpole Library renewal & expansion,3,2026,28,4,PL,3000000.0
+Marpole Library renewal & expansion,4,2022,28,4,PY,2190446.0
+Capital maintenance - Archives,3,2023,24,4,AC,100000.0
+Capital maintenance - Archives,3,2026,24,4,PL,30000.0
+Capital maintenance - Archives,4,2022,24,4,PY,100000.0
+Kensington Community Hall Deconstruction,4,2022,31,4,PY,700000.0
+RayCam Community Centre - renewal & expansion,3,2025,31,4,AC,3440000.0
+RayCam Community Centre - renewal & expansion,4,2022,31,4,PY,5440000.0
+Downtown Eastside (DTES) Food Sovereignty Hub,3,2025,33,4,AC,100000.0
+Downtown Eastside (DTES) Food Sovereignty Hub,3,2026,33,4,PL,200000.0
+Downtown Eastside (DTES) Food Sovereignty Hub,4,2022,33,4,PY,100000.0
+Social capital grant program,3,2023,33,4,AC,275000.0
+Social capital grant program,3,2024,33,4,AC,275000.0
+Social capital grant program,3,2025,33,4,AC,275000.0
+Social capital grant program,3,2026,33,4,PL,275000.0
+Social capital grant program,4,2022,33,4,PY,1666742.0
+Planning & studies - Social facilities,3,2023,34,4,AC,1000000.0
+Planning & studies - Social facilities,3,2024,34,4,AC,750000.0
+Planning & studies - Social facilities,3,2025,34,4,AC,1225000.0
+Planning & studies - Social facilities,3,2026,34,4,PL,573779.0
+Planning & studies - Social facilities,4,2022,34,4,PY,4775000.0
+Renovations - Social facilities,3,2023,34,4,AC,450000.0
+Renovations - Social facilities,3,2024,34,4,AC,-28913.0
+Renovations - Social facilities,3,2025,34,4,AC,756266.0
+Renovations - Social facilities,4,2022,34,4,PY,1177352.0
+Qmunity Facility,3,2023,35,4,AC,2500000.0
+Qmunity Facility,4,2022,35,4,PY,11000000.0
+Maintenance & upgrades of cemetery facilities,3,2023,26,4,AC,75000.0
+Maintenance & upgrades of cemetery facilities,3,2024,26,4,AC,425000.0
+Maintenance & upgrades of cemetery facilities,3,2025,26,4,AC,500000.0
+Maintenance & upgrades of cemetery facilities,4,2022,26,4,PY,1350000.0
+Capital maintenance - Fire & rescue,3,2023,73,8,AC,700000.0
+Capital maintenance - Fire & rescue,3,2024,73,8,AC,860000.0
+Capital maintenance - Fire & rescue,4,2022,73,8,PY,1797976.0
+Renewal of vehicles & equipment - VFRS,3,2023,73,8,AC,4210000.0
+Renewal of vehicles & equipment - VFRS,3,2025,73,8,AC,27790000.0
+Renewal of vehicles & equipment - VFRS,4,2022,73,8,PY,47200000.0
+Firehall#2 Temporary Annex,3,2023,74,8,AC,3000000.0
+Firehall#2 Temporary Annex,3,2025,74,8,AC,-350000.0
+Firehall#2 Temporary Annex,4,2022,74,8,PY,2650000.0
+Fraserview fire hall (FH#17) - renewal,4,2022,74,8,PY,25428068.0
+Grandview Woodland fire hall (FH#9) renewal,3,2024,74,8,AC,375000.0
+Grandview Woodland fire hall (FH#9) renewal,3,2025,74,8,AC,15850000.0
+Grandview Woodland fire hall (FH#9) renewal,4,2022,74,8,PY,78475000.0
+Kitsilano fire hall (FH#12) - seismic upgrades,4,2022,74,8,PY,5844000.0
+Capital maintenance - Animal control,3,2024,71,8,AC,300000.0
+Capital maintenance - Animal control,3,2025,71,8,AC,-30000.0
+Capital maintenance - Animal control,4,2022,71,8,PY,270000.0
+Animal Control Centre renewal & expansion,3,2024,72,8,AC,4000000.0
+Animal Control Centre renewal & expansion,3,2025,72,8,AC,500000.0
+Animal Control Centre renewal & expansion,3,2026,72,8,PL,21710000.0
+Animal Control Centre renewal & expansion,4,2022,72,8,PY,6960046.0
+Renovations - Administrative facilities,3,2023,16,3,AC,2200000.0
+Renovations - Administrative facilities,3,2024,16,3,AC,1834374.0
+Renovations - Administrative facilities,3,2025,16,3,AC,555626.0
+Renovations - Administrative facilities,4,2022,16,3,PY,5445626.0
+Energy optimization program,3,2023,18,3,AC,6146000.0
+Energy optimization program,3,2024,18,3,AC,2346800.0
+Energy optimization program,4,2022,18,3,PY,10581873.0
+Facility resilience & improvement programs,3,2023,18,3,AC,1587200.0
+Facility resilience & improvement programs,3,2024,18,3,AC,1825450.0
+Facility resilience & improvement programs,3,2025,18,3,AC,2187000.0
+Facility resilience & improvement programs,3,2026,18,3,PL,997000.0
+Facility resilience & improvement programs,4,2022,18,3,PY,7509424.0
+Cambie Bridge rehabilitation & seismic upgrades,3,2023,84,10,AC,30000000.0
+Cambie Bridge rehabilitation & seismic upgrades,3,2024,84,10,AC,25000000.0
+Cambie Bridge rehabilitation & seismic upgrades,3,2025,84,10,AC,1500000.0
+Cambie Bridge rehabilitation & seismic upgrades,3,2026,84,10,PL,12000000.0
+Cambie Bridge rehabilitation & seismic upgrades,4,2022,84,10,PY,56500000.0
+General bridge rehabilitation program,3,2023,84,10,AC,3200000.0
+General bridge rehabilitation program,3,2024,84,10,AC,5337803.0
+General bridge rehabilitation program,3,2025,84,10,AC,350000.0
+General bridge rehabilitation program,3,2026,84,10,PL,510000.0
+General bridge rehabilitation program,4,2022,84,10,PY,8981271.0
+Granville Bridge Means Prevention Fencing Conceptual Design,3,2025,84,10,AC,600000.0
+Granville Bridge Means Prevention Fencing Conceptual Design,4,2022,84,10,PY,600000.0
+Granville Bridge rehabilitation & seismic upgrades,3,2023,84,10,AC,34700000.0
+Granville Bridge rehabilitation & seismic upgrades,3,2024,84,10,AC,11600000.0
+Granville Bridge rehabilitation & seismic upgrades,3,2025,84,10,AC,-575000.0
+Granville Bridge rehabilitation & seismic upgrades,3,2026,84,10,PL,1000000.0
+Granville Bridge rehabilitation & seismic upgrades,4,2022,84,10,PY,110256410.0
+Major road network rehabilitation,3,2023,85,10,AC,5625000.0
+Major road network rehabilitation,3,2024,85,10,AC,8625000.0
+Major road network rehabilitation,3,2025,85,10,AC,6000000.0
+Major road network rehabilitation,3,2026,85,10,PL,5250000.0
+Major road network rehabilitation,4,2022,85,10,PY,20250000.0
+Street lighting upgrades,4,2022,88,10,PY,900000.0
+Trolley pole replacement,3,2023,88,10,AC,1375000.0
+Trolley pole replacement,3,2024,88,10,AC,1375000.0
+Trolley pole replacement,3,2025,88,10,AC,3100000.0
+Trolley pole replacement,3,2026,88,10,PL,1150000.0
+Trolley pole replacement,4,2022,88,10,PY,5850000.0
+Renewal of vehicles & equipment - Streets,3,2023,90,10,AC,3240000.0
+Renewal of vehicles & equipment - Streets,3,2024,90,10,AC,3000000.0
+Renewal of vehicles & equipment - Streets,3,2025,90,10,AC,21550000.0
+Renewal of vehicles & equipment - Streets,3,2026,90,10,PL,1470000.0
+Renewal of vehicles & equipment - Streets,4,2022,90,10,PY,27790000.0
+Transportation planning & monitoring,3,2023,92,10,AC,2609103.0
+Transportation planning & monitoring,3,2024,92,10,AC,2700000.0
+Transportation planning & monitoring,3,2025,92,10,AC,3455000.0
+Transportation planning & monitoring,3,2026,92,10,PL,2845000.0
+Transportation planning & monitoring,4,2022,92,10,PY,8764103.0
+At-grade rail crossings,3,2023,95,10,AC,1250000.0
+At-grade rail crossings,3,2024,95,10,AC,1250000.0
+At-grade rail crossings,3,2025,95,10,AC,1250000.0
+At-grade rail crossings,3,2026,95,10,PL,1575000.0
+At-grade rail crossings,4,2022,95,10,PY,7378594.0
+School program,3,2023,95,10,AC,900000.0
+School program,3,2024,95,10,AC,750000.0
+School program,3,2025,95,10,AC,750000.0
+School program,3,2026,95,10,PL,750000.0
+School program,4,2022,95,10,PY,5766811.0
+Gastown / Water St. public space & transportation improvements,3,2023,97,10,AC,5800000.0
+Gastown / Water St. public space & transportation improvements,3,2024,97,10,AC,2500000.0
+Gastown / Water St. public space & transportation improvements,3,2025,97,10,AC,7070000.0
+Gastown / Water St. public space & transportation improvements,3,2026,97,10,PL,2330000.0
+Gastown / Water St. public space & transportation improvements,4,2022,97,10,PY,18620000.0
+Metered & pay parking,3,2025,98,10,AC,3000000.0
+Metered & pay parking,3,2026,98,10,PL,4000000.0
+Metered & pay parking,4,2022,98,10,PY,3000000.0
+Equity & Cultural Redress public space projects,3,2023,99,10,AC,500000.0
+Equity & Cultural Redress public space projects,3,2024,99,10,AC,500000.0
+Equity & Cultural Redress public space projects,3,2025,99,10,AC,1000000.0
+Equity & Cultural Redress public space projects,4,2022,99,10,PY,5020000.0
+Horticulture,3,2023,100,10,AC,250000.0
+Horticulture,3,2024,100,10,AC,250000.0
+Horticulture,3,2025,100,10,AC,500000.0
+Horticulture,4,2022,100,10,PY,1000000.0
+,3,2023,96,10,AC,663876.0
+,3,2024,96,10,AC,500000.0
+,3,2025,96,10,AC,7000000.0
+,3,2026,96,10,PL,8000000.0
+,4,2022,96,10,PY,36340000.0
+Meter renewal program,3,2023,113,13,AC,800000.0
+Meter renewal program,3,2024,113,13,AC,480000.0
+Meter renewal program,3,2025,113,13,AC,1200000.0
+Meter renewal program,3,2026,113,13,PL,1520000.0
+Meter renewal program,4,2022,113,13,PY,2480000.0
+Water planning & site investigations,3,2023,113,13,AC,1288000.0
+Water planning & site investigations,3,2024,113,13,AC,1250000.0
+Water planning & site investigations,3,2025,113,13,AC,550000.0
+Water planning & site investigations,3,2026,113,13,PL,1200000.0
+Water planning & site investigations,4,2022,113,13,PY,3088000.0
+Water system components,3,2023,113,13,AC,416000.0
+Water system components,3,2024,113,13,AC,1066000.0
+Water system components,3,2025,113,13,AC,975000.0
+Water system components,3,2026,113,13,PL,2050000.0
+Water system components,4,2022,113,13,PY,6187723.0
+Water access programs supporting emergency preparedness,3,2023,114,13,AC,175000.0
+Water access programs supporting emergency preparedness,3,2024,114,13,AC,200000.0
+Water access programs supporting emergency preparedness,3,2025,114,13,AC,300000.0
+Water access programs supporting emergency preparedness,3,2026,114,13,PL,300000.0
+Water access programs supporting emergency preparedness,4,2022,114,13,PY,850000.0
+New vehicles & equipment - Water,3,2023,116,13,AC,310000.0
+New vehicles & equipment - Water,3,2026,116,13,PL,190000.0
+New vehicles & equipment - Water,4,2022,116,13,PY,310000.0
+"Asset inspections, investigations & monitoring",3,2023,117,13,AC,6607000.0
+"Asset inspections, investigations & monitoring",3,2024,117,13,AC,3167000.0
+"Asset inspections, investigations & monitoring",3,2025,117,13,AC,6162000.0
+"Asset inspections, investigations & monitoring",3,2026,117,13,PL,7182450.0
+"Asset inspections, investigations & monitoring",4,2022,117,13,PY,15936000.0
+New & upgraded connections,3,2023,118,13,AC,13700000.0
+New & upgraded connections,3,2024,118,13,AC,20510120.0
+New & upgraded connections,3,2025,118,13,AC,7625000.0
+New & upgraded connections,3,2026,118,13,PL,11297000.0
+New & upgraded connections,4,2022,118,13,PY,126451120.0
+Larger (750 mm +) & Smaller main renewal program (up to 750 mm),3,2023,119,13,AC,55780000.0
+Larger (750 mm +) & Smaller main renewal program (up to 750 mm),3,2024,119,13,AC,59420000.0
+Larger (750 mm +) & Smaller main renewal program (up to 750 mm),3,2025,119,13,AC,64662000.0
+Larger (750 mm +) & Smaller main renewal program (up to 750 mm),3,2026,119,13,PL,44638000.0
+Larger (750 mm +) & Smaller main renewal program (up to 750 mm),4,2022,119,13,PY,231285557.0
+New vehicles & equipment - Sewers,3,2023,120,13,AC,1950000.0
+New vehicles & equipment - Sewers,3,2026,120,13,PL,50000.0
+New vehicles & equipment - Sewers,4,2022,120,13,PY,2050000.0
+Zero Waste Demonstration Centre Pilot,4,2022,111,12,PY,250000.0
+Technological enhancements,3,2023,105,12,AC,500000.0
+Technological enhancements,3,2024,105,12,AC,500000.0
+Technological enhancements,3,2025,105,12,AC,213000.0
+Technological enhancements,3,2026,105,12,PL,787000.0
+Technological enhancements,4,2022,105,12,PY,2913000.0
+Phase 5 North - closure implementation,3,2026,107,12,PL,13790000.0
+Maintenance / renovations / upgrades,3,2023,108,12,AC,2500000.0
+Maintenance / renovations / upgrades,3,2024,108,12,AC,6255000.0
+Maintenance / renovations / upgrades,3,2025,108,12,AC,1650000.0
+Maintenance / renovations / upgrades,3,2026,108,12,PL,1040000.0
+Maintenance / renovations / upgrades,4,2022,108,12,PY,16391208.0
+Renewal of vehicles & equipment - Disposal,3,2023,110,12,AC,7340000.0
+Renewal of vehicles & equipment - Disposal,3,2025,110,12,AC,1390000.0
+Renewal of vehicles & equipment - Disposal,3,2026,110,12,PL,50000.0
+Renewal of vehicles & equipment - Disposal,4,2022,110,12,PY,8730000.0
+Expansion of existing distribution network,3,2023,80,9,AC,500000.0
+Expansion of existing distribution network,3,2024,80,9,AC,900000.0
+Expansion of existing distribution network,3,2025,80,9,AC,250000.0
+Expansion of existing distribution network,4,2022,80,9,PY,14215577.0
+System planning & overhead,3,2023,82,9,AC,950000.0
+System planning & overhead,3,2024,82,9,AC,800000.0
+System planning & overhead,3,2025,82,9,AC,500000.0
+System planning & overhead,3,2026,82,9,PL,750000.0
+System planning & overhead,4,2022,82,9,PY,2250000.0
+Embodied Carbon in Non-City Buildings,3,2024,78,9,AC,2980000.0
+Embodied Carbon in Non-City Buildings,4,2022,78,9,PY,2980000.0
+Energy retrofits for non-City buildings,3,2023,78,9,AC,4080000.0
+Energy retrofits for non-City buildings,3,2024,78,9,AC,7205000.0
+Energy retrofits for non-City buildings,3,2025,78,9,AC,2500000.0
+Energy retrofits for non-City buildings,4,2022,78,9,PY,13785000.0
+Maintenance & upgrades of IT systems & infrastructure,3,2023,103,11,AC,23655022.0
+Maintenance & upgrades of IT systems & infrastructure,3,2024,103,11,AC,26444106.0
+Maintenance & upgrades of IT systems & infrastructure,3,2025,103,11,AC,20407568.0
+Maintenance & upgrades of IT systems & infrastructure,3,2026,103,11,PL,23507873.0
+Maintenance & upgrades of IT systems & infrastructure,4,2022,103,11,PY,70770111.0
+Technology transformation,3,2023,103,11,AC,14780000.0
+Technology transformation,3,2024,103,11,AC,15258000.0
+Technology transformation,3,2025,103,11,AC,8887693.0
+Technology transformation,3,2026,103,11,PL,658309.0
+Technology transformation,4,2022,103,11,PY,53635562.0
+PDS Project office,3,2023,38,5,AC,480000.0
+PDS Project office,3,2024,38,5,AC,480000.0
+PDS Project office,3,2025,38,5,AC,480000.0
+PDS Project office,3,2026,38,5,PL,398880.0
+PDS Project office,4,2022,38,5,PY,1440000.0
+Shelter program,3,2023,41,6,AC,100000.0
+Shelter program,3,2026,41,6,PL,11900000.0
+Shelter program,4,2022,41,6,PY,100000.0
+Grants to support new or redeveloped Partner units,3,2023,42,6,AC,16000000.0
+Grants to support new or redeveloped Partner units,3,2024,42,6,AC,18800000.0
+Grants to support new or redeveloped Partner units,3,2025,42,6,AC,15000000.0
+Grants to support new or redeveloped Partner units,4,2022,42,6,PY,89020556.0
+Predevelopment funding program for housing projects on City-land,3,2023,42,6,AC,14000000.0
+Predevelopment funding program for housing projects on City-land,3,2024,42,6,AC,10000000.0
+Predevelopment funding program for housing projects on City-land,3,2025,42,6,AC,23661234.0
+Predevelopment funding program for housing projects on City-land,4,2022,42,6,PY,60574406.0
+Evelyne Saller Centre - Garbage Compactor,3,2023,43,6,AC,300000.0
+Evelyne Saller Centre - Garbage Compactor,3,2025,43,6,AC,150000.0
+Evelyne Saller Centre - Garbage Compactor,4,2022,43,6,PY,450000.0
+Little Mouintain Neighbourhood House,4,2022,43,6,PY,13300000.0
+Grants to support new full day (0-4) Partner spaces,3,2023,10,2,AC,5400000.0
+Grants to support new full day (0-4) Partner spaces,4,2022,10,2,PY,5400000.0
+Childcare - Coal Harbour School,4,2022,11,2,PY,15852000.0
+Childcare - David Lloyd George school,4,2022,11,2,PY,9300000.0
+Childcare - Marpole Oakridge CC renewal & expansion,4,2022,11,2,PY,14900000.0
+Childcare - RayCam - renewal & expansion of full day (0-4) spaces,3,2025,11,2,AC,1420000.0
+Childcare - RayCam - renewal & expansion of full day (0-4) spaces,4,2022,11,2,PY,1420000.0
+Childcare - Vancouver Aquatic Centre - new full day (0-4) spaces (potential),3,2023,11,2,AC,2387000.0
+Childcare - Vancouver Aquatic Centre - new full day (0-4) spaces (potential),3,2024,11,2,AC,-2387000.0
+Childcare at East Fraser Land Community Centre - new full day (0-4) spaces,3,2023,11,2,AC,2385000.0
+Childcare at East Fraser Land Community Centre - new full day (0-4) spaces,3,2024,11,2,AC,1115000.0
+Childcare at East Fraser Land Community Centre - new full day (0-4) spaces,4,2022,11,2,PY,3500000.0
+Capital maintenance - Childcare,3,2023,13,2,AC,150000.0
+Capital maintenance - Childcare,3,2025,13,2,AC,400000.0
+Capital maintenance - Childcare,4,2022,13,2,PY,570000.0
+Planning & studies - Childcare,3,2023,13,2,AC,875000.0
+Planning & studies - Childcare,3,2024,13,2,AC,875000.0
+Planning & studies - Childcare,3,2025,13,2,AC,875000.0
+Planning & studies - Childcare,3,2026,13,2,PL,875000.0
+Planning & studies - Childcare,4,2022,13,2,PY,2625000.0
+Small capital grants for non-City owned childcares,3,2023,13,2,AC,100000.0
+Small capital grants for non-City owned childcares,3,2024,13,2,AC,100000.0
+Small capital grants for non-City owned childcares,3,2025,13,2,AC,100000.0
+Small capital grants for non-City owned childcares,3,2026,13,2,PL,100000.0
+Small capital grants for non-City owned childcares,4,2022,13,2,PY,355251.0
+,4,2022,12,2,PY,192946.0
+Maintenance / repairs of seawall or shoreline,3,2023,66,7,AC,1125000.0
+Maintenance / repairs of seawall or shoreline,3,2024,66,7,AC,1260000.0
+Maintenance / repairs of seawall or shoreline,4,2022,66,7,PY,3837500.0
+Maintenance / repairs of seawall or shoreline - ENG,3,2024,66,7,AC,990000.0
+Maintenance / repairs of seawall or shoreline - ENG,4,2022,66,7,PY,990000.0
+Seawall / shoreline planning - Coastal Flood Protection,3,2023,66,7,AC,250000.0
+Seawall / shoreline planning - Coastal Flood Protection,3,2024,66,7,AC,925000.0
+Seawall / shoreline planning - Coastal Flood Protection,3,2026,66,7,PL,3825000.0
+Seawall / shoreline planning - Coastal Flood Protection,4,2022,66,7,PY,1175000.0
+Carbon sequestration projects,4,2022,70,7,PY,1050000.0
+Park trees - new,3,2023,70,7,AC,466700.0
+Park trees - new,3,2024,70,7,AC,1200000.0
+Park trees - new,3,2025,70,7,AC,480000.0
+Park trees - new,3,2026,70,7,PL,353300.0
+Park trees - new,4,2022,70,7,PY,2146700.0
+New ball diamonds & playfields,3,2023,48,7,AC,63000.0
+New ball diamonds & playfields,3,2026,48,7,PL,624000.0
+New ball diamonds & playfields,4,2022,48,7,PY,63000.0
+Park Renewal Program,3,2026,50,7,PL,2590000.0
+Park Renewal Program,4,2022,50,7,PY,3900000.0
+West End waterfront parks (phase 1 implementation),3,2024,50,7,AC,150000.0
+West End waterfront parks (phase 1 implementation),3,2026,50,7,PL,814000.0
+West End waterfront parks (phase 1 implementation),4,2022,50,7,PY,3900000.0
+John Hendry Park,3,2025,50,7,AC,1040000.0
+John Hendry Park,4,2022,50,7,PY,2920000.0
+Expansion of W.C. Shelly Park (phase 1),3,2023,51,7,AC,150000.0
+Expansion of W.C. Shelly Park (phase 1),3,2024,51,7,AC,12419.0
+Expansion of W.C. Shelly Park (phase 1),3,2025,51,7,AC,300000.0
+Expansion of W.C. Shelly Park (phase 1),3,2026,51,7,PL,1894000.0
+Expansion of W.C. Shelly Park (phase 1),4,2022,51,7,PY,462419.0
+New 'East Park' in Southeast False Creek (phase 1),3,2025,51,7,AC,2000000.0
+New 'East Park' in Southeast False Creek (phase 1),3,2026,51,7,PL,10250000.0
+New 'East Park' in Southeast False Creek (phase 1),4,2022,51,7,PY,4100000.0
+New other amenities,3,2023,52,7,AC,167000.0
+New other amenities,3,2024,52,7,AC,100000.0
+New other amenities,4,2022,52,7,PY,267000.0
+Andy Livingstone Synthetic Turf Renewal,3,2024,53,7,AC,500000.0
+Andy Livingstone Synthetic Turf Renewal,3,2025,53,7,AC,5712000.0
+Andy Livingstone Synthetic Turf Renewal,4,2022,53,7,PY,6405000.0
+Kerrisdale Track and Field Facility,3,2023,53,7,AC,846000.0
+Kerrisdale Track and Field Facility,4,2022,53,7,PY,3800000.0
+Mural and Sports Court Activation at Sunset Beach,3,2024,53,7,AC,60000.0
+Mural and Sports Court Activation at Sunset Beach,4,2022,53,7,PY,60000.0
+Trout Lake Score Shack and Batting Cage Upgrades,3,2025,53,7,AC,100000.0
+Trout Lake Score Shack and Batting Cage Upgrades,4,2022,53,7,PY,100000.0
+New sport courts & skate parks,3,2023,56,7,AC,100000.0
+New sport courts & skate parks,3,2025,56,7,AC,1983000.0
+New sport courts & skate parks,4,2022,56,7,PY,3083000.0
+Maintenance & renewal of park pedestrian infrastructure,3,2023,59,7,AC,279000.0
+Maintenance & renewal of park pedestrian infrastructure,3,2025,59,7,AC,300000.0
+Maintenance & renewal of park pedestrian infrastructure,4,2022,59,7,PY,4069000.0
+Universal access improvements to park pedestrian infrastructure,3,2025,59,7,AC,100000.0
+Universal access improvements to park pedestrian infrastructure,3,2026,59,7,PL,175000.0
+Universal access improvements to park pedestrian infrastructure,4,2022,59,7,PY,100000.0
+Electrification of vehicles & equipment - Parks,3,2023,61,7,AC,530000.0
+Electrification of vehicles & equipment - Parks,3,2024,61,7,AC,120000.0
+Electrification of vehicles & equipment - Parks,3,2025,61,7,AC,1340000.0
+Electrification of vehicles & equipment - Parks,3,2026,61,7,PL,1410000.0
+Electrification of vehicles & equipment - Parks,4,2022,61,7,PY,1990000.0
+Co-management framework,3,2023,47,7,AC,200000.0
+Co-management framework,4,2022,47,7,PY,200000.0
+Cultural visibility on the land,3,2023,47,7,AC,150000.0
+Cultural visibility on the land,3,2025,47,7,AC,110000.0
+Cultural visibility on the land,3,2026,47,7,PL,40000.0
+Cultural visibility on the land,4,2022,47,7,PY,260000.0
+Chinatown cultural partnership grants,3,2023,1,1,AC,250000.0
+Chinatown cultural partnership grants,3,2024,1,1,AC,250000.0
+Chinatown cultural partnership grants,3,2025,1,1,AC,250000.0
+Chinatown cultural partnership grants,3,2026,1,1,PL,250000.0
+Chinatown cultural partnership grants,4,2022,1,1,PY,1250000.0
+Civic theatre upgrades,3,2023,2,1,AC,1200000.0
+Civic theatre upgrades,3,2024,2,1,AC,761804.0
+Civic theatre upgrades,4,2022,2,1,PY,1961804.0
+"FireHall Theatre renewal & expansion, detailed design",3,2023,3,1,AC,700000.0
+"FireHall Theatre renewal & expansion, detailed design",4,2022,3,1,PY,700000.0
+Renovations - Entertainment & exhibition,3,2025,4,1,AC,275000.0
+Renovations - Entertainment & exhibition,4,2022,4,1,PY,462000.0
+Hastings Park - site-wide infrastructure renewal,3,2023,5,1,AC,1400000.0
+Hastings Park - site-wide infrastructure renewal,3,2025,5,1,AC,2100000.0
+Hastings Park - site-wide infrastructure renewal,4,2022,5,1,PY,8100000.0
+New public art delivered by the City,3,2023,9,1,AC,500000.0
+New public art delivered by the City,3,2024,9,1,AC,300000.0
+New public art delivered by the City,3,2025,9,1,AC,700000.0
+New public art delivered by the City,3,2026,9,1,PL,2500000.0
+New public art delivered by the City,4,2022,9,1,PY,8395000.0
+Ongoing program for Central Library Maintenance /Renovations /Furniture Replacement,3,2025,27,4,AC,125000.0
+Ongoing program for Central Library Maintenance /Renovations /Furniture Replacement,3,2026,27,4,PL,125000.0
+Ongoing program for Central Library Maintenance /Renovations /Furniture Replacement,4,2022,27,4,PY,125000.0
+Renovations - Libraries,3,2023,27,4,AC,175000.0
+Renovations - Libraries,3,2024,27,4,AC,175000.0
+Renovations - Libraries,3,2025,27,4,AC,250000.0
+Renovations - Libraries,3,2026,27,4,PL,250000.0
+Renovations - Libraries,4,2022,27,4,PY,600000.0
+Interim rehabilitation / renovation of Archive facilities,3,2023,25,4,AC,2000000.0
+Interim rehabilitation / renovation of Archive facilities,3,2024,25,4,AC,2000000.0
+Interim rehabilitation / renovation of Archive facilities,4,2022,25,4,PY,5223388.0
+Renovations - Recreation facilities,3,2023,30,4,AC,700000.0
+Renovations - Recreation facilities,3,2024,30,4,AC,100000.0
+Renovations - Recreation facilities,3,2025,30,4,AC,1135000.0
+Renovations - Recreation facilities,3,2026,30,4,PL,575000.0
+Renovations - Recreation facilities,4,2022,30,4,PY,4933159.0
+Britannia Community Centre Capital Maintenance,3,2024,31,4,AC,2000000.0
+Britannia Community Centre Capital Maintenance,3,2025,31,4,AC,-1036420.0
+Britannia Community Centre Capital Maintenance,4,2022,31,4,PY,20079510.0
+Marpole Oakridge Community Centre renewal & expansion,3,2023,31,4,AC,6300000.0
+Marpole Oakridge Community Centre renewal & expansion,3,2025,31,4,AC,21000000.0
+Marpole Oakridge Community Centre renewal & expansion,4,2022,31,4,PY,72516776.0
+Vancouver Aquatic Centre - renewal & expansion,3,2023,31,4,AC,21000000.0
+Vancouver Aquatic Centre - renewal & expansion,3,2026,31,4,PL,154000000.0
+Vancouver Aquatic Centre - renewal & expansion,4,2022,31,4,PY,21135000.0
+West End Community Centre - Capital Maintenance,3,2025,31,4,AC,4000000.0
+West End Community Centre - Capital Maintenance,4,2022,31,4,PY,4000000.0
+Downtown Eastside capital grant programs,3,2023,33,4,AC,1188000.0
+Downtown Eastside capital grant programs,3,2024,33,4,AC,900000.0
+Downtown Eastside capital grant programs,3,2025,33,4,AC,660000.0
+Downtown Eastside capital grant programs,3,2026,33,4,PL,1377000.0
+Downtown Eastside capital grant programs,4,2022,33,4,PY,7121555.0
+Community Economic Development (CED) Hub,3,2025,35,4,AC,10000000.0
+Community Economic Development (CED) Hub,4,2022,35,4,PY,10000000.0
+Electrification of vehicles & equipment - VFRS,3,2024,73,8,AC,60000.0
+Electrification of vehicles & equipment - VFRS,3,2025,73,8,AC,90000.0
+Electrification of vehicles & equipment - VFRS,3,2026,73,8,PL,50000.0
+Electrification of vehicles & equipment - VFRS,4,2022,73,8,PY,150000.0
+Fire Hall - Interior Finish Refresh Program,3,2025,73,8,AC,1000000.0
+Fire Hall - Interior Finish Refresh Program,4,2022,73,8,PY,1000000.0
+Renovations - Fire & rescue,3,2023,73,8,AC,300000.0
+Renovations - Fire & rescue,3,2024,73,8,AC,250000.0
+Renovations - Fire & rescue,3,2025,73,8,AC,150000.0
+Renovations - Fire & rescue,4,2022,73,8,PY,866744.0
+Downtown South fire hall (FH#8) - renewal & expansion - VAHEF,3,2023,74,8,AC,266000.0
+Downtown South fire hall (FH#8) - renewal & expansion - VAHEF,3,2025,74,8,AC,-266000.0
+Firehall Land Acquisition,3,2023,74,8,AC,4200000.0
+VPD Headquarters - planning & scoping,3,2023,76,8,AC,100000.0
+VPD Headquarters - planning & scoping,3,2026,76,8,PL,900000.0
+VPD Headquarters - planning & scoping,4,2022,76,8,PY,100000.0
+Capital maintenance - Administrative facilities,3,2023,16,3,AC,1400000.0
+Capital maintenance - Administrative facilities,3,2024,16,3,AC,2920000.0
+Capital maintenance - Administrative facilities,3,2025,16,3,AC,2720000.0
+Capital maintenance - Administrative facilities,3,2026,16,3,PL,452500.0
+Capital maintenance - Administrative facilities,4,2022,16,3,PY,8887323.0
+City Hall Sub-ground Renovation & Mechanical Upgrade,3,2024,17,3,AC,100000.0
+City Hall Sub-ground Renovation & Mechanical Upgrade,3,2025,17,3,AC,900000.0
+City Hall Sub-ground Renovation & Mechanical Upgrade,4,2022,17,3,PY,1000000.0
+Capital maintenance - Service yards,3,2023,21,3,AC,835000.0
+Capital maintenance - Service yards,3,2024,21,3,AC,1625000.0
+Capital maintenance - Service yards,3,2025,21,3,AC,650000.0
+Capital maintenance - Service yards,3,2026,21,3,PL,300000.0
+Capital maintenance - Service yards,4,2022,21,3,PY,3871796.0
+Renovations - Service yards,3,2023,21,3,AC,1200000.0
+Renovations - Service yards,3,2024,21,3,AC,311581.0
+Renovations - Service yards,3,2025,21,3,AC,400000.0
+Renovations - Service yards,4,2022,21,3,PY,11071581.0
+Stanley Park Service Yards - Capital Maintenance,3,2025,21,3,AC,1500000.0
+Stanley Park Service Yards - Capital Maintenance,4,2022,21,3,PY,1500000.0
+"Sunset Yard renewal, phase one",3,2023,22,3,AC,9375000.0
+"Sunset Yard renewal, phase one",4,2022,22,3,PY,18375000.0
+Electrification of vehicles & equipment - Other,3,2023,23,3,AC,650000.0
+Electrification of vehicles & equipment - Other,3,2026,23,3,PL,150000.0
+Electrification of vehicles & equipment - Other,4,2022,23,3,PY,650000.0
+Civic Dock Maintenance,3,2024,18,3,AC,100000.0
+Civic Dock Maintenance,3,2025,18,3,AC,250000.0
+Civic Dock Maintenance,3,2026,18,3,PL,150000.0
+Civic Dock Maintenance,4,2022,18,3,PY,350000.0
+Facility resilience & improvement programs - VAHEF,3,2023,18,3,AC,188000.0
+Facility resilience & improvement programs - VAHEF,3,2026,18,3,PL,562000.0
+Facility resilience & improvement programs - VAHEF,4,2022,18,3,PY,188000.0
+Arterial road rehabilitation,3,2023,85,10,AC,7750000.0
+Arterial road rehabilitation,3,2024,85,10,AC,3750000.0
+Arterial road rehabilitation,3,2025,85,10,AC,7200000.0
+Arterial road rehabilitation,3,2026,85,10,PL,3800000.0
+Arterial road rehabilitation,4,2022,85,10,PY,18700000.0
+Engineering PMO Implementation,3,2025,86,10,AC,150000.0
+Engineering PMO Implementation,4,2022,86,10,PY,2590219.0
+New signals,3,2023,89,10,AC,2100000.0
+New signals,3,2024,89,10,AC,200000.0
+New signals,3,2025,89,10,AC,3000000.0
+New signals,3,2026,89,10,PL,3100000.0
+New signals,4,2022,89,10,PY,5300000.0
+Signal rehabilitation,3,2023,89,10,AC,6467151.0
+Signal rehabilitation,3,2024,89,10,AC,7500000.0
+Signal rehabilitation,3,2025,89,10,AC,5900000.0
+Signal rehabilitation,3,2026,89,10,PL,6100000.0
+Signal rehabilitation,4,2022,89,10,PY,19867151.0
+Electrification of vehicles & equipment - Streets,3,2023,90,10,AC,410000.0
+Electrification of vehicles & equipment - Streets,3,2025,90,10,AC,1020000.0
+Electrification of vehicles & equipment - Streets,3,2026,90,10,PL,2620000.0
+Electrification of vehicles & equipment - Streets,4,2022,90,10,PY,1430000.0
+Active transportation & complete streets,3,2023,92,10,AC,6900000.0
+Active transportation & complete streets,3,2024,92,10,AC,16600000.0
+Active transportation & complete streets,3,2025,92,10,AC,19100000.0
+Active transportation & complete streets,3,2026,92,10,PL,23600000.0
+Active transportation & complete streets,4,2022,92,10,PY,90829514.0
+Arbutus Greenway,4,2022,92,10,PY,2000000.0
+Neighbourhood traffic management & spot improvements,3,2023,93,10,AC,500000.0
+Neighbourhood traffic management & spot improvements,3,2024,93,10,AC,250000.0
+Neighbourhood traffic management & spot improvements,3,2025,93,10,AC,500000.0
+Neighbourhood traffic management & spot improvements,3,2026,93,10,PL,750000.0
+Neighbourhood traffic management & spot improvements,4,2022,93,10,PY,1250000.0
+Pedestrian curb ramps,3,2023,93,10,AC,1000000.0
+Pedestrian curb ramps,3,2024,93,10,AC,2000000.0
+Pedestrian curb ramps,3,2025,93,10,AC,1000000.0
+Pedestrian curb ramps,3,2026,93,10,PL,8279000.0
+Pedestrian curb ramps,4,2022,93,10,PY,4000000.0
+Bus transit improvements,3,2023,94,10,AC,1875000.0
+Bus transit improvements,3,2024,94,10,AC,3625000.0
+Bus transit improvements,3,2025,94,10,AC,5300000.0
+Bus transit improvements,3,2026,94,10,PL,11800000.0
+Bus transit improvements,4,2022,94,10,PY,11300000.0
+Granville St Near Term Streetscape Improvements,3,2025,97,10,AC,1200000.0
+Granville St Near Term Streetscape Improvements,4,2022,97,10,PY,1200000.0
+West End public space & transportation improvements,3,2023,97,10,AC,100000.0
+West End public space & transportation improvements,3,2024,97,10,AC,300000.0
+West End public space & transportation improvements,3,2025,97,10,AC,4700000.0
+West End public space & transportation improvements,3,2026,97,10,PL,4900000.0
+West End public space & transportation improvements,4,2022,97,10,PY,17600000.0
+Public realm electrification,3,2023,100,10,AC,1100000.0
+Public realm electrification,3,2024,100,10,AC,1100000.0
+Public realm electrification,3,2025,100,10,AC,1000000.0
+Public realm electrification,3,2026,100,10,PL,1050000.0
+Public realm electrification,4,2022,100,10,PY,10062500.0
+Public realm EV charging infrastructure,3,2023,100,10,AC,850000.0
+Public realm EV charging infrastructure,3,2024,100,10,AC,1000000.0
+Public realm EV charging infrastructure,3,2025,100,10,AC,1100000.0
+Public realm EV charging infrastructure,3,2026,100,10,PL,1300000.0
+Public realm EV charging infrastructure,4,2022,100,10,PY,9900000.0
+Street furniture & bike racks,3,2023,100,10,AC,200000.0
+Street furniture & bike racks,3,2024,100,10,AC,200000.0
+Street furniture & bike racks,3,2025,100,10,AC,100000.0
+Street furniture & bike racks,4,2022,100,10,PY,500000.0
+Connection renewal program,3,2024,113,13,AC,262000.0
+Connection renewal program,3,2025,113,13,AC,1500000.0
+Connection renewal program,3,2026,113,13,PL,300000.0
+Connection renewal program,4,2022,113,13,PY,8365757.0
+Transmission main renewal program,3,2023,113,13,AC,300000.0
+Transmission main renewal program,3,2024,113,13,AC,8000000.0
+Transmission main renewal program,3,2025,113,13,AC,2500000.0
+Transmission main renewal program,4,2022,113,13,PY,10800000.0
+Water conservation programs,3,2023,114,13,AC,200000.0
+Water conservation programs,3,2024,114,13,AC,300000.0
+Water conservation programs,3,2025,114,13,AC,300000.0
+Water conservation programs,4,2022,114,13,PY,1354000.0
+Water quality programs,3,2024,114,13,AC,50000.0
+Water quality programs,3,2025,114,13,AC,50000.0
+Water quality programs,3,2026,114,13,PL,100000.0
+Water quality programs,4,2022,114,13,PY,1140015.0
+Connection upgrades to support growth,3,2023,115,13,AC,5670000.0
+Connection upgrades to support growth,3,2024,115,13,AC,7979700.0
+Connection upgrades to support growth,3,2025,115,13,AC,1600000.0
+Connection upgrades to support growth,3,2026,115,13,PL,3478000.0
+Connection upgrades to support growth,4,2022,115,13,PY,15249700.0
+Electrification of vehicles & equipment - Water,3,2024,116,13,AC,200000.0
+Electrification of vehicles & equipment - Water,4,2022,116,13,PY,200000.0
+Connections renewal program,3,2023,118,13,AC,1200000.0
+Connections renewal program,3,2024,118,13,AC,2000000.0
+Connections renewal program,3,2025,118,13,AC,1400000.0
+Connections renewal program,3,2026,118,13,PL,1200000.0
+Connections renewal program,4,2022,118,13,PY,4600000.0
+Cambie sheetpile wall decommissioning: Consulting & Construction,3,2024,119,13,AC,1500000.0
+Cambie sheetpile wall decommissioning: Consulting & Construction,3,2025,119,13,AC,6000000.0
+Cambie sheetpile wall decommissioning: Consulting & Construction,4,2022,119,13,PY,7500000.0
+Green infrastructure renewal & upgrades,3,2023,119,13,AC,20350000.0
+Green infrastructure renewal & upgrades,3,2024,119,13,AC,6714000.0
+Green infrastructure renewal & upgrades,3,2025,119,13,AC,8443000.0
+Green infrastructure renewal & upgrades,3,2026,119,13,PL,7968000.0
+Green infrastructure renewal & upgrades,4,2022,119,13,PY,44892743.0
+Maintenance & replacement of other components,3,2023,119,13,AC,2950000.0
+Maintenance & replacement of other components,3,2024,119,13,AC,3900000.0
+Maintenance & replacement of other components,3,2025,119,13,AC,14800000.0
+Maintenance & replacement of other components,3,2026,119,13,PL,4050000.0
+Maintenance & replacement of other components,4,2022,119,13,PY,22986000.0
+Targeted separation program (strategic CSO & flood mitigation),3,2023,119,13,AC,2775000.0
+Targeted separation program (strategic CSO & flood mitigation),3,2024,119,13,AC,5840000.0
+Targeted separation program (strategic CSO & flood mitigation),3,2025,119,13,AC,1294021.0
+Targeted separation program (strategic CSO & flood mitigation),3,2026,119,13,PL,4261900.0
+Targeted separation program (strategic CSO & flood mitigation),4,2022,119,13,PY,10195000.0
+Electrification of vehicle & equipment - Sewers,3,2024,120,13,AC,500000.0
+Electrification of vehicle & equipment - Sewers,4,2022,120,13,PY,500000.0
+Renewal of vehicles & equipment - Sewers,3,2023,120,13,AC,6240000.0
+Renewal of vehicles & equipment - Sewers,3,2024,120,13,AC,145000.0
+Renewal of vehicles & equipment - Sewers,3,2025,120,13,AC,6540000.0
+Renewal of vehicles & equipment - Sewers,3,2026,120,13,PL,675000.0
+Renewal of vehicles & equipment - Sewers,4,2022,120,13,PY,47168000.0
+Zero waste programs,3,2024,111,12,AC,138961.0
+Zero waste programs,3,2025,111,12,AC,81400.0
+Zero waste programs,4,2022,111,12,PY,1186292.0
+Electrification of vehicles & equipment - Sanitation,3,2023,105,12,AC,80000.0
+Electrification of vehicles & equipment - Sanitation,3,2025,105,12,AC,730000.0
+Electrification of vehicles & equipment - Sanitation,3,2026,105,12,PL,290000.0
+Electrification of vehicles & equipment - Sanitation,4,2022,105,12,PY,810000.0
+New vehicles & equipment - Sanitation,3,2023,105,12,AC,150000.0
+New vehicles & equipment - Sanitation,3,2024,105,12,AC,320000.0
+New vehicles & equipment - Sanitation,3,2025,105,12,AC,460000.0
+New vehicles & equipment - Sanitation,3,2026,105,12,PL,670000.0
+New vehicles & equipment - Sanitation,4,2022,105,12,PY,930000.0
+Renewal of vehicles & equipment - Sanitation,3,2023,105,12,AC,6380000.0
+Renewal of vehicles & equipment - Sanitation,3,2024,105,12,AC,10500000.0
+Renewal of vehicles & equipment - Sanitation,3,2025,105,12,AC,12620000.0
+Renewal of vehicles & equipment - Sanitation,3,2026,105,12,PL,220000.0
+Renewal of vehicles & equipment - Sanitation,4,2022,105,12,PY,42117000.0
+Maintenance & renewal of litter & recycling cans/bins,3,2023,106,12,AC,500000.0
+Maintenance & renewal of litter & recycling cans/bins,3,2024,106,12,AC,-500000.0
+Closure maintenance,3,2024,107,12,AC,3000000.0
+Closure maintenance,3,2025,107,12,AC,1025000.0
+Closure maintenance,3,2026,107,12,PL,1000000.0
+Closure maintenance,4,2022,107,12,PY,5025000.0
+Phase 4 - design,4,2022,107,12,PY,26972000.0
+Maintenance & renewal of transfer station,3,2023,109,12,AC,5225000.0
+Maintenance & renewal of transfer station,3,2024,109,12,AC,4230000.0
+Maintenance & renewal of transfer station,3,2025,109,12,AC,600000.0
+Maintenance & renewal of transfer station,4,2022,109,12,PY,10055000.0
+Electrification of vehicles & equipment - Disposal,3,2023,110,12,AC,160000.0
+Electrification of vehicles & equipment - Disposal,3,2026,110,12,PL,40000.0
+Electrification of vehicles & equipment - Disposal,4,2022,110,12,PY,160000.0
+New vehicles & equipment - Disposal,3,2023,110,12,AC,60000.0
+New vehicles & equipment - Disposal,3,2024,110,12,AC,13000.0
+New vehicles & equipment - Disposal,3,2026,110,12,PL,127000.0
+New vehicles & equipment - Disposal,4,2022,110,12,PY,73000.0
+"New service connections, including energy transfer stations",4,2022,80,9,PY,7930000.0
+Maintenance & renewal of NEU assets,3,2023,82,9,AC,2075000.0
+Maintenance & renewal of NEU assets,3,2025,82,9,AC,100000.0
+Maintenance & renewal of NEU assets,3,2026,82,9,PL,500000.0
+Maintenance & renewal of NEU assets,4,2022,82,9,PY,2175000.0
+Off-street EV charging infrastructure for non-City buildings,3,2023,79,9,AC,900000.0
+Off-street EV charging infrastructure for non-City buildings,3,2024,79,9,AC,2399329.0
+Off-street EV charging infrastructure for non-City buildings,3,2025,79,9,AC,1800000.0
+Off-street EV charging infrastructure for non-City buildings,3,2026,79,9,PL,1461000.0
+Off-street EV charging infrastructure for non-City buildings,4,2022,79,9,PY,5099329.0
+,3,2023,102,11,AC,978.0
+PDS Financing Growth,3,2023,38,5,AC,500000.0
+PDS Financing Growth,3,2024,38,5,AC,500000.0
+PDS Financing Growth,3,2025,38,5,AC,500000.0
+PDS Financing Growth,3,2026,38,5,PL,500000.0
+PDS Financing Growth,4,2022,38,5,PY,1500000.0
+New land for social housing projects,3,2023,39,6,AC,44600000.0
+New land for social housing projects,3,2024,39,6,AC,51320000.0
+New land for social housing projects,3,2025,39,6,AC,8439999.0
+New land for social housing projects,4,2022,39,6,PY,130859999.0
+New land for supportive housing,3,2023,39,6,AC,16890000.0
+New land for supportive housing,4,2022,39,6,PY,16890000.0
+"Accessibility Enhancements, repairs and renovations",3,2023,42,6,AC,1730000.0
+"Accessibility Enhancements, repairs and renovations",4,2022,42,6,PY,1730000.0
+Granville Residences HVAC Upgrade,3,2023,43,6,AC,1560000.0
+Granville Residences HVAC Upgrade,3,2024,43,6,AC,320245.0
+Granville Residences HVAC Upgrade,4,2022,43,6,PY,2660245.0
+Planning & studies - Housing - ACCS,3,2023,45,6,AC,800000.0
+Planning & studies - Housing - ACCS,3,2024,45,6,AC,110000.0
+Planning & studies - Housing - ACCS,3,2025,45,6,AC,1180000.0
+Planning & studies - Housing - ACCS,4,2022,45,6,PY,3690000.0
+,3,2024,44,6,AC,1157031.0
+,3,2025,44,6,AC,813179.0
+,4,2022,44,6,PY,81185464.0
+Childcare - 960 E 7th renewal,4,2022,11,2,PY,14000000.0
+Childcare - Eric Hamber,4,2022,11,2,PY,10800000.0
+Childcare - Henry Hudson,4,2022,11,2,PY,12700000.0
+Childcare at DT South FireHall #8,3,2023,11,2,AC,1320000.0
+Childcare at DT South FireHall #8,3,2024,11,2,AC,780000.0
+Childcare at DT South FireHall #8,3,2025,11,2,AC,9100000.0
+Childcare at DT South FireHall #8,3,2026,11,2,PL,2600000.0
+Childcare at DT South FireHall #8,4,2022,11,2,PY,11375000.0
+Childcare- Oakridge Civic Center,3,2024,11,2,AC,2000000.0
+Childcare- Oakridge Civic Center,4,2022,11,2,PY,2000000.0
+Grants to support new school age (5-12) Partner spaces,3,2023,14,2,AC,91000.0
+Grants to support new school age (5-12) Partner spaces,3,2024,14,2,AC,250000.0
+Grants to support new school age (5-12) Partner spaces,3,2026,14,2,PL,63000.0
+Grants to support new school age (5-12) Partner spaces,4,2022,14,2,PY,1346600.0
+Childcare - RayCam - renewal school age (5-12) childcare spaces,3,2025,15,2,AC,300000.0
+Childcare - RayCam - renewal school age (5-12) childcare spaces,4,2022,15,2,PY,300000.0
+Renovations - Childcare,3,2023,13,2,AC,225000.0
+Renovations - Childcare,3,2024,13,2,AC,225000.0
+Renovations - Childcare,3,2025,13,2,AC,300000.0
+Renovations - Childcare,3,2026,13,2,PL,125000.0
+Renovations - Childcare,4,2022,13,2,PY,1011999.0
+New land for parks,3,2024,62,7,AC,18500000.0
+New land for parks,3,2025,62,7,AC,2505000.0
+New land for parks,4,2022,62,7,PY,23800000.0
+Renewal of marine structures,3,2024,65,7,AC,2800000.0
+Renewal of marine structures,3,2025,65,7,AC,1345000.0
+Renewal of marine structures,4,2022,65,7,PY,12222119.0
+Deconstruction Creekside Expo deck (initial phases),3,2024,66,7,AC,1000000.0
+Deconstruction Creekside Expo deck (initial phases),3,2025,66,7,AC,800000.0
+Deconstruction Creekside Expo deck (initial phases),4,2022,66,7,PY,1800000.0
+Seawall / shoreline planning - Coastal Resiliency,3,2023,66,7,AC,285000.0
+Seawall / shoreline planning - Coastal Resiliency,3,2024,66,7,AC,1415000.0
+Seawall / shoreline planning - Coastal Resiliency,4,2022,66,7,PY,1700000.0
+Upgrades to waterfront-walkway bikeway,3,2025,67,7,AC,500000.0
+Upgrades to waterfront-walkway bikeway,4,2022,67,7,PY,4800000.0
+Renewal & upgrades of ball diamonds & playfields,3,2023,48,7,AC,1025000.0
+Renewal & upgrades of ball diamonds & playfields,3,2024,48,7,AC,1413000.0
+Renewal & upgrades of ball diamonds & playfields,3,2025,48,7,AC,1200000.0
+Renewal & upgrades of ball diamonds & playfields,3,2026,48,7,PL,402000.0
+Renewal & upgrades of ball diamonds & playfields,4,2022,48,7,PY,5698000.0
+Upgrades dog off-leash area at Emery Barnes Park,3,2023,49,7,AC,960000.0
+Upgrades dog off-leash area at Emery Barnes Park,3,2024,49,7,AC,114000.0
+Upgrades dog off-leash area at Emery Barnes Park,4,2022,49,7,PY,1107000.0
+New park at Main & 7th,3,2025,51,7,AC,1620000.0
+New park at Main & 7th,4,2022,51,7,PY,5320000.0
+New track & field facility,3,2024,53,7,AC,12961000.0
+New track & field facility,4,2022,53,7,PY,14255000.0
+Synthetic Turfs & Fieldhouses,3,2025,53,7,AC,2000000.0
+Synthetic Turfs & Fieldhouses,3,2026,53,7,PL,11600000.0
+Synthetic Turfs & Fieldhouses,4,2022,53,7,PY,2000000.0
+Planning & studies - Parks,3,2023,54,7,AC,60000.0
+Planning & studies - Parks,3,2024,54,7,AC,200000.0
+Planning & studies - Parks,3,2025,54,7,AC,900000.0
+Planning & studies - Parks,3,2026,54,7,PL,850000.0
+Planning & studies - Parks,4,2022,54,7,PY,3860000.0
+New playgrounds & spray parks,3,2023,55,7,AC,683000.0
+New playgrounds & spray parks,3,2024,55,7,AC,165000.0
+New playgrounds & spray parks,3,2025,55,7,AC,500000.0
+New playgrounds & spray parks,3,2026,55,7,PL,3935000.0
+New playgrounds & spray parks,4,2022,55,7,PY,1648000.0
+Renewal & upgrades of sport courts & skate parks,3,2023,56,7,AC,588000.0
+Renewal & upgrades of sport courts & skate parks,3,2024,56,7,AC,512000.0
+Renewal & upgrades of sport courts & skate parks,3,2025,56,7,AC,60000.0
+Renewal & upgrades of sport courts & skate parks,3,2026,56,7,PL,1300000.0
+Renewal & upgrades of sport courts & skate parks,4,2022,56,7,PY,1520000.0
+Capital maintenance - Park buildings,3,2023,57,7,AC,1250000.0
+Capital maintenance - Park buildings,3,2024,57,7,AC,750000.0
+Capital maintenance - Park buildings,3,2025,57,7,AC,950000.0
+Capital maintenance - Park buildings,4,2022,57,7,PY,3016690.0
+Renovations - Park buildings,3,2023,57,7,AC,200000.0
+Renovations - Park buildings,3,2024,57,7,AC,1300000.0
+Renovations - Park buildings,3,2025,57,7,AC,3120234.0
+Renovations - Park buildings,4,2022,57,7,PY,4820234.0
+Washrooms & Fieldhouses Renewal,4,2022,57,7,PY,5718296.0
+Italian Garden Fountain Repair - PNE,3,2024,58,7,AC,200000.0
+Italian Garden Fountain Repair - PNE,3,2025,58,7,AC,-21810.0
+Italian Garden Fountain Repair - PNE,4,2022,58,7,PY,178190.0
+"Maintenance, upgrading & renewal of park electrical & water infrastructure",3,2023,58,7,AC,2025000.0
+"Maintenance, upgrading & renewal of park electrical & water infrastructure",3,2024,58,7,AC,3225000.0
+"Maintenance, upgrading & renewal of park electrical & water infrastructure",3,2025,58,7,AC,950000.0
+"Maintenance, upgrading & renewal of park electrical & water infrastructure",4,2022,58,7,PY,8359000.0
+Pump replacement lower sanctuary pond - PNE,3,2024,58,7,AC,50000.0
+Pump replacement lower sanctuary pond - PNE,4,2022,58,7,PY,50000.0
+Maintenance & renewal of park vehicular infrastructure,3,2023,60,7,AC,625000.0
+Maintenance & renewal of park vehicular infrastructure,3,2024,60,7,AC,875000.0
+Maintenance & renewal of park vehicular infrastructure,3,2025,60,7,AC,400000.0
+Maintenance & renewal of park vehicular infrastructure,3,2026,60,7,PL,300000.0
+Maintenance & renewal of park vehicular infrastructure,4,2022,60,7,PY,1900000.0
+Renewal of vehicles & equipment - Parks,3,2023,61,7,AC,3330000.0
+Renewal of vehicles & equipment - Parks,3,2024,61,7,AC,2303000.0
+Renewal of vehicles & equipment - Parks,3,2025,61,7,AC,8350000.0
+Renewal of vehicles & equipment - Parks,3,2026,61,7,PL,804000.0
+Renewal of vehicles & equipment - Parks,4,2022,61,7,PY,13983000.0
+Decolonization strategy,3,2023,47,7,AC,500000.0
+Decolonization strategy,4,2022,47,7,PY,500000.0
+Parks project management & overhead,3,2023,64,7,AC,2000000.0
+Parks project management & overhead,3,2024,64,7,AC,4393640.0
+Parks project management & overhead,3,2025,64,7,AC,70000.0
+Parks project management & overhead,3,2026,64,7,PL,2160000.0
+Parks project management & overhead,4,2022,64,7,PY,6611639.0
+,3,2023,63,7,AC,290000.0
+,3,2024,63,7,AC,1665581.0
+,3,2025,63,7,AC,920000.0
+,4,2022,63,7,PY,17889004.0
+Renovations - Cultural facilities,3,2023,2,1,AC,250000.0
+Renovations - Cultural facilities,3,2025,2,1,AC,725000.0
+Renovations - Cultural facilities,4,2022,2,1,PY,1068724.0
+Vancouver Civic Theatres Capital Maintenance - Orpheum Theatre,3,2025,2,1,AC,6000000.0
+Vancouver Civic Theatres Capital Maintenance - Orpheum Theatre,4,2022,2,1,PY,6000000.0
+First Nation Signage,4,2022,3,1,PY,900000.0
+Historic Joy Kogawa House renewal,3,2025,3,1,AC,400000.0
+Historic Joy Kogawa House renewal,3,2026,3,1,PL,1000000.0
+Historic Joy Kogawa House renewal,4,2022,3,1,PY,1216000.0
+Capital maintenance - Entertainment & exhibition,3,2023,4,1,AC,1950000.0
+Capital maintenance - Entertainment & exhibition,3,2024,4,1,AC,650000.0
+Capital maintenance - Entertainment & exhibition,3,2025,4,1,AC,2450000.0
+Capital maintenance - Entertainment & exhibition,3,2026,4,1,PL,260500.0
+Capital maintenance - Entertainment & exhibition,4,2022,4,1,PY,5050000.0
+Maintenance of Public Art,3,2023,9,1,AC,500000.0
+Maintenance of Public Art,3,2024,9,1,AC,250000.0
+Maintenance of Public Art,3,2025,9,1,AC,250000.0
+Maintenance of Public Art,3,2026,9,1,PL,250000.0
+Maintenance of Public Art,4,2022,9,1,PY,2000000.0
+Grant to Heritage Foundation,3,2023,6,1,AC,300000.0
+Grant to Heritage Foundation,3,2024,6,1,AC,300000.0
+Grant to Heritage Foundation,3,2025,6,1,AC,300000.0
+Grant to Heritage Foundation,3,2026,6,1,PL,300000.0
+Grant to Heritage Foundation,4,2022,6,1,PY,900000.0
+Chinatown Memorial Square redesign,3,2024,7,1,AC,500000.0
+Chinatown Memorial Square redesign,3,2025,7,1,AC,2000000.0
+Chinatown Memorial Square redesign,3,2026,7,1,PL,375000.0
+Chinatown Memorial Square redesign,4,2022,7,1,PY,3500000.0
+Lab and STEM Equipment - New Oakridge Library,3,2025,28,4,AC,100000.0
+Lab and STEM Equipment - New Oakridge Library,3,2026,28,4,PL,150000.0
+Lab and STEM Equipment - New Oakridge Library,4,2022,28,4,PY,100000.0
+Oakridge Branch Library & Inspiration Lab Equipment & Furniture,3,2024,28,4,AC,350000.0
+Oakridge Branch Library & Inspiration Lab Equipment & Furniture,4,2022,28,4,PY,350000.0
+"Oakridge Library: furniture, equipment + collection",3,2023,28,4,AC,2400000.0
+"Oakridge Library: furniture, equipment + collection",4,2022,28,4,PY,2400000.0
+Renovation of Central Children's Library,3,2023,28,4,AC,4500000.0
+Renovation of Central Children's Library,3,2024,28,4,AC,4100000.0
+Renovation of Central Children's Library,4,2022,28,4,PY,8942154.0
+Capital maintenance - Recreation facilities,3,2023,30,4,AC,4900000.0
+Capital maintenance - Recreation facilities,3,2024,30,4,AC,8400000.0
+Capital maintenance - Recreation facilities,3,2025,30,4,AC,-7800000.0
+Capital maintenance - Recreation facilities,3,2026,30,4,PL,908500.0
+Capital maintenance - Recreation facilities,4,2022,30,4,PY,30561000.0
+Kits Pool Capital Maintenance,3,2024,30,4,AC,3000000.0
+Kits Pool Capital Maintenance,4,2022,30,4,PY,3298871.0
+Kits Pool Feasibility Study,3,2024,31,4,AC,2500000.0
+Kits Pool Feasibility Study,4,2022,31,4,PY,2500000.0
+Capital maintenance - Social facilities,3,2023,34,4,AC,600000.0
+Capital maintenance - Social facilities,3,2024,34,4,AC,480000.0
+Capital maintenance - Social facilities,3,2025,34,4,AC,-745000.0
+Capital maintenance - Social facilities,3,2026,34,4,PL,500000.0
+Capital maintenance - Social facilities,4,2022,34,4,PY,351636.0
+South Vancouver Food Centre,3,2025,34,4,AC,100000.0
+South Vancouver Food Centre,3,2026,34,4,PL,200000.0
+South Vancouver Food Centre,4,2022,34,4,PY,100000.0
+Indigenous Healing and Wellness Centre,4,2022,35,4,PY,711000.0
+Kingsway Drop-in Centre,4,2022,35,4,PY,1500000.0
+Neighbourhood house capital project grants,3,2023,35,4,AC,5000000.0
+Neighbourhood house capital project grants,4,2022,35,4,PY,5000000.0
+Cemetery Infrastructure,3,2024,26,4,AC,2800000.0
+Cemetery Infrastructure,4,2022,26,4,PY,2800000.0
+,3,2024,29,4,AC,4497413.0
+,3,2025,29,4,AC,3600000.0
+,4,2022,29,4,PY,61639581.0
+New vehicles & equipment - VFRS,3,2023,73,8,AC,3510000.0
+New vehicles & equipment - VFRS,3,2024,73,8,AC,3500000.0
+New vehicles & equipment - VFRS,3,2025,73,8,AC,2000000.0
+New vehicles & equipment - VFRS,3,2026,73,8,PL,690000.0
+New vehicles & equipment - VFRS,4,2022,73,8,PY,9010000.0
+Downtown South fire hall (FH#8) - renewal & expansion,3,2023,74,8,AC,3294000.0
+Downtown South fire hall (FH#8) - renewal & expansion,3,2025,74,8,AC,30566000.0
+Downtown South fire hall (FH#8) - renewal & expansion,3,2026,74,8,PL,12740000.0
+Downtown South fire hall (FH#8) - renewal & expansion,4,2022,74,8,PY,33860000.0
+Capital maintenance - Police,3,2023,75,8,AC,1650000.0
+Capital maintenance - Police,3,2024,75,8,AC,2110000.0
+Capital maintenance - Police,3,2025,75,8,AC,2120000.0
+Capital maintenance - Police,3,2026,75,8,PL,698500.0
+Capital maintenance - Police,4,2022,75,8,PY,6523000.0
+Electrification of vehicles & equipment - VPD,3,2024,75,8,AC,1000000.0
+Electrification of vehicles & equipment - VPD,3,2025,75,8,AC,1790000.0
+Electrification of vehicles & equipment - VPD,3,2026,75,8,PL,610000.0
+Electrification of vehicles & equipment - VPD,4,2022,75,8,PY,2790000.0
+Renewal of vehicles & equipment - VPD,3,2023,75,8,AC,2750000.0
+Renewal of vehicles & equipment - VPD,3,2024,75,8,AC,1650000.0
+Renewal of vehicles & equipment - VPD,3,2025,75,8,AC,15210000.0
+Renewal of vehicles & equipment - VPD,3,2026,75,8,PL,4690000.0
+Renewal of vehicles & equipment - VPD,4,2022,75,8,PY,38895000.0
+Renovations - Police,3,2023,75,8,AC,1900000.0
+Renovations - Police,3,2024,75,8,AC,-34053.0
+Renovations - Police,4,2022,75,8,PY,2470231.0
+,3,2024,77,8,AC,34053.0
+City Hall Security Enhancements,3,2024,16,3,AC,600000.0
+City Hall Security Enhancements,4,2022,16,3,PY,600000.0
+Emergency Operations Centre (EOC) Audio-Visual System Replacement & Safety Improvements,3,2024,17,3,AC,2300000.0
+Emergency Operations Centre (EOC) Audio-Visual System Replacement & Safety Improvements,4,2022,17,3,PY,2300000.0
+Manitoba Yard renewal,4,2022,21,3,PY,2650000.0
+"Planning, studies, project management & other support - Service Yards",4,2022,21,3,PY,92983.0
+New vehicles & equipment - Other,3,2023,23,3,AC,500000.0
+New vehicles & equipment - Other,4,2022,23,3,PY,500000.0
+Renewal of vehicles & equipment - Other,3,2023,23,3,AC,930000.0
+Renewal of vehicles & equipment - Other,3,2024,23,3,AC,288000.0
+Renewal of vehicles & equipment - Other,3,2025,23,3,AC,70000.0
+Renewal of vehicles & equipment - Other,3,2026,23,3,PL,175000.0
+Renewal of vehicles & equipment - Other,4,2022,23,3,PY,1288000.0
+"Planning, studies, project management & other support - All city facilities",3,2023,18,3,AC,4500000.0
+"Planning, studies, project management & other support - All city facilities",3,2024,18,3,AC,3800000.0
+"Planning, studies, project management & other support - All city facilities",3,2025,18,3,AC,5335510.0
+"Planning, studies, project management & other support - All city facilities",3,2026,18,3,PL,2485825.0
+"Planning, studies, project management & other support - All city facilities",4,2022,18,3,PY,15194673.0
+Protective Services Program,3,2023,18,3,AC,525000.0
+Protective Services Program,3,2024,18,3,AC,525000.0
+Protective Services Program,3,2025,18,3,AC,541000.0
+Marpole Civic Center site acquisition,4,2022,19,3,PY,3170000.0
+,3,2023,20,3,AC,365800.0
+,3,2024,20,3,AC,1675000.0
+,3,2025,20,3,AC,1350000.0
+,4,2022,20,3,PY,16260121.0
+Burrard Bridge Towers Rehabilitation and Coating Assessment: Consulting,3,2024,84,10,AC,500000.0
+Burrard Bridge Towers Rehabilitation and Coating Assessment: Consulting,4,2022,84,10,PY,500000.0
+Retaining wall & slope rehabilitation,3,2023,84,10,AC,850000.0
+Retaining wall & slope rehabilitation,3,2024,84,10,AC,410000.0
+Retaining wall & slope rehabilitation,3,2025,84,10,AC,50000.0
+Retaining wall & slope rehabilitation,3,2026,84,10,PL,140000.0
+Retaining wall & slope rehabilitation,4,2022,84,10,PY,1310000.0
+Sen̓áḵw Engineering Studies,3,2023,84,10,AC,1600000.0
+Sen̓áḵw Engineering Studies,3,2024,84,10,AC,280000.0
+Sen̓áḵw Engineering Studies,3,2025,84,10,AC,1075000.0
+Sen̓áḵw Engineering Studies,3,2026,84,10,PL,45000.0
+Sen̓áḵw Engineering Studies,4,2022,84,10,PY,3155000.0
+Viaducts replacement planning,4,2022,84,10,PY,36977084.0
+Design investigation - streets & structures,3,2023,85,10,AC,700000.0
+Design investigation - streets & structures,3,2024,85,10,AC,234000.0
+Design investigation - streets & structures,3,2025,85,10,AC,233000.0
+Design investigation - streets & structures,3,2026,85,10,PL,233000.0
+Design investigation - streets & structures,4,2022,85,10,PY,1167000.0
+Local roads rehabilitation,3,2023,85,10,AC,2500000.0
+Local roads rehabilitation,3,2024,85,10,AC,3050000.0
+Local roads rehabilitation,3,2025,85,10,AC,4000000.0
+Local roads rehabilitation,3,2026,85,10,PL,4000000.0
+Local roads rehabilitation,4,2022,85,10,PY,9550000.0
+Sidewalks rehabilitation,3,2023,87,10,AC,1500000.0
+Sidewalks rehabilitation,3,2024,87,10,AC,2200000.0
+Sidewalks rehabilitation,3,2025,87,10,AC,700000.0
+Sidewalks rehabilitation,3,2026,87,10,PL,275000.0
+Sidewalks rehabilitation,4,2022,87,10,PY,4400000.0
+H-frame replacement,3,2023,88,10,AC,1500000.0
+H-frame replacement,3,2024,88,10,AC,1500000.0
+H-frame replacement,3,2025,88,10,AC,1500000.0
+H-frame replacement,3,2026,88,10,PL,1000000.0
+H-frame replacement,4,2022,88,10,PY,4500000.0
+New street lighting,3,2023,88,10,AC,250000.0
+New street lighting,3,2024,88,10,AC,250000.0
+New street lighting,3,2025,88,10,AC,500000.0
+New street lighting,4,2022,88,10,PY,1000000.0
+Street lighting rehabilitation,3,2023,88,10,AC,7550000.0
+Street lighting rehabilitation,3,2024,88,10,AC,6750000.0
+Street lighting rehabilitation,3,2025,88,10,AC,7150000.0
+Street lighting rehabilitation,3,2026,88,10,PL,4850000.0
+Street lighting rehabilitation,4,2022,88,10,PY,21450000.0
+New vehicles & equipment - Streets,3,2023,90,10,AC,1000000.0
+New vehicles & equipment - Streets,3,2024,90,10,AC,1500000.0
+New vehicles & equipment - Streets,3,2026,90,10,PL,1500000.0
+New vehicles & equipment - Streets,4,2022,90,10,PY,2650000.0
+New sidewalks,3,2025,92,10,AC,4250000.0
+New sidewalks,3,2026,92,10,PL,4250000.0
+New sidewalks,4,2022,92,10,PY,9927317.0
+Rapid transit office,3,2023,94,10,AC,1925000.0
+Rapid transit office,3,2024,94,10,AC,1525000.0
+Rapid transit office,3,2025,94,10,AC,3725000.0
+Rapid transit office,3,2026,94,10,PL,1825000.0
+Rapid transit office,4,2022,94,10,PY,14975000.0
+Arterial & construction management,3,2023,95,10,AC,259870.0
+Arterial & construction management,3,2024,95,10,AC,500000.0
+Arterial & construction management,3,2025,95,10,AC,500000.0
+Arterial & construction management,3,2026,95,10,PL,500000.0
+Arterial & construction management,4,2022,95,10,PY,1259870.0
+Transportation safety,3,2023,95,10,AC,3500000.0
+Transportation safety,3,2024,95,10,AC,1000000.0
+Transportation safety,3,2025,95,10,AC,3000000.0
+Transportation safety,3,2026,95,10,PL,3000000.0
+Transportation safety,4,2022,95,10,PY,13872471.0
+Public gathering / plazas,3,2023,99,10,AC,1450000.0
+Public gathering / plazas,3,2024,99,10,AC,11450000.0
+Public gathering / plazas,3,2025,99,10,AC,3425000.0
+Public gathering / plazas,4,2022,99,10,PY,17025000.0
+Uplifting Communities,3,2025,100,10,AC,3000000.0
+Uplifting Communities,3,2026,100,10,PL,3000000.0
+Uplifting Communities,4,2022,100,10,PY,3000000.0
+Vancouver Sign,3,2025,100,10,AC,300000.0
+Vancouver Sign,4,2022,100,10,PY,300000.0
+New washrooms,4,2022,101,10,PY,327341.0
+Distribution mains renewal program,3,2023,113,13,AC,20000000.0
+Distribution mains renewal program,3,2024,113,13,AC,18200000.0
+Distribution mains renewal program,3,2025,113,13,AC,21200000.0
+Distribution mains renewal program,3,2026,113,13,PL,23600000.0
+Distribution mains renewal program,4,2022,113,13,PY,39400000.0
+Sen̓áḵw - Water Upgrades,3,2023,113,13,AC,100000.0
+Sen̓áḵw - Water Upgrades,3,2024,113,13,AC,672000.0
+Sen̓áḵw - Water Upgrades,3,2025,113,13,AC,253971.0
+Sen̓áḵw - Water Upgrades,4,2022,113,13,PY,1025971.0
+Accelerated water meter deployment program,3,2023,114,13,AC,3000000.0
+Accelerated water meter deployment program,3,2024,114,13,AC,18500000.0
+Accelerated water meter deployment program,3,2025,114,13,AC,1500000.0
+Accelerated water meter deployment program,4,2022,114,13,PY,29088000.0
+Water seismic resilience upgrade program,3,2023,114,13,AC,231000.0
+Water seismic resilience upgrade program,3,2025,114,13,AC,1000000.0
+Water seismic resilience upgrade program,3,2026,114,13,PL,6200000.0
+Water seismic resilience upgrade program,4,2022,114,13,PY,3981000.0
+New meters to support growth,3,2023,115,13,AC,500000.0
+New meters to support growth,3,2024,115,13,AC,530190.0
+New meters to support growth,3,2025,115,13,AC,70690.0
+New meters to support growth,3,2026,115,13,PL,380000.0
+New meters to support growth,4,2022,115,13,PY,1846880.0
+Water upgrades to support growth (City-led),3,2023,115,13,AC,200000.0
+Water upgrades to support growth (City-led),3,2024,115,13,AC,740000.0
+Water upgrades to support growth (City-led),3,2025,115,13,AC,2430000.0
+Water upgrades to support growth (City-led),3,2026,115,13,PL,1630000.0
+Water upgrades to support growth (City-led),4,2022,115,13,PY,11150000.0
+Renewal of vehicles & equipment - Water,3,2023,116,13,AC,2090000.0
+Renewal of vehicles & equipment - Water,3,2025,116,13,AC,100000.0
+Renewal of vehicles & equipment - Water,4,2022,116,13,PY,2190000.0
+"System strategy, policy & planning",3,2023,117,13,AC,6502000.0
+"System strategy, policy & planning",3,2024,117,13,AC,6991000.0
+"System strategy, policy & planning",3,2025,117,13,AC,3989979.0
+"System strategy, policy & planning",3,2026,117,13,PL,6215000.0
+"System strategy, policy & planning",4,2022,117,13,PY,26408333.0
+Flood protection & drainage,3,2023,119,13,AC,1708000.0
+Flood protection & drainage,3,2024,119,13,AC,4500000.0
+Flood protection & drainage,3,2025,119,13,AC,760000.0
+Flood protection & drainage,3,2026,119,13,PL,2064485.0
+Flood protection & drainage,4,2022,119,13,PY,15184900.0
+Pump station renewals & upgrades,3,2023,119,13,AC,23800000.0
+Pump station renewals & upgrades,3,2024,119,13,AC,1735000.0
+Pump station renewals & upgrades,3,2025,119,13,AC,1500000.0
+Pump station renewals & upgrades,3,2026,119,13,PL,11465000.0
+Pump station renewals & upgrades,4,2022,119,13,PY,50015000.0
+Sewer upgrades to support growth (city-led),3,2023,119,13,AC,32737000.0
+Sewer upgrades to support growth (city-led),3,2024,119,13,AC,6800000.0
+Sewer upgrades to support growth (city-led),3,2025,119,13,AC,24131000.0
+Sewer upgrades to support growth (city-led),3,2026,119,13,PL,39032000.0
+Sewer upgrades to support growth (city-led),4,2022,119,13,PY,103995580.0
+New litter & recycling cans/bins,3,2023,106,12,AC,450000.0
+New litter & recycling cans/bins,3,2024,106,12,AC,200000.0
+New litter & recycling cans/bins,3,2025,106,12,AC,350000.0
+New litter & recycling cans/bins,3,2026,106,12,PL,400000.0
+New litter & recycling cans/bins,4,2022,106,12,PY,1000000.0
+Landfill stormwater management,3,2023,107,12,AC,2500000.0
+Landfill stormwater management,3,2025,107,12,AC,2240000.0
+Landfill stormwater management,3,2026,107,12,PL,2760000.0
+Landfill stormwater management,4,2022,107,12,PY,4740000.0
+Phase 5 - design,3,2023,107,12,AC,400000.0
+Phase 5 - design,3,2026,107,12,PL,425000.0
+Phase 5 - design,4,2022,107,12,PY,3500000.0
+Phase 5 South - closure implementation,3,2023,107,12,AC,20500000.0
+Phase 5 South - closure implementation,3,2025,107,12,AC,5210000.0
+Phase 5 South - closure implementation,4,2022,107,12,PY,25710000.0
+Gas collection infrastructure,3,2023,108,12,AC,8024000.0
+Gas collection infrastructure,3,2024,108,12,AC,6100000.0
+Gas collection infrastructure,3,2025,108,12,AC,5200000.0
+Gas collection infrastructure,3,2026,108,12,PL,12109575.0
+Gas collection infrastructure,4,2022,108,12,PY,19324000.0
+New low carbon base load capacity for existing network (planning & design),3,2023,81,9,AC,200000.0
+New low carbon base load capacity for existing network (planning & design),3,2024,81,9,AC,350000.0
+New low carbon base load capacity for existing network (planning & design),3,2025,81,9,AC,50000.0
+New low carbon base load capacity for existing network (planning & design),3,2026,81,9,PL,900000.0
+New low carbon base load capacity for existing network (planning & design),4,2022,81,9,PY,600000.0
+New peaking capacity for existing network,3,2023,81,9,AC,3000000.0
+New peaking capacity for existing network,3,2024,81,9,AC,1000000.0
+New peaking capacity for existing network,3,2025,81,9,AC,500000.0
+New peaking capacity for existing network,4,2022,81,9,PY,4500000.0
+,3,2023,83,9,AC,200000.0
+,3,2024,83,9,AC,671.0
+,4,2022,83,9,PY,35160000.0
+Cybersecurity Program,3,2025,103,11,AC,250000.0
+Cybersecurity Program,3,2026,103,11,PL,306250.0
+Cybersecurity Program,4,2022,103,11,PY,250000.0
+"Climate adaptation initiatives (seawall reconstruction, urban canopy, etc.)",3,2023,37,5,AC,10338000.0
+"Climate adaptation initiatives (seawall reconstruction, urban canopy, etc.)",3,2024,37,5,AC,5150000.0
+"Climate adaptation initiatives (seawall reconstruction, urban canopy, etc.)",3,2025,37,5,AC,3728900.0
+"Climate adaptation initiatives (seawall reconstruction, urban canopy, etc.)",3,2026,37,5,PL,4572000.0
+"Climate adaptation initiatives (seawall reconstruction, urban canopy, etc.)",4,2022,37,5,PY,19308961.0
+Debt issuance costs,3,2023,38,5,AC,1000000.0
+Debt issuance costs,3,2024,38,5,AC,1000000.0
+Debt issuance costs,3,2025,38,5,AC,1000000.0
+Debt issuance costs,3,2026,38,5,PL,1000000.0
+Debt issuance costs,4,2022,38,5,PY,3504562.0
+Indirect corporate overhead supporting capital,3,2023,38,5,AC,7640000.0
+Indirect corporate overhead supporting capital,3,2024,38,5,AC,7792000.0
+Indirect corporate overhead supporting capital,3,2025,38,5,AC,7980000.0
+Indirect corporate overhead supporting capital,3,2026,38,5,PL,7946195.0
+Indirect corporate overhead supporting capital,4,2022,38,5,PY,23412001.0
+PNE Capital overhead,3,2025,38,5,AC,21810.0
+PNE Capital overhead,4,2022,38,5,PY,861810.0
+Permanent Modular Housing - Site Preparation Costs,1,2026,39,6,PL,107991.0
+Land Acquisition - March 2016,2,2027,39,6,FC,4000000.0
+2023-2026 Housing Land acquisition,1,2026,39,6,PL,11709349.0
+2023-2026 Single Room Occupancy (SRO) upgrade program,1,2026,40,6,PL,250000.0
+2023-2026 Single Room Occupancy (SRO) upgrade program,2,2027,40,6,FC,750000.0
+2023-2026 Single Room Occupancy (SRO) upgrade program,2,2028,40,6,FC,900000.0
+Vancouver Affordable Housing Agency preliminary funding,1,2026,42,6,PL,1503553.0
+Vancouver Affordable Housing Agency preliminary funding,2,2027,42,6,FC,1503553.0
+Vancouver Affordable Housing Agency preliminary funding,2,2028,42,6,FC,1503553.0
+Vancouver Affordable Housing Agency preliminary funding,2,2029,42,6,FC,1503553.0
+Vancouver Affordable Housing Agency preliminary funding,2,2030,42,6,FC,1503551.0
+2019-2022 Supportive Housing Grant program,1,2026,42,6,PL,311529.0
+2019-2022 Community Housing Incentive program,2,2029,42,6,FC,795000.0
+2019-2022 Community Housing Incentive program,2,2030,42,6,FC,795000.0
+Little Mountain Neighbourhood House: Housing Development,1,2026,43,6,PL,9251000.0
+Gresham Residences Retrofit,2,2027,43,6,FC,508000.0
+2023-2026 Planning & studies - Housing,1,2026,45,6,PL,700000.0
+2023-2026 Planning & studies - Housing,2,2027,45,6,FC,810000.0
+2023-2026 Planning & studies - Affordable Housing,1,2026,45,6,PL,460000.0
+2023-2026 Planning & studies - Affordable Housing,2,2027,45,6,FC,460000.0
+2023-2026 Capital Maintenance & Renovations - Housing,1,2026,45,6,PL,2243873.0
+2023-2026 Capital Maintenance & Renovations - Housing,2,2027,45,6,FC,395000.0
+2023-2026 Grants to support new full day (0-4) partner spaces- other,1,2026,10,2,PL,200000.0
+Little Mountain Neighbourhood House: Childcare,1,2026,11,2,PL,910000.0
+Childcare at Eric Hamber School,1,2026,11,2,PL,3043000.0
+Childcare (0-5 years) (November 2020),1,2026,11,2,PL,4200000.0
+Childcare (0-5 years) (November 2020),2,2027,11,2,FC,9389000.0
+Childcare - Urban Native Youth centre - new full day (0-4) spaces,1,2026,11,2,PL,1123000.0
+Childcare - Urban Native Youth centre - new full day (0-4) spaces,2,2027,11,2,FC,1123000.0
+Childcare - Urban Native Youth centre - new full day (0-4) spaces,2,2028,11,2,FC,1124000.0
+Childcare - East Fraser Land Community centre - new full day (0-4) spaces,2,2028,11,2,FC,3500000.0
+Deconstruction & Greening - Park Land acquisition - October 2018,2,2027,62,7,FC,200000.0
+Deconstruction & Greening - Park Land acquisition - June 2017,2,2027,62,7,FC,115000.0
+Marine Structures and Studies,1,2026,65,7,PL,14873.0
+2023-2026 Maintenance / Repairs of Seawall or Shoreline - Engineering,1,2026,66,7,PL,360000.0
+2023-2026 Maintenance / Repairs of Seawall or Shoreline - Engineering,2,2027,66,7,FC,56157.0
+Hastings Park Stream and Wetland Creation,1,2026,68,7,PL,50000.0
+Hastings Park Stream and Wetland Creation,2,2027,68,7,FC,250000.0
+2023-2026 Street Trees - Replacement,1,2026,70,7,PL,1087465.0
+2023-2026 Park Trees - New,1,2026,70,7,PL,610639.0
+2022 Climate Emergency Action Dedicated Funding - Carbon Sequestration Quick Starts,1,2026,70,7,PL,202749.0
+2019-2022 Renewal/upgrades of Baseball and Softball Diamonds,2,2027,48,7,FC,102969.0
+West End Waterfront Parks and Beach Avenue,2,2027,50,7,FC,250000.0
+Queen Elizabeth Master Plan - Cambie Corridor Park Development,1,2026,50,7,PL,100000.0
+Queen Elizabeth Master Plan - Cambie Corridor Park Development,2,2027,50,7,FC,750000.0
+Queen Elizabeth Master Plan - Cambie Corridor Park Development,2,2028,50,7,FC,1108654.0
+Oak Park Master Plan,1,2026,50,7,PL,45352.0
+General Brock Park Renewal,1,2026,50,7,PL,449537.0
+New park at Alberni & Nicola,1,2026,51,7,PL,50000.0
+New park at Alberni & Nicola,2,2027,51,7,FC,50000.0
+Little Mountain Neighbourhood House: New Park Development,1,2026,51,7,PL,380000.0
+Expansion of Delamont park (Phase 1),1,2026,51,7,PL,10000.0
+Expansion of Delamont park (Phase 1),2,2027,51,7,FC,350000.0
+Expansion of Delamont park (Phase 1),2,2028,51,7,FC,436776.0
+East Fraser Land Park Development: Area 1,1,2026,51,7,PL,179120.0
+Trout Lake Score Shack and Batting Cage Upgrades,1,2026,53,7,PL,35000.0
+Trout Lake Score Shack and Batting Cage Upgrades,2,2027,53,7,FC,41384.0
+Synthetic Turf Assessments,1,2026,53,7,PL,400000.0
+New Synthetic turf & fieldhouse at Moberly,1,2026,53,7,PL,500000.0
+New Synthetic turf & fieldhouse at Moberly,2,2027,53,7,FC,11000000.0
+New Synthetic turf & fieldhouse at Moberly,2,2028,53,7,FC,2018509.0
+Killarney Track & Field Facility,1,2026,53,7,PL,5000000.0
+Killarney Track & Field Facility,2,2027,53,7,FC,1680806.0
+Barclay Square Park renewal - Design,2,2027,55,7,FC,300000.0
+Cambie North project,1,2026,56,7,PL,52118.0
+Fieldhouse - Oak Park,1,2026,57,7,PL,580000.0
+Pump replacement lower sanctuary pond,1,2026,58,7,PL,50000.0
+2023-2026 Potable Water reduction/reuse program,1,2026,58,7,PL,1416633.0
+2023-2026 New park electrical & water infrastructure,1,2026,58,7,PL,300000.0
+2023-2026 New park electrical & water infrastructure,2,2027,58,7,FC,377264.0
+Grant - Satellite Video Exchange Vivo & C-Space (Rize),2,2027,1,1,FC,2200000.0
+2023-2026 Cultural Capital Grant program,1,2026,1,1,PL,750000.0
+2023-2026 Cultural Capital Grant program,2,2027,1,1,FC,840103.0
+2023-2026 Chinatown Cultural Partnership Grants,1,2026,1,1,PL,404000.0
+2019-2022 Cultural Infrastructure Grant program,1,2026,1,1,PL,194100.0
+Vancouver Civic Theatres Capital Maintenance - Orpheum Theatre,1,2026,2,1,PL,1800000.0
+Vancouver Civic Theatres Capital Maintenance - Orpheum Theatre,2,2027,2,1,FC,3230000.0
+FireHall Arts Theatre - Capital Maintenance,1,2026,2,1,PL,340000.0
+FireHall Arts Theatre - Capital Maintenance,2,2027,2,1,FC,80000.0
+2023-2026 Capital Maintenance - Cultural Facilities,1,2026,2,1,PL,3530000.0
+2023-2026 Capital Maintenance - Cultural Facilities,2,2027,2,1,FC,7825298.0
+2019-2022 Capital Maintenance - Cultural Facilities,1,2026,2,1,PL,60000.0
+2019-2022 Capital Maintenance - Cultural Facilities,2,2027,2,1,FC,60000.0
+Historic Joy Kogawa House renewal,1,2026,3,1,PL,700000.0
+Historic Joy Kogawa House renewal,2,2027,3,1,FC,700000.0
+Renovations - Entertainment & exhibition,1,2026,4,1,PL,340000.0
+2023-2026 Capital Maintenance - Entertainment & Exhibition,1,2026,4,1,PL,825030.0
+2023-2026 Capital Maintenance - Entertainment & Exhibition,2,2027,4,1,FC,39816.0
+PNE Amphitheatre renewal & expansion,1,2026,5,1,PL,65500000.0
+PNE Amphitheatre renewal & expansion,2,2027,5,1,FC,91531.0
+2023-2026 New Public Art delivered by the City,1,2026,9,1,PL,750000.0
+2023-2026 New Public Art delivered by the City,2,2027,9,1,FC,1125008.0
+2023-2026 New Public Art delivered by the City,2,2028,9,1,FC,1250000.0
+2023-2026 Maintenance of Public Art,1,2026,9,1,PL,582338.0
+2015-2018 New Public Art installations,1,2026,9,1,PL,200000.0
+2015-2018 New Public Art installations,2,2027,9,1,FC,239149.0
+Central Library Maintenance /Renovations /Furniture Replacement,1,2026,27,4,PL,125000.0
+Central Library Maintenance /Renovations /Furniture Replacement,2,2027,27,4,FC,38817.0
+Oakridge Library-Lab and STEM Equipment,1,2026,28,4,PL,150000.0
+Oakridge Library-Lab and STEM Equipment,2,2027,28,4,FC,100000.0
+2023-2026 Capital Maintenance - Archives,1,2026,24,4,PL,61345.0
+2023-2026 Capital Maintenance - Archives,2,2027,24,4,FC,60000.0
+Community Recreation Facilities upgrades,1,2026,30,4,PL,800000.0
+Community Recreation Facilities upgrades,2,2027,30,4,FC,400000.0
+Community Recreation Facilities upgrades,2,2028,30,4,FC,390378.0
+2023-2026 Renovations - Recreation Facilities,1,2026,30,4,PL,1124000.0
+2023-2026 Renovations - Recreation Facilities,2,2027,30,4,FC,250000.0
+West End Community Centre - Capital Maintenance,1,2026,31,4,PL,1400000.0
+West End Community Centre - Capital Maintenance,2,2027,31,4,FC,2070000.0
+Vancouver Aquatic Centre - renewal & expansion,1,2026,31,4,PL,20000000.0
+Vancouver Aquatic Centre - renewal & expansion,2,2027,31,4,FC,50000000.0
+Vancouver Aquatic Centre - renewal & expansion,2,2028,31,4,FC,50000000.0
+Vancouver Aquatic Centre - renewal & expansion,2,2029,31,4,FC,47075000.0
+Renewal/expansion of Marpole Oakridge Community Center,1,2026,31,4,PL,18765466.0
+Renewal/expansion of Marpole Oakridge Community Center,2,2027,31,4,FC,25585.0
+2023-2026 Chinatown Cultural Heritage Asset Management Plan (CHAMP),1,2026,33,4,PL,7500.0
+2019-2022 Social Policy Capital Grants,1,2026,33,4,PL,406217.0
+2023-2026 Renovations - Social Facilities,1,2026,34,4,PL,235000.0
+2023-2026 Renovations - Social Facilities,2,2027,34,4,FC,463000.0
+Kingsway Drop-In Centre,2,2027,35,4,FC,570806.0
+Cemetery Infrastructure,1,2026,26,4,PL,1800000.0
+2023-2026 Maintenance & upgrades of Cemetery Facilities,1,2026,26,4,PL,563127.0
+Fire Hall-Interior Finish Refresh Program,1,2026,73,8,PL,100500.0
+2023-2026 Renovations - Fire & Rescue,1,2026,73,8,PL,330000.0
+2023-2026 New Vehicles & Equipment - Vancouver Fire & Rescue Services,1,2026,73,8,PL,853000.0
+2023-2026 New Vehicles & Equipment - Vancouver Fire & Rescue Services,2,2027,73,8,FC,1244617.0
+2023-2026 Capital Maintenance - Fire & Rescue,1,2026,73,8,PL,340000.0
+2019-2022 Replacement of Vehicles & Equipment - Vancouver Fire & Rescue Services,2,2027,73,8,FC,426642.0
+Firehall #2 Temporary Annex,1,2026,74,8,PL,2084000.0
+Firehall #2 Temporary Annex,2,2027,74,8,FC,232000.0
+Downtown South fire hall (FH#8) - renewal & expansion,1,2026,74,8,PL,3011000.0
+Downtown South fire hall (FH#8) - renewal & expansion,2,2027,74,8,FC,24011000.0
+Downtown South fire hall (FH#8) - renewal & expansion,2,2028,74,8,FC,12011000.0
+Downtown South fire hall (FH#8) - renewal & expansion,2,2029,74,8,FC,1895000.0
+2023-2026 Replacement of Vehicles & Equipment - Vancouver Police Department (VPD),1,2026,75,8,PL,3336000.0
+2023-2026 Replacement of Vehicles & Equipment - Vancouver Police Department (VPD),2,2027,75,8,FC,6290930.0
+2023-2026 Renovations - Vancouver Police Department (VPD),1,2026,75,8,PL,222000.0
+2023-2026 Capital maintenance - Animal Control,1,2026,71,8,PL,47504.0
+Vancouver Animal Shelter Redevelopment,1,2026,72,8,PL,7108000.0
+Vancouver Animal Shelter Redevelopment,2,2027,72,8,FC,13283000.0
+Vancouver Animal Shelter Redevelopment,2,2028,72,8,FC,7109000.0
+Renovation of interim Vancouver Archives' holding facility,1,2026,16,3,PL,8000.0
+Stanley Park Service Yards - Capital Maintenance,1,2026,21,3,PL,358113.0
+Stanley Park Service Yards - Capital Maintenance,2,2027,21,3,FC,200000.0
+Snow Readiness - Service Yard upgrades,1,2026,21,3,PL,963606.0
+Evans Yard Dust Extraction System replacement,2,2027,22,3,FC,5000.0
+2023-2026 Replacement of Vehicles & Equipment - Other,1,2026,23,3,PL,122000.0
+2023-2026 Replacement of Vehicles & Equipment - Other,2,2027,23,3,FC,271663.0
+City Wide Fire Safety program,1,2026,18,3,PL,125000.0
+2023-2026 Facility Project Management & Other Support,1,2026,18,3,PL,910825.0
+2023-2026 Facility Accessibility program,1,2026,18,3,PL,1287000.0
+Marpole City Properties Site Costs,1,2026,19,3,PL,225000.0
+Marpole City Properties Site Costs,2,2027,19,3,FC,200000.0
+Marpole City Properties Site Costs,2,2028,19,3,FC,200000.0
+Marpole City Properties Site Costs,2,2029,19,3,FC,200000.0
+Marpole City Properties Site Costs,2,2030,19,3,FC,772270.0
+Granville Bridge Coating,1,2026,84,10,PL,200000.0
+Granville Bridge Coating,2,2027,84,10,FC,832910.0
+2023-2026 MRN (Major Road Network) rehabilitation,1,2026,85,10,PL,7539212.0
+2023-2026 Local Roads rehabilitation,1,2026,85,10,PL,7230139.0
+2023-2026 Sidewalks rehabilitation,1,2026,87,10,PL,1689709.0
+Fixtures - Decorative/Pedestrian Scale,1,2026,88,10,PL,1000000.0
+Fixtures - Decorative/Pedestrian Scale,2,2027,88,10,FC,501878.0
+Pedestrian & Bike Signal rehabilitation,1,2026,89,10,PL,1966999.0
+2023-2026 New Signals,1,2026,89,10,PL,3561299.0
+Upgrades to Active Transportation Network,1,2026,91,10,PL,9000000.0
+Upgrades to Active Transportation Network,2,2027,91,10,FC,7445202.0
+Cambie Corridor Complete Street Improvements - King Edward To 37th,1,2026,91,10,PL,764750.0
+2023-2026 Transportation planning & monitoring,1,2026,91,10,PL,1294999.0
+2023-2026 Active Transportation & Complete streets - Portside Greenway,1,2026,91,10,PL,490000.0
+2023-2026 Active Transportation & Complete streets - Portside Greenway,2,2027,91,10,FC,9183366.0
+2023-2026 Pedestrian curb ramps,2,2027,93,10,FC,8279000.0
+Rapid Transit - staffing,1,2026,94,10,PL,3525000.0
+Bus Operations & Accessibility,1,2026,94,10,PL,1200000.0
+Bus Operations & Accessibility,2,2027,94,10,FC,336000.0
+2023-2026 Transportation Safety,1,2026,95,10,PL,1997270.0
+2023-2026 Transportation Safety,2,2027,95,10,FC,2675899.0
+2023-2026 School program,1,2026,95,10,PL,948245.0
+West End public space & transportation improvements: Neighbourhood Improvements,1,2026,97,10,PL,2900000.0
+West End public space & transportation improvements: Neighbourhood Improvements,2,2027,97,10,FC,6244060.0
+Granville Street Improvements,1,2026,97,10,PL,720936.0
+Gastown/Water Street - Near term repairs & reconstruction,1,2026,97,10,PL,2017037.0
+Gastown/Water Street - Near term repairs & reconstruction,2,2027,97,10,FC,985022.0
+Vancouver Sign,1,2026,100,10,PL,300000.0
+Climate Emergency Response - Curbside electrical power supply,1,2026,100,10,PL,650982.0
+2023-2026 Public realm EV charging infrastructure,1,2026,100,10,PL,2036082.0
+2022 Climate Emergency Action dedicated funding - Electric Vehicle Fleet & Electric Vehicle Infrastructure,1,2026,100,10,PL,345981.0
+2025 Transmission Main - Arbutus,2,2027,112,13,FC,2500000.0
+2023-2026 Aging Hydrant replacement,1,2026,112,13,PL,573730.0
+2023-2026 Aging Hydrant replacement,2,2027,112,13,FC,26441.0
+Emergency Preparedness (Post disaster provision of water),1,2026,114,13,PL,175000.0
+2023-2026 Water Seismic Resilience upgrade program,1,2026,114,13,PL,5200000.0
+2023-2026 Water Seismic Resilience upgrade program,2,2027,114,13,FC,1164166.0
+2019-2022 Water Quality Capital,1,2026,114,13,PL,129667.0
+2023-2026 Connection upgrades to support growth,1,2026,115,13,PL,3123138.0
+2023-2026 Connection upgrades to support growth,2,2027,115,13,FC,2180148.0
+2023-2026 Electrification of Vehicles & Equipment - Water,2,2027,116,13,FC,155000.0
+2023-2026 Water Quality & Green Infrastructure monitoring,1,2026,117,13,PL,243000.0
+2023-2026 Water Quality & Green Infrastructure monitoring,2,2027,117,13,FC,216066.0
+2023-2026 Utility planning,1,2026,117,13,PL,2727050.0
+2023-2026 Utility planning,2,2027,117,13,FC,767976.0
+2023-2026 Sewer asset inspections & monitoring,1,2026,117,13,PL,3835224.0
+2023-2026 Sewer Residential and Commercial Connections,1,2026,118,13,PL,3000000.0
+2023-2026 Sewer Residential and Commercial Connections,2,2027,118,13,FC,9131350.0
+2023-2026 New & upgraded connections,1,2026,118,13,PL,2753434.0
+2023-2026 New & upgraded connections,2,2027,118,13,FC,4715056.0
+2019-2022 Water Commercial Connections,1,2026,118,13,PL,55267.0
+Cambie Sheetpile Wall Decommissioning,1,2026,119,13,PL,795000.0
+Cambie Sheetpile Wall Decommissioning,2,2027,119,13,FC,5589821.0
+Affordable Housing related Sewer upgrades,2,2027,119,13,FC,11630080.0
+2023-2026 Targeted Combined Sewer Overflow (CSO) reduction- South West Marine Drive,2,2027,119,13,FC,4739893.0
+2023-2026 Sewer upgrades to support growth- Georgia and Burrard,1,2026,119,13,PL,120000.0
+2023-2026 Sewer upgrades to support growth- Georgia and Burrard,2,2027,119,13,FC,695000.0
+2023-2026 Sewer Maintenance and replacement other,1,2026,119,13,PL,500000.0
+2023-2026 Sewer Maintenance and replacement other,2,2027,119,13,FC,13775164.0
+2023-2026 Sewer Main renewal- Cambie/ Heather Catchment area,1,2026,119,13,PL,6200000.0
+2023-2026 Sewer Main renewal- Cambie/ Heather Catchment area,2,2027,119,13,FC,5674929.0
+2023-2026 Sewer Main renewal- Balaclava Catchment area,1,2026,119,13,PL,25000000.0
+2023-2026 Sewer Main renewal- Balaclava Catchment area,2,2027,119,13,FC,7104759.0
+2023-2026 Sewer Main renewal - Angus Catchment area,1,2026,119,13,PL,7000000.0
+2023-2026 Sewer Main renewal - Angus Catchment area,2,2027,119,13,FC,6201978.0
+2023-2026 Green Infrastructure planning and design,1,2026,119,13,PL,3396263.0
+2023-2026 Flood & Watershed Planning,1,2026,119,13,PL,2258105.0
+2023-2026 Flood & Watershed Planning,2,2027,119,13,FC,300000.0
+2023-2026 Flood & Watershed Planning,2,2028,119,13,FC,101562.0
+2023 Green Infrastructure renewal & upgrades -  Complete street project,1,2026,119,13,PL,4200000.0
+2023 Green Infrastructure renewal & upgrades -  Complete street project,2,2027,119,13,FC,2105876.0
+2019-2022 Upgrades & replacement - Pump Station,1,2026,119,13,PL,4950000.0
+2019-2022 Upgrades & replacement - Pump Station,2,2027,119,13,FC,5530000.0
+2019-2022 Upgrades & replacement - Pump Station,2,2028,119,13,FC,7257718.0
+2019-2022 Forcemain rehabilitation/renewal,1,2026,119,13,PL,49110.0
+2023-2026 Replacement of Vehicles & Equipment - Sewers,1,2026,120,13,PL,4354000.0
+2023-2026 Replacement of Vehicles & Equipment - Sewers,2,2027,120,13,FC,3252191.0
+2023-2026 Replacement of Vehicles & Equipment - Sanitation,1,2026,104,12,PL,13200000.0
+2023-2026 Replacement of Vehicles & Equipment - Sanitation,2,2027,104,12,FC,12618822.0
+2019-2022 Vancouver Landfill Hydrogeological Monitoring,1,2026,108,12,PL,234089.0
+2023-2026 Replacement of Vehicles & Equipment - Disposal,2,2027,110,12,FC,241406.0
+2023-2026 New Vehicles & Equipment - Disposal,2,2027,110,12,FC,122012.0
+2023-2026 Expansion of Existing Distribution Network,2,2027,80,9,FC,30000.0
+2023-2026 Expansion of Existing Distribution Network,2,2028,80,9,FC,220000.0
+2023-2026 Expansion of Existing Distribution Network,2,2029,80,9,FC,563276.0
+2019-2022 Neighbourhood Energy Utility (NEU) - New Satellite Energy Generation,1,2026,80,9,PL,50000.0
+2019-2022 Neighbourhood Energy Utility (NEU) - New Satellite Energy Generation,2,2027,80,9,FC,200000.0
+2019-2022 Neighbourhood Energy Utility (NEU) - New Satellite Energy Generation,2,2028,80,9,FC,297619.0
+New low carbon base load capacity for existing network - design,1,2026,81,9,PL,547000.0
+New low carbon base load capacity for existing network - design,2,2027,81,9,FC,362240.0
+New low carbon base load capacity for existing network - design,2,2028,81,9,FC,212485.0
+New low carbon base load capacity for existing network - design,2,2029,81,9,FC,234068.0
+Neighbourhood Energy Utility (NEU) Waste Heat Recovery Expansion,2,2027,82,9,FC,449462.0
+Embodied Carbon in Non-City Buildings,1,2026,78,9,PL,800000.0
+Embodied Carbon in Non-City Buildings,2,2027,78,9,FC,750000.0
+Embodied Carbon in Non-City Buildings,2,2028,78,9,FC,555321.0
+2023-2026 Energy Retrofits for Non-City Buildings,1,2026,78,9,PL,5500000.0
+2023-2026 Energy Retrofits for Non-City Buildings,2,2027,78,9,FC,3699714.0
+2023-2026 Off-Street Electrical Vehicle Charging Infrastructure for Non-City Buildings,1,2026,79,9,PL,1300000.0
+2023-2026 Off-Street Electrical Vehicle Charging Infrastructure for Non-City Buildings,2,2027,79,9,FC,1700000.0
+2023-2026 Off-Street Electrical Vehicle Charging Infrastructure for Non-City Buildings,2,2028,79,9,FC,1787054.0
+Digital Transformation program,1,2026,103,11,PL,5309798.0
+Cybersecurity,1,2026,103,11,PL,285000.0
+2023-2026 Technology Services Capital Resource Pool,1,2026,103,11,PL,600000.0
+2023-2026 Maintenance/upgrade/expansion for Vancouver Public Library (VPL) Technology Infrastructure,1,2026,103,11,PL,796745.0
+Overhead for Special project office,1,2026,38,5,PL,480000.0
+Overhead for Special project office,2,2027,38,5,FC,182096.0
+2023-2026 Financing Growth team,1,2026,38,5,PL,500000.0
+2023-2026 Financing Growth team,2,2027,38,5,FC,264193.0
+2023-2026 Capital Overhead - Procurement,1,2026,38,5,PL,3465000.0
+2023-2026 Capital Overhead - Human Resources,1,2026,38,5,PL,425000.0
+2023-2026 Capital Overhead - Debt Issuance Costs,1,2026,38,5,PL,1000000.0
+2023-2026 Capital Overhead - Debt Issuance Costs,2,2027,38,5,FC,700000.0
+2023-2026 Capital Overhead - Debt Issuance Costs,2,2028,38,5,FC,700000.0
+2023-2026 Capital Overhead - Debt Issuance Costs,2,2029,38,5,FC,328767.0
+Seismic Risk and Response Prioritization project,1,2026,36,5,PL,65000.0
+Seismic Risk and Response Prioritization project,2,2027,36,5,FC,70000.0
+Seismic Risk and Response Prioritization project,2,2028,36,5,FC,65000.0
+2026 Cool and Clean Air Non-Market Housing Building Retrofits,1,2026,36,5,PL,1100000.0
+2019-2022 Housing Land Acquisition,1,2026,39,6,PL,1000000.0
+2019-2022 Housing Land Acquisition,2,2027,39,6,FC,2796082.0
+2019-2022 Housing Land Acquisition,2,2028,39,6,FC,2796082.0
+2023-2026 Shelter program,2,2027,41,6,FC,12000000.0
+Single Room Occupancy (SRO) Grants - privately owned SRO stock,1,2026,40,6,PL,200000.0
+Single Room Occupancy (SRO) Grants - privately owned SRO stock,2,2027,40,6,FC,600000.0
+2019-2022 Single Room Occupancy (SRO) upgrade Granting program,1,2026,40,6,PL,750000.0
+2019-2022 Single Room Occupancy (SRO) upgrade Granting program,2,2027,40,6,FC,1500000.0
+2019-2022 Single Room Occupancy (SRO) upgrade Granting program,2,2028,40,6,FC,1200000.0
+2019-2022 Single Room Occupancy (SRO) upgrade Granting program,2,2029,40,6,FC,1380000.0
+Predevelopment funding program for housing projects on City-land,1,2026,42,6,PL,5310327.0
+Predevelopment funding program for housing projects on City-land,2,2027,42,6,FC,5310327.0
+Predevelopment funding program for housing projects on City-land,2,2028,42,6,FC,5310327.0
+Predevelopment funding program for housing projects on City-land,2,2029,42,6,FC,5310327.0
+Predevelopment funding program for housing projects on City-land,2,2030,42,6,FC,5310328.0
+Non-Profit housing Capital Grant program,2,2027,42,6,FC,2411210.0
+Non-Profit housing Capital Grant program,2,2028,42,6,FC,2411210.0
+Non-Profit housing Capital Grant program,2,2029,42,6,FC,2411209.0
+Non Market Housing Grant program,2,2030,42,6,FC,350000.0
+Little Mountain Neighbourhood House: Social Housing,1,2026,43,6,PL,790000.0
+2019-2022 Capital Maintenance - Non-Market Housing,1,2026,45,6,PL,1713417.0
+2019-2022 Affordable Housing - planning & studies,1,2026,45,6,PL,500000.0
+2019-2022 Affordable Housing - planning & studies,2,2027,45,6,FC,291095.0
+2023-2026 Conversion of part-day spaces to full day (0-4) care,1,2026,10,2,PL,362000.0
+Oakridge Civic Centre (Childcare),1,2026,11,2,PL,2000000.0
+Childcare at Henry Hudson School,1,2026,11,2,PL,2497000.0
+Childcare at Coal Harbour School,1,2026,11,2,PL,734000.0
+School Aged Expansion Grants,1,2026,14,2,PL,221653.0
+Childcare 5-12 Grant - 1766 Frances Street Indigenous-led Childcare project,1,2026,14,2,PL,446000.0
+2023-2026 Capital Maintenance - Childcare,1,2026,13,2,PL,46000.0
+2023-2026 Capital Maintenance - Childcare,2,2027,13,2,FC,96000.0
+Deconstruction & Greening - Park Land acquisition - July 2019,2,2027,62,7,FC,3496.0
+Deconstruction & Greening - Land acquisition October 2023,2,2027,62,7,FC,165000.0
+Deconstruction & Greening - Land acquisition November 2023,2,2027,62,7,FC,103534.0
+Deconstruction & Greening - Land acquisition June 2022,2,2027,62,7,FC,165000.0
+Jericho Pier,1,2026,65,7,PL,50000.0
+Jericho Pier,2,2027,65,7,FC,193437.0
+"2019-2022 Marine Structures (Piers, Docks, Boardwalk)",1,2026,65,7,PL,100000.0
+"2019-2022 Marine Structures (Piers, Docks, Boardwalk)",2,2027,65,7,FC,426087.0
+Seawall / shoreline planning - Coastal Flood Protection,1,2026,66,7,PL,600000.0
+Seawall / shoreline planning - Coastal Flood Protection,2,2027,66,7,FC,2200000.0
+Seawall / shoreline planning - Coastal Flood Protection,2,2028,66,7,FC,2200000.0
+Maintenance / Repairs of Seawall or Shoreline,1,2026,66,7,PL,400000.0
+Maintenance / Repairs of Seawall or Shoreline,2,2027,66,7,FC,360640.0
+Phase One - Seaside Greenway Improvement,1,2026,67,7,PL,15000.0
+Phase One - Seaside Greenway Improvement,2,2027,67,7,FC,301146.0
+2023-2026 Waterfront Walkways and Bikeway Upgrade,1,2026,67,7,PL,40000.0
+2023-2026 Waterfront Walkways and Bikeway Upgrade,2,2027,67,7,FC,411499.0
+2023-2026 Convert park land to healthy habitat,1,2026,68,7,PL,1500000.0
+2023-2026 Convert park land to healthy habitat,2,2027,68,7,FC,1581120.0
+Renewals and upgrades of Field Lightings,1,2026,48,7,PL,24887.0
+2023-2026 New Ball Diamonds & Playfields,1,2026,48,7,PL,150000.0
+2023-2026 New Ball Diamonds & Playfields,2,2027,48,7,FC,464895.0
+Renewal of Jonathan Rogers Park,1,2026,50,7,PL,180000.0
+Renewal of Jonathan Rogers Park,2,2027,50,7,FC,185000.0
+Renewal of Jonathan Rogers Park,2,2028,50,7,FC,155082.0
+2019-2022 Neighbourhood Areas - Emerging Park Board Priorities,1,2026,50,7,PL,44223.0
+Planning and design for New park at Burrard Slopes,1,2026,51,7,PL,250000.0
+Planning and design for New park at Burrard Slopes,2,2027,51,7,FC,263431.0
+Planning and design for New park at Burrard Slopes,2,2028,51,7,FC,184140.0
+Mount Pleasant - New Park Planning and Design,1,2026,51,7,PL,863730.0
+Expansion of W.C. Shelly park (Phase 1),1,2026,51,7,PL,250000.0
+Expansion of W.C. Shelly park (Phase 1),2,2027,51,7,FC,1999136.0
+East Fraser Land Community Center Plaza and Riverfront Park,1,2026,51,7,PL,150000.0
+East Fraser Land Community Center Plaza and Riverfront Park,2,2027,51,7,FC,150000.0
+East Fraser Land Community Center Plaza and Riverfront Park,2,2028,51,7,FC,175452.0
+Burrard Slopes - New Park,1,2026,51,7,PL,70000.0
+Burrard Slopes - New Park,2,2027,51,7,FC,250000.0
+Burrard Slopes - New Park,2,2028,51,7,FC,480000.0
+2023-2026 Renewal of Other Amenities,1,2026,52,7,PL,1100000.0
+2023-2026 Renewal of Other Amenities,2,2027,52,7,FC,489319.0
+2023-2026 New other amenities,1,2026,52,7,PL,152320.0
+2023-2026 New Playgrounds & Spray parks,1,2026,55,7,PL,300000.0
+2023-2026 New Playgrounds & Spray parks,2,2027,55,7,FC,180000.0
+2023-2026 New Playgrounds & Spray parks,2,2028,55,7,FC,504648.0
+Washrooms & Fieldhouses renewal,1,2026,57,7,PL,1595000.0
+Washrooms & Fieldhouses renewal,2,2027,57,7,FC,367000.0
+2023-2026 Renovations - Park Buildings,1,2026,57,7,PL,4221000.0
+"2023-2026 Maintenance, upgrading & renewal of park electrical & water infrastructure",1,2026,58,7,PL,400000.0
+"2023-2026 Maintenance, upgrading & renewal of park electrical & water infrastructure",2,2027,58,7,FC,239392.0
+Musqueam Park Bridge replacement,2,2027,59,7,FC,493.0
+2023-2026 Universal Accessibility Improvement Park Infrastructure,1,2026,59,7,PL,200000.0
+2023-2026 Universal Accessibility Improvement Park Infrastructure,2,2027,59,7,FC,65000.0
+2023-2026 Maintenance & renewal of Park Vehicular Infrastructure,1,2026,60,7,PL,200000.0
+2023-2026 Maintenance & renewal of Park Vehicular Infrastructure,2,2027,60,7,FC,740281.0
+2023-2026 New Vehicles & Equipment - Park Board,2,2027,61,7,FC,1048177.0
+2023-2026 Decolonization Strategy,1,2026,47,7,PL,231000.0
+2023-2026 Decolonization Strategy,2,2027,47,7,FC,77161.0
+2023-2026 Co-Management Framework,1,2026,47,7,PL,75000.0
+2023-2026 Co-Management Framework,2,2027,47,7,FC,60000.0
+2023-2026 Co-Management Framework,2,2028,47,7,FC,46472.0
+Detailed design for Firehall Arts Theatre renewal & expansion,2,2027,3,1,FC,297000.0
+2019-2022 New Public Art installations,1,2026,9,1,PL,500000.0
+2019-2022 New Public Art installations,2,2027,9,1,FC,1489780.0
+2024 Heritage Incentive Program Grants,2,2028,6,1,FC,4000000.0
+2024 Heritage Incentive Program Grants,2,2029,6,1,FC,5000000.0
+2024 Heritage Incentive Program Grants,2,2030,6,1,FC,2600000.0
+2023-2026 Grant To Heritage Foundation,1,2026,6,1,PL,300000.0
+2019-2022 Heritage Incentive program Grants,2,2028,6,1,FC,991700.0
+Library Square - IT and Communications Cooling Systems and Backup Power,1,2026,27,4,PL,1258953.0
+Library Square - IT and Communications Cooling Systems and Backup Power,2,2027,27,4,FC,675000.0
+2023-2026 Renovations - Libraries,1,2026,27,4,PL,250000.0
+2023-2026 Renovations - Libraries,2,2027,27,4,FC,199256.0
+2023-2026 Capital Maintenance - Libraries,1,2026,27,4,PL,4602000.0
+2023-2026 Capital Maintenance - Libraries,2,2027,27,4,FC,64500.0
+Renovation of Central Children's Library,1,2026,28,4,PL,2719000.0
+Oakridge Library & Inspiration Lab equipment,2,2027,28,4,FC,338756.0
+Marpole Library Expansion - Detailed Design & Construction,1,2026,28,4,PL,4323000.0
+Marpole Library Expansion - Detailed Design & Construction,2,2027,28,4,FC,100000.0
+Marpole Library Expansion - Detailed Design & Construction,2,2028,28,4,FC,100000.0
+Marpole Library Expansion - Detailed Design & Construction,2,2029,28,4,FC,100000.0
+Marpole Library Expansion - Detailed Design & Construction,2,2030,28,4,FC,39000.0
+Interim rehabilitation / Renovation of Archive Facilities,1,2026,25,4,PL,515853.0
+Interim rehabilitation / Renovation of Archive Facilities,2,2027,25,4,FC,403500.0
+Kitsilano Pool Capital Maintenance,1,2026,30,4,PL,1063351.0
+Kitsilano Pool Capital Maintenance,2,2028,30,4,FC,15000.0
+RayCam Community Centre - renewal & expansion,1,2026,31,4,PL,1364000.0
+RayCam Community Centre - renewal & expansion,2,2028,31,4,FC,3432082.0
+Britannia Community Centre - Capital Maintenance,1,2026,31,4,PL,5970002.0
+Britannia Community Centre - Capital Maintenance,2,2027,31,4,FC,6587324.0
+Britannia Community Centre - Capital Maintenance,2,2028,31,4,FC,455000.0
+Chinese Society Legacy program Grants,2,2027,33,4,FC,30924.0
+2023-2026 Social Capital Grant program,1,2026,33,4,PL,300000.0
+2023-2026 Social Capital Grant program,2,2027,33,4,FC,344593.0
+2019-2022 Downtown Eastside Capital Grant program,1,2026,33,4,PL,187500.0
+Interim Community Space -IC,1,2026,34,4,PL,292223.0
+2023-2026 Planning & Studies - Social Facilities,1,2026,34,4,PL,1000000.0
+2023-2026 Planning & Studies - Social Facilities,2,2027,34,4,FC,923376.0
+2023-2026 Capital Maintenance - Social Facilities,1,2026,34,4,PL,368610.0
+2023-2026 Capital Maintenance - Social Facilities,2,2027,34,4,FC,115000.0
+2023-2026 Capital Maintenance - Social Facilities,2,2028,34,4,FC,40000.0
+Indigenous Social Enterprise,1,2026,35,4,PL,1131000.0
+Indigenous Social Enterprise,2,2027,35,4,FC,1000000.0
+Indigenous Healing and Wellness Center Tenant Improvements,1,2026,35,4,PL,350000.0
+Vancouver School Board / City Childcare Partnership project - Coal Harbour - School,1,2026,32,4,PL,10733968.0
+2023-2026 Replacement of Vehicles & Equipment - Vancouver Fire & Rescue Services,1,2026,73,8,PL,7390000.0
+2023-2026 Replacement of Vehicles & Equipment - Vancouver Fire & Rescue Services,2,2027,73,8,FC,17791539.0
+Grandview Woodland fire hall (FH#9) renewal,2,2027,74,8,FC,40000000.0
+Grandview Woodland fire hall (FH#9) renewal,2,2028,74,8,FC,31753000.0
+2023-2026 Capital Maintenance - Vancouver Police Department (VPD),1,2026,75,8,PL,1781947.0
+2023-2026 Capital Maintenance - Vancouver Police Department (VPD),2,2027,75,8,FC,155058.0
+Vancouver Police Department (VPD) Headquarters - Planning & Scoping,2,2027,76,8,FC,1000000.0
+2023-2026 Capital Maintenance - Administrative Facilities,1,2026,16,3,PL,4154273.0
+2023-2026 Capital Maintenance - Administrative Facilities,2,2027,16,3,FC,27700.0
+Emergency Operations Centre Audio Visual System Replacement,1,2026,17,3,PL,299672.0
+City Hall Subground,1,2026,17,3,PL,835700.0
+City Hall Subground,2,2027,17,3,FC,164300.0
+City Hall Office Accommodation Plan - rezoning & design,1,2026,17,3,PL,954000.0
+City Hall Office Accommodation Plan - rezoning & design,2,2027,17,3,FC,954000.0
+2019-2022 Capital Maintenance - Service Yards,2,2027,21,3,FC,15000.0
+Sunset Yard renewal - Master plan & construction,1,2026,22,3,PL,1980000.0
+2023-2026 New Vehicles & Equipment - Other,2,2027,23,3,FC,31642.0
+2023-2026 Electrification of Vehicles & Equipment - Other,2,2027,23,3,FC,412332.0
+2023-2026 Facility Seismic program,1,2026,18,3,PL,831000.0
+2023-2026 Facility Seismic program,2,2027,18,3,FC,250000.0
+2023-2026 Facility Remediation program,1,2026,18,3,PL,888762.0
+2023-2026 Facility Remediation program,2,2027,18,3,FC,698723.0
+2023-2026 Facility Department Planning,1,2026,18,3,PL,3109494.0
+2019-2022 Planning & Research - Recreation Facilities,1,2026,18,3,PL,22000.0
+Viaducts Replacement/Northeast False Creek Redevelopment,1,2026,84,10,PL,1000000.0
+Viaducts Replacement/Northeast False Creek Redevelopment,2,2027,84,10,FC,1472435.0
+Granville Bridge Means Prevention,1,2026,84,10,PL,450000.0
+Burrard Bridge Tower rehabilitation and coating consulting,1,2026,84,10,PL,218976.0
+2023-2026 Retaining wall & slope rehabilitation,1,2026,84,10,PL,420150.0
+2023-2026 Retaining wall & slope rehabilitation,2,2027,84,10,FC,100000.0
+2023-2026 Retaining wall & slope rehabilitation,2,2028,84,10,FC,100000.0
+2023-2026 Design Investigation - Streets & Structures,1,2026,85,10,PL,233000.0
+Street Lighting & Pole - rehabilitation,1,2026,88,10,PL,2185459.0
+City Wide Street Lighting LED replacement,1,2026,88,10,PL,8436603.0
+2023-2026 Trolley Pole replacement,1,2026,88,10,PL,1859646.0
+2023-2026 New Street Lighting,1,2026,88,10,PL,205625.0
+2023-2026 H-Frame replacement,1,2026,88,10,PL,1100000.0
+2023-2026 H-Frame replacement,2,2027,88,10,FC,1176672.0
+2023-2026 Signal rehabilitation,1,2026,89,10,PL,2349999.0
+2023-2026 Replacement of Vehicles & Equipment - Streets,1,2026,90,10,PL,9600000.0
+2023-2026 Replacement of Vehicles & Equipment - Streets,2,2027,90,10,FC,12817731.0
+2023-2026 New Vehicles & Equipment - Streets,2,2027,90,10,FC,1792600.0
+Transportation monitoring,1,2026,91,10,PL,1373753.0
+New Active Transportation improvements,1,2026,91,10,PL,3000000.0
+New Active Transportation improvements,2,2027,91,10,FC,8980935.0
+2023-2026 Transportation Planning Studies,1,2026,91,10,PL,864655.0
+2023-2026 Transportation Design staffing,1,2026,91,10,PL,1100000.0
+2023-2026 New sidewalks,1,2026,91,10,PL,3500000.0
+2023-2026 New sidewalks,2,2027,91,10,FC,3500000.0
+2023-2026 Active Transportation - Beatty Street,1,2026,91,10,PL,522295.0
+2023-2026 Neighbourhood traffic management & spot improvements,1,2026,93,10,PL,800000.0
+2023-2026 Neighbourhood traffic management & spot improvements,2,2027,93,10,FC,544017.0
+Broadway Project Office - Provincial Work,1,2026,94,10,PL,200000.0
+Transportation safety & accessibility improvements,1,2026,95,10,PL,917736.0
+Transportation safety & accessibility improvements,2,2027,95,10,FC,638951.0
+2023-2026 At-Grade Rail Crossings,1,2026,95,10,PL,1700196.0
+2023-2026 At-Grade Rail Crossings,2,2027,95,10,FC,751451.0
+Curbside Vehicle Management,1,2026,98,10,PL,5119053.0
+2019-2022 Metered Parking program,1,2026,98,10,PL,999999.0
+2023-2026 Gathering Places,1,2026,99,10,PL,4246545.0
+Uplifting Communities,1,2026,100,10,PL,4000000.0
+2023-2026 Horticulture,1,2026,100,10,PL,69363.0
+2023-2026 Engineering Site & Investigation - Development Water Resources Management,1,2026,112,13,PL,566175.0
+2023-2026 Engineering & Site Investigation,1,2026,112,13,PL,696017.0
+2023-2026 Aging Meter replacement,1,2026,112,13,PL,1360000.0
+2023-2026 Aging Meter replacement,2,2027,112,13,FC,5311.0
+2026 Distribution Main Replacement,1,2026,113,13,PL,23600000.0
+2023-2026 Dedicated Fire Protection System,1,2026,113,13,PL,175000.0
+2023-2026 Dedicated Fire Protection System,2,2027,113,13,FC,1500000.0
+2023-2026 Water quality programs,2,2027,114,13,FC,150000.0
+2023-2026 Drinking Water demand management,1,2026,114,13,PL,12000000.0
+2023-2026 Drinking Water demand management,2,2027,114,13,FC,4171294.0
+2023-2026 Access To Water,1,2026,114,13,PL,200000.0
+2023-2026 Access To Water,2,2027,114,13,FC,163564.0
+2019-2022 Water Pressure and Loss Management,1,2026,114,13,PL,64811.0
+2019-2022 System Extension & Minor Improvements (One Water),1,2026,114,13,PL,19871.0
+2023-2026 New Meters To support growth,1,2026,115,13,PL,44078.0
+2023-2026 New Meters To support growth,2,2027,115,13,FC,344284.0
+2023-2026 Replacement of Vehicles & Equipment - Water,1,2026,116,13,PL,104877.0
+2023-2026 Green Infrastructure Asset strategy and planning,1,2026,117,13,PL,250000.0
+2023-2026 Green Infrastructure Asset strategy and planning,2,2027,117,13,FC,228880.0
+2019-2022 Sewer Residential & At-Cost Connections,1,2026,118,13,PL,250899.0
+2019-2022 Sewer Residential & At-Cost Connections,2,2027,118,13,FC,316150.0
+2019-2022 Sewer Commercial Connections,1,2026,118,13,PL,800000.0
+2019-2022 Sewer Commercial Connections,2,2027,118,13,FC,729844.0
+Tidal Gates replacement,1,2026,119,13,PL,100000.0
+Tidal Gates replacement,2,2027,119,13,FC,568977.0
+2023-2026 Sewer upgrades to support growth - Other projects,1,2026,119,13,PL,4000000.0
+2023-2026 Sewer upgrades to support growth - Other projects,2,2027,119,13,FC,19728838.0
+2023-2026 Sewer upgrades to support growth - Other projects,2,2028,119,13,FC,21828838.0
+2023-2026 Sewer Main renewal- Other projects,2,2027,119,13,FC,15100146.0
+2023-2026 Sewer Main renewal- Hastings Sunrise Catchment area,1,2026,119,13,PL,3000000.0
+2023-2026 Sewer Main renewal- Hastings Sunrise Catchment area,2,2027,119,13,FC,7080023.0
+2023-2026 Sewer Main renewal- Dunbar Catchment area,1,2026,119,13,PL,5024929.0
+2023-2026 Sewer Main renewal - Grandview Catchment area,1,2026,119,13,PL,14400000.0
+2023-2026 Sewer Main renewal - Grandview Catchment area,2,2027,119,13,FC,10137703.0
+2023-2026 Sewer and Drainage planning for Combined Sewer Overflow (CSO) elimination,2,2027,119,13,FC,140362.0
+2023-2026 Green Infrastructure Asset renewal,1,2026,119,13,PL,283946.0
+2023-2026 GI Establishment,1,2026,119,13,PL,92583.0
+2023-2026 Drainage Studies and Outfall,1,2026,119,13,PL,1694988.0
+2023-2026 Drainage Studies and Outfall,2,2027,119,13,FC,1090000.0
+2023-2026 Drainage Studies and Outfall,2,2028,119,13,FC,1800000.0
+2023-2026 Electrification of Vehicles & Equipment - Sewers,2,2027,120,13,FC,339021.0
+2019-2022 Replacement of Vehicles & Equipment - Engineering Services,1,2026,120,13,PL,399207.0
+Zero Waste efforts - Food Waste prevention and diversion,1,2026,111,12,PL,138452.0
+Zero Waste efforts - Food Waste prevention and diversion,2,2027,111,12,FC,1500.0
+Zero Waste Demonstration Centre Pilot,1,2026,111,12,PL,10441.0
+Landfill Closure program,1,2026,107,12,PL,5652912.0
+Landfill Closure program,2,2027,107,12,FC,13790000.0
+Closed Landfills Remediation program,1,2026,107,12,PL,92989.0
+2023-2026 Landfill Stormwater Management,1,2026,107,12,PL,1989680.0
+2023-2026 Landfill Stormwater Management,2,2027,107,12,FC,250000.0
+2023-2026 Landfill Stormwater Management,2,2028,107,12,FC,250000.0
+2023-2026 Landfill Stormwater Management,2,2029,107,12,FC,114209.0
+2023-2026 Maintenance & renewal of Transfer Station,1,2026,109,12,PL,1837053.0
+2023-2026 Electrification of Vehicles & Equipment - Disposal,2,2027,110,12,FC,44765.0
+New Neighbourhood Energy Utility (NEU) Service Connections & Energy Transfer Stations,1,2026,80,9,PL,135000.0
+New Neighbourhood Energy Utility (NEU) Service Connections & Energy Transfer Stations,2,2027,80,9,FC,297849.0
+New Neighbourhood Energy Utility (NEU) Service Connections & Energy Transfer Stations,2,2028,80,9,FC,403270.0
+2019-2022 Neighbourhood Energy Utility (NEU) System Extension,1,2026,80,9,PL,50000.0
+2019-2022 Neighbourhood Energy Utility (NEU) System Extension,2,2027,80,9,FC,300000.0
+2019-2022 Neighbourhood Energy Utility (NEU) System Extension,2,2028,80,9,FC,5668456.0
+Fibre Maintenance and renewal,1,2026,103,11,PL,306194.0
+2023-2026 Technology Services Overhead,1,2026,103,11,PL,584464.0
+2023-2026 Technology Services Business projects,1,2026,103,11,PL,2500000.0
+2023-2026 Maintenance/upgrade/expansion of Citywide Technology infrastructure,1,2026,103,11,PL,4207015.0
+2023-2026 Data Centre Relocation,1,2026,103,11,PL,100068.0
+2023-2026 Client Hardware Refresh program,1,2026,103,11,PL,4452380.0
+2023-2026 Capital Overhead - Legal,1,2026,38,5,PL,2853000.0
+2023-2026 Capital Overhead - Civic Engagement and Communications,1,2026,38,5,PL,485000.0
+Social Infrastructure grants Climate,1,2026,36,5,PL,500000.0
+Social Infrastructure grants Climate,2,2027,36,5,FC,267078.0
+2026-2028 Single Room Occupancy (SRO) Cooling and Warming Room Retrofit,1,2026,36,5,PL,138000.0
+2026-2028 Single Room Occupancy (SRO) Cooling and Warming Room Retrofit,2,2027,36,5,FC,182000.0
+2026-2028 Single Room Occupancy (SRO) Cooling and Warming Room Retrofit,2,2028,36,5,FC,180000.0
+2024 Climate Emergency Action dedicated funding - Building Retrofits/Cooling/Air Quality Relief Centers,1,2026,36,5,PL,6927000.0
+2024 Climate Emergency Action dedicated funding - Building Retrofits/Cooling/Air Quality Relief Centers,2,2027,36,5,FC,2481000.0
+2024 Climate Emergency Action dedicated funding - Building Retrofits/Cooling/Air Quality Relief Centers,2,2028,36,5,FC,789000.0
+2023-2026 Demolition & other Land preparation costs,1,2026,39,6,PL,3207535.0
+2023-2026 Demolition & other Land preparation costs,2,2027,39,6,FC,3207535.0
+2023-2026 Demolition & other Land preparation costs,2,2028,39,6,FC,3207535.0
+Grant - Urban Native Youth Association (Temporary Relocation),2,2030,42,6,FC,500000.0
+Grant - Urban Native Youth Association,2,2028,42,6,FC,306928.0
+"Accessibility enhancements, repairs and renovations",1,2026,42,6,PL,1530000.0
+"Accessibility enhancements, repairs and renovations",2,2027,42,6,FC,200000.0
+2023-2026 Grants to support new or redeveloped Partner units,1,2026,42,6,PL,10000000.0
+2023-2026 Grants to support new or redeveloped Partner units,2,2027,42,6,FC,7139000.0
+2023-2026 Grants to support new or redeveloped Partner units,2,2028,42,6,FC,7139000.0
+2023-2026 Grants to support new or redeveloped Partner units,2,2029,42,6,FC,7139000.0
+2019-2022 Chinatown Housing Partnership program,1,2026,42,6,PL,500000.0
+2019-2022 Chinatown Housing Partnership program,2,2027,42,6,FC,420000.0
+Non-Market Housing HVAC upgrade,2,2027,43,6,FC,125000.0
+Non-Market Housing HVAC upgrade,2,2028,43,6,FC,125000.0
+Non-Market Housing HVAC upgrade,2,2029,43,6,FC,125000.0
+Non-Market Housing HVAC upgrade,2,2030,43,6,FC,125000.0
+Coal Harbour - Housing,1,2026,43,6,PL,9018001.0
+Grants for Rental Protection & Relocation,1,2026,46,6,PL,500000.0
+Grants for Rental Protection & Relocation,2,2027,46,6,FC,764015.0
+"2023-2026 Furniture, Fixtures and Equipment for Non-Market Housing",1,2026,45,6,PL,250000.0
+"2023-2026 Furniture, Fixtures and Equipment for Non-Market Housing",2,2027,45,6,FC,254887.0
+2015-2018 Planning & Research - Non-Market Housing,1,2026,45,6,PL,987306.0
+2015-2018 Planning & Research - Non-Market Housing,2,2027,45,6,FC,987307.0
+2023-2026 Grants to support new full day (0-4) partner spaces- Cedar Cottage,1,2026,10,2,PL,4850000.0
+Renewal of Marpole Oakridge Childcare,1,2026,11,2,PL,2980000.0
+PHSA Slocan Site Redevelopment Project,1,2026,11,2,PL,2757500.0
+PHSA Slocan Site Redevelopment Project,2,2027,11,2,FC,2757500.0
+Childcare at David Lloyd George School,1,2026,11,2,PL,1180000.0
+Childcare - RayCam - renewal & expansion of full day (0-4) spaces,2,2028,11,2,FC,1420000.0
+Childcare - FireHall #8,1,2026,11,2,PL,3615000.0
+Childcare - FireHall #8,2,2027,11,2,FC,3615000.0
+Childcare - FireHall #8,2,2028,11,2,FC,3615000.0
+Childcare - FireHall #8,2,2029,11,2,FC,570000.0
+Childcare - RayCam - renewal school age (5-12) childcare spaces,2,2028,15,2,FC,300000.0
+2023-2026 Small Capital Grants for Non-city owned Childcares,1,2026,13,2,PL,224120.0
+2023-2026 Renovations - Childcare,1,2026,13,2,PL,163000.0
+2023-2026 Planning & studies - Childcare,1,2026,13,2,PL,700000.0
+2023-2026 Planning & studies - Childcare,2,2027,13,2,FC,601640.0
+2019-2022 Renovations - Childcare Facilities (0-4 Years),1,2026,13,2,PL,80000.0
+Deconstruction & Greening - Park Land acquisition - May 2019,2,2027,62,7,FC,285000.0
+Deconstruction & Greening - Park Land acquisition - March 2018,2,2027,62,7,FC,166907.0
+Deconstruction & Greening - Park Land acquisition - January 2016,2,2027,62,7,FC,84244.0
+Deconstruction & Greening - Land acquisition December 2024,2,2027,62,7,FC,305000.0
+2019-2022 Park Land acquisition,1,2026,62,7,PL,16588.0
+Renewal of Marine Structures,1,2026,65,7,PL,1200000.0
+Renewal of Marine Structures,2,2027,65,7,FC,1000000.0
+Renewal of Marine Structures,2,2028,65,7,FC,635298.0
+Seawall / shoreline planning - Coastal Resiliency,1,2026,66,7,PL,550000.0
+Seawall / shoreline planning - Coastal Resiliency,2,2027,66,7,FC,451332.0
+Deconstruction of Creekside Expo deck,1,2026,66,7,PL,535590.0
+Upgrade To Waterfront Walkways/Bikeway,1,2026,67,7,PL,214374.0
+Tatlow Park Creek Daylighting,1,2026,68,7,PL,75000.0
+Tatlow Park Creek Daylighting,2,2027,68,7,FC,324155.0
+2019-2022 Carbon Sequestration projects,1,2026,70,7,PL,10000.0
+2023-2026 Renewal & upgrades of Ball Diamonds & Playfields,1,2026,48,7,PL,1319301.0
+2023-2026 Renewal & upgrades of Ball Diamonds & Playfields,2,2027,48,7,FC,400000.0
+Upgrades to Dog off-leash area at Emery Barnes park,1,2026,49,7,PL,40570.0
+2019-2022 Dog Parks - New/upgrades,1,2026,49,7,PL,26890.0
+West End waterfront parks (phase 1 implementation),1,2026,50,7,PL,200000.0
+West End waterfront parks (phase 1 implementation),2,2027,50,7,FC,670548.0
+Park Renewals,1,2026,50,7,PL,712500.0
+Park Renewals,2,2027,50,7,FC,1425000.0
+Park Renewals,2,2028,50,7,FC,452500.0
+New/Renewed Parks - Joyce Collingwood,1,2026,50,7,PL,10000.0
+New/Renewed Parks - Joyce Collingwood,2,2027,50,7,FC,93547.0
+John Hendry Park,1,2026,50,7,PL,1457525.0
+John Hendry Park,2,2027,50,7,FC,500000.0
+Wedge Park,1,2026,51,7,PL,25000.0
+East Park Olympic Village at Southeast False Creek,1,2026,51,7,PL,1195075.0
+East Park Olympic Village at Southeast False Creek,2,2027,51,7,FC,2987500.0
+East Park Olympic Village at Southeast False Creek,2,2028,51,7,FC,5415000.0
+East Park Olympic Village at Southeast False Creek,2,2029,51,7,FC,2717183.0
+East Fraser Lands Parks: Foreshore Park,1,2026,51,7,PL,3700000.0
+East Fraser Lands Parks: Foreshore Park,2,2027,51,7,FC,1110581.0
+Delamont Park,1,2026,51,7,PL,163493.0
+Mural and Sports Court Sunset,1,2026,53,7,PL,45000.0
+Andy Livingstone Synthetic Turf Renewal,1,2026,53,7,PL,5837869.0
+2023-2026 Planning & studies - Parks,1,2026,54,7,PL,720000.0
+2023-2026 Planning & studies - Parks,2,2027,54,7,FC,231223.0
+Ross Park Spray Park,1,2026,55,7,PL,500000.0
+Ross Park Spray Park,2,2027,55,7,FC,2500000.0
+Ross Park Spray Park,2,2028,55,7,FC,1083683.0
+2023-2026 Renewal & upgrades of Playgrounds & Spray parks,1,2026,55,7,PL,2200000.0
+2023-2026 Renewal & upgrades of Playgrounds & Spray parks,2,2027,55,7,FC,650000.0
+2023-2026 Renewal & upgrades of Playgrounds & Spray parks,2,2028,55,7,FC,106457.0
+2023-2026 Renewal & upgrades of Sport Courts & Skate parks,1,2026,56,7,PL,700000.0
+2023-2026 Renewal & upgrades of Sport Courts & Skate parks,2,2027,56,7,FC,959996.0
+2023-2026 New Sport courts & Skate parks,1,2026,56,7,PL,1457381.0
+2023-2026 New Sport courts & Skate parks,2,2027,56,7,FC,500000.0
+New Washrooms & Fieldhouses - design,1,2026,57,7,PL,42000.0
+New Washrooms & Fieldhouses - design,2,2027,57,7,FC,36000.0
+2023-2026 New Park Buildings,1,2026,57,7,PL,2936000.0
+2023-2026 New Park Buildings,2,2027,57,7,FC,1461000.0
+2023-2026 New Park Buildings,2,2028,57,7,FC,891000.0
+2023-2026 Capital Maintenance - Park Buildings,1,2026,57,7,PL,535679.0
+2023-2026 Capital Maintenance - Park Buildings,2,2027,57,7,FC,292500.0
+Parks Green Operations,1,2026,58,7,PL,30766.0
+2023-2026 Stanley Park Cliff maintenance,1,2026,58,7,PL,125000.0
+2023-2026 Stanley Park Cliff maintenance,2,2027,58,7,FC,16551.0
+2023-2026 Maintenance & renewal of Park Pedestrian infrastructure,1,2026,59,7,PL,200000.0
+2023-2026 Maintenance & renewal of Park Pedestrian infrastructure,2,2027,59,7,FC,50328.0
+2019-2022 Park Bridges,1,2026,59,7,PL,57956.0
+2023-2026 Replacement of vehicles & equipment - Park Board,1,2026,61,7,PL,4018000.0
+2023-2026 Replacement of vehicles & equipment - Park Board,2,2027,61,7,FC,1928459.0
+2023-2026 Electrification of Vehicles & Equipment - Parks,1,2026,61,7,PL,10000.0
+2023-2026 Electrification of Vehicles & Equipment - Parks,2,2027,61,7,FC,3234253.0
+2023-2026 Cultural Visibility on the land,1,2026,47,7,PL,40000.0
+Parks Project Management & Overhead,1,2026,64,7,PL,2378000.0
+2023-2026 Renovations - Cultural Facilities,1,2026,2,1,PL,336000.0
+2023-2026 Planning & Studies - Cultural Facilities,1,2026,2,1,PL,286000.0
+2023-2026 Civic Theatre upgrades,1,2026,2,1,PL,750000.0
+2023-2026 Civic Theatre upgrades,2,2027,2,1,FC,670017.0
+First Nations Signage for Šxʷƛ̓Exən Xwtl'A7Shn and Šxʷƛ̓Ənəq Xwtl'E7ÉNḵ Square,1,2026,3,1,PL,648000.0
+Hastings Park - Pacific National Exhibition Master Plan: Infrastructure implementation,1,2026,5,1,PL,4000000.0
+Hastings Park - Pacific National Exhibition Master Plan: Infrastructure implementation,2,2027,5,1,FC,497279.0
+2019-2022 Maintenance - existing Public Art,1,2026,9,1,PL,251984.0
+Facade Grant - 265 Carrall Street,1,2026,6,1,PL,100000.0
+2023-2026 Heritage Facade rehabilitation program,2,2028,6,1,FC,600000.0
+2023-2026 Heritage Facade rehabilitation program,2,2029,6,1,FC,600000.0
+2019-2022 Heritage Facade rehabilitation program,1,2026,6,1,PL,50000.0
+Chinatown Memorial Square Redesign,1,2026,7,1,PL,3051484.0
+"Oakridge Library: Furniture, Equipment + Collection",2,2027,28,4,FC,1343350.0
+2023-2026 Capital Maintenance - Recreation Facilities,1,2026,30,4,PL,10652419.0
+2023-2026 Capital Maintenance - Recreation Facilities,2,2027,30,4,FC,1092900.0
+2023-2026 Capital Maintenance - Recreation Facilities,2,2028,30,4,FC,108500.0
+2019-2022 Capital Maintenance - Recreation Facilities,2,2027,30,4,FC,74510.0
+Kitsilano Pool Replacement Feasibility Study,1,2026,31,4,PL,768000.0
+Downtown East Side Food Sovereignty Hub,1,2026,33,4,PL,300000.0
+2023-2026 Downtown Eastside Special Enterprise program,1,2026,33,4,PL,410000.0
+2023-2026 Downtown Eastside Special Enterprise program,2,2027,33,4,FC,350000.0
+2023-2026 Downtown Eastside Special Enterprise program,2,2028,33,4,FC,350000.0
+2023-2026 Downtown Eastside Special Enterprise program,2,2029,33,4,FC,350000.0
+2023-2026 Downtown Eastside Special Enterprise program,2,2030,33,4,FC,139300.0
+2023-2026 Downtown Eastside Plan Strategic project Grants,1,2026,33,4,PL,208800.0
+2023-2026 Downtown Eastside Plan Strategic project Grants,2,2027,33,4,FC,23200.0
+2023-2026 Downtown Eastside Plan Implementation Matching Grants,1,2026,33,4,PL,767295.0
+2023-2026 Downtown Eastside Plan Implementation Matching Grants,2,2027,33,4,FC,79187.0
+South Vancouver Food Centre,1,2026,34,4,PL,300000.0
+Sunset Seniors Center,1,2026,35,4,PL,5553000.0
+Qmunity Facility,1,2026,35,4,PL,3764000.0
+Community Economic Development Hub Delivery,1,2026,35,4,PL,4000000.0
+Community Economic Development Hub Delivery,2,2027,35,4,FC,4000000.0
+2023-2026 Neighbourhood House Capital project Grants,1,2026,35,4,PL,350000.0
+2023-2026 Electrification of Vehicles & Equipment - Vancouver Fire & Rescue Services,2,2027,73,8,FC,106505.0
+2023-2026 Electrification of Vehicles & Equipment -  Vancouver Police Department (VPD),2,2027,75,8,FC,2536979.0
+2019-2022 Replacement of Vehicles & Equipment - Vancouver Police Department (VPD),2,2027,75,8,FC,221161.0
+City Hall Security Enhancements,1,2026,16,3,PL,97690.0
+Manitoba Yard renewal - planning,1,2026,21,3,PL,1046917.0
+2023-2026 Renovations - Service Yards,1,2026,21,3,PL,605000.0
+2023-2026 Capital Maintenance - Service Yards,1,2026,21,3,PL,1155045.0
+2023-2026 Capital Maintenance - Service Yards,2,2027,21,3,FC,184500.0
+Civic Dock Maintenance,1,2026,18,3,PL,300000.0
+Civic Dock Maintenance,2,2027,18,3,FC,150000.0
+2023-2026 Facility Security program,1,2026,18,3,PL,370300.0
+2023-2026 Facility resilience of Non-Market Housing buildings,1,2026,18,3,PL,250000.0
+2023-2026 Facility resilience of Non-Market Housing buildings,2,2027,18,3,FC,250000.0
+2023-2026 Facility resilience of Non-Market Housing buildings,2,2028,18,3,FC,250000.0
+2023-2026 Facility Reassessment program,1,2026,18,3,PL,926416.0
+2023-2026 Facility Reassessment program,2,2027,18,3,FC,84522.0
+2023-2026 Facility Ergonomic Furniture program,1,2026,18,3,PL,199356.0
+2023-2026 Energy Optimization program,1,2026,18,3,PL,924000.0
+2023-2026 Energy Optimization program,2,2027,18,3,FC,1875000.0
+2019-2022 Energy Optimization program,1,2026,18,3,PL,563950.0
+Sen̓áḵw Engineering studies,1,2026,84,10,PL,1864705.0
+Sen̓áḵw - Burrard Bridge Structural Review,1,2026,84,10,PL,45000.0
+Granville Bridge structural steel repairs & recoating (Phase 2),1,2026,84,10,PL,24900000.0
+Granville Bridge structural steel repairs & recoating (Phase 2),2,2027,84,10,FC,1513098.0
+Granville Bridge South Approach rehabilitation (Phase 1),1,2026,84,10,PL,5095658.0
+Downtown Historic Railway Decommissioning,1,2026,84,10,PL,41024.0
+Cambie Bridge - Seismic Upgrades,1,2026,84,10,PL,20000000.0
+Cambie Bridge - Seismic Upgrades,2,2027,84,10,FC,30000000.0
+Cambie Bridge - Seismic Upgrades,2,2028,84,10,FC,8283149.0
+Cambie Bridge - rehabilitation,1,2026,84,10,PL,1533080.0
+Cambie Bridge - rehabilitation,2,2027,84,10,FC,1531879.0
+2023-2026 General Bridge rehabilitation program,1,2026,84,10,PL,1137850.0
+2025-2026 Local Improvement Program,1,2026,85,10,PL,550000.0
+2023-2026 Arterial Road rehabilitation,1,2026,85,10,PL,6637452.0
+Underground Street Lighting Conduits,1,2026,88,10,PL,2250000.0
+Underground Street Lighting Conduits,2,2027,88,10,FC,4888958.0
+Service Panels & Kiosks - rehabilitation,1,2026,88,10,PL,200190.0
+Light Fixture Arm - rehabilitation,1,2026,88,10,PL,375000.0
+Light Fixture Arm - rehabilitation,2,2027,88,10,FC,208904.0
+Traffic Signal LED replacement,1,2026,89,10,PL,1445678.0
+Traffic Signal Controller replacement,1,2026,89,10,PL,944527.0
+Signal Communication rehabilitation,1,2026,89,10,PL,885092.0
+2023-2026 Electrification of Vehicles & Equipment - Streets,2,2027,90,10,FC,3218471.0
+2023-2026 Transportation Promotion,1,2026,91,10,PL,773027.0
+2023-2026 Bus transit improvements,1,2026,94,10,PL,6000000.0
+2023-2026 Bus transit improvements,2,2027,94,10,FC,4659002.0
+2023-2026 Arterial & construction management,1,2026,95,10,PL,826838.0
+Gastown/Water Street - rehabilitation planning & design,1,2026,97,10,PL,3003192.0
+Planning and research for Equity Related Initiatives,1,2026,99,10,PL,172641.0
+2023-2026 Equity and Cultural Redress staffing,1,2026,99,10,PL,238966.0
+Film Power Kiosk Network,1,2026,100,10,PL,230170.0
+2023-2026 Public realm electrification,1,2026,100,10,PL,2467586.0
+2023-2026 Pressure Reducing Valve replacement and refurbishment,1,2026,112,13,PL,244000.0
+2023-2026 Pressure Reducing Valve replacement and refurbishment,2,2027,112,13,FC,1108.0
+2023-2026 Aging Service replacement,1,2026,112,13,PL,1000000.0
+2023-2026 Aging Service replacement,2,2027,112,13,FC,56696.0
+2023 Transmission Main renewal - Pender Street,2,2027,112,13,FC,2458219.0
+2019-2022 Telemetry System - New and Replacement,1,2026,112,13,PL,461907.0
+2019-2022 Dedicated Fire Protection System,1,2026,112,13,PL,16437.0
+Drinking Water Demand Management Technology,1,2026,114,13,PL,1744128.0
+2023-2026 Water Conservation programs,1,2026,114,13,PL,200000.0
+2023-2026 Water Conservation programs,2,2027,114,13,FC,322413.0
+2019-2022 Emergency Preparedness (One Water),1,2026,114,13,PL,90438.0
+2023-2026 Water upgrades to support growth,1,2026,115,13,PL,659536.0
+2023-2026 Water upgrades to support growth,2,2027,115,13,FC,456883.0
+2023-2026 New Vehicles & Equipment - Water,2,2027,116,13,FC,221099.0
+2023-2026 Utility Modeling,1,2026,117,13,PL,844005.0
+2023-2026 Utility Modeling,2,2027,117,13,FC,170074.0
+2023-2026 Sewer and Drainage planning,1,2026,117,13,PL,7490000.0
+2023-2026 Sewer and Drainage planning,2,2027,117,13,FC,1574158.0
+2023-2026 Rain & Ground Water planning,1,2026,117,13,PL,3055751.0
+2023-2026 Rain & Ground Water planning,2,2027,117,13,FC,17196.0
+2023-2026 Rain & Ground Water monitoring,1,2026,117,13,PL,2654247.0
+2023-2026 Aging Sewer Connections,1,2026,118,13,PL,1500000.0
+2023-2026 Aging Sewer Connections,2,2027,118,13,FC,596494.0
+2019-2022 Sewer & Water Combined Connections,1,2026,118,13,PL,612507.0
+2023-2026 Targeted Combined Sewer Overflow separation program - Hastings street,1,2026,119,13,PL,700000.0
+2023-2026 Sewer upgrades to support growth - Alberta Trunk project,1,2026,119,13,PL,14400000.0
+2023-2026 Sewer upgrades to support growth - Alberta Trunk project,2,2027,119,13,FC,4794724.0
+2023-2026 Pump Station renewals & upgrades - Thornton,1,2026,119,13,PL,6000000.0
+2023-2026 Pump Station renewals & upgrades - Thornton,2,2027,119,13,FC,2000000.0
+2023-2026 Pump Station renewals & upgrades - Nelson,1,2026,119,13,PL,248000.0
+2023-2026 Pump Station renewals & upgrades,1,2026,119,13,PL,1248010.0
+2023-2026 Pump Station renewals & upgrades,2,2027,119,13,FC,2209000.0
+2023-2026 Pump Station renewals & upgrades,2,2028,119,13,FC,2521000.0
+2023-2026 Pump Station renewals & upgrades,2,2029,119,13,FC,77710.0
+2023-2026 Green Infrastructure renewal & upgrades - Growth projects,1,2026,119,13,PL,3965400.0
+2023-2026 Green Infrastructure renewal & upgrades - Growth projects,2,2027,119,13,FC,2289877.0
+2023-2026 Clean Water planning,1,2026,119,13,PL,2400000.0
+2023-2026 Clean Water planning,2,2027,119,13,FC,604859.0
+2023 Green Infrastructure renewal & upgrades - Watershed projects,1,2026,119,13,PL,2897576.0
+2019-2022 Growth related Utility upgrades - Green Infrastructure,1,2026,119,13,PL,375596.0
+2019-2022 Flood Management - Drainage Studies/Outfalls,1,2026,119,13,PL,800000.0
+2019-2022 Flood Management - Drainage Studies/Outfalls,2,2027,119,13,FC,310751.0
+2023-2026 New Vehicles & Equipment - Sewers,2,2027,120,13,FC,277763.0
+Vancouver Landfill Building renovations/upgrades,1,2026,104,12,PL,314623.0
+Technology Improvements To Automated Cart Collection Management Application (ACCMA),1,2026,104,12,PL,40856.0
+Sanitation Camera Solutions - Pilot program for Contamination Documentation,1,2026,104,12,PL,179817.0
+2023-2026 Technological enhancements,1,2026,104,12,PL,790000.0
+2023-2026 Technological enhancements,2,2027,104,12,FC,322499.0
+2023-2026 New Vehicles & Equipment - Sanitation,2,2027,104,12,FC,1309125.0
+2023-2026 Electrification of Vehicles & Equipment - Sanitation,2,2027,104,12,FC,894982.0
+2023-2026 New Litter & Recycling Cans/Bins,1,2026,106,12,PL,500000.0
+2023-2026 New Litter & Recycling Cans/Bins,2,2027,106,12,FC,50947.0
+Vancouver Landfill Phase 5 Closure - Design,1,2026,107,12,PL,700000.0
+Vancouver Landfill Phase 5 Closure - Design,2,2027,107,12,FC,1025000.0
+Vancouver Landfill Phase 5 Closure - Design,2,2028,107,12,FC,436726.0
+Closed Landfills Monitoring program,1,2026,107,12,PL,50000.0
+Closed Landfills Monitoring program,2,2027,107,12,FC,69158.0
+2023-2026 Closure maintenance,1,2026,107,12,PL,1350000.0
+2023-2026 Closure maintenance,2,2027,107,12,FC,379966.0
+2023-2026 Closure maintenance,2,2028,107,12,FC,231147.0
+"Design, Operations and Progressive Closure Plan (DOPC) - update",1,2026,108,12,PL,12553.0
+2023-2026 Vancouver Landfill maintenance / renovations / upgrades,1,2026,108,12,PL,6947218.0
+2023-2026 Vancouver Landfill maintenance / renovations / upgrades,2,2027,108,12,FC,1227700.0
+2023-2026 Gas Collection Infrastructure,1,2026,108,12,PL,6000000.0
+2023-2026 Gas Collection Infrastructure,2,2027,108,12,FC,11900000.0
+2023-2026 Gas Collection Infrastructure,2,2028,108,12,FC,700000.0
+2023-2026 Gas Collection Infrastructure,2,2029,108,12,FC,539887.0
+New peaking capacity for existing network,1,2026,81,9,PL,20000.0
+New peaking capacity for existing network,2,2027,81,9,FC,1000000.0
+New peaking capacity for existing network,2,2028,81,9,FC,2500000.0
+New peaking capacity for existing network,2,2029,81,9,FC,763347.0
+2023-2026 System Planning & Overhead,1,2026,82,9,PL,800000.0
+2023-2026 System Planning & Overhead,2,2027,82,9,FC,179032.0
+2023-2026 Maintenance & renewal of Neighbourhood Energy Utility (NEU) assets,1,2026,82,9,PL,1505000.0
+2023-2026 Maintenance & renewal of Neighbourhood Energy Utility (NEU) assets,2,2027,82,9,FC,328346.0
+POS System Replacement Vancouver Board of Parks/Vancouver Civic Theatres,1,2026,103,11,PL,455000.0
+POS System Replacement Vancouver Board of Parks/Vancouver Civic Theatres,2,2027,103,11,FC,187000.0
+POS System Replacement Vancouver Board of Parks/Vancouver Civic Theatres,2,2028,103,11,FC,191106.0
+2023-2026 Maintenance/upgrade/expansion for Vancouver Police Department (VPD) Technology Infrastructure,1,2026,103,11,PL,2750000.0
+2023-2026 Enterprise Service Management,1,2026,103,11,PL,934000.0
+2023-2026 Enterprise Data & Analytics,1,2026,103,11,PL,991993.0
+2023-2026 Digital Strategy,1,2026,103,11,PL,2400000.0
+2023-2026 Application Renewal program,1,2026,103,11,PL,2265183.0
+2023-2026 Capital Overhead - Strategy and Project Support Office,1,2026,38,5,PL,533195.0
+2023-2026 Capital Overhead - Financial Planning & Analysis and Other,1,2026,38,5,PL,690000.0
+Still Creek Nature-Based Flood Management Project,1,2026,36,5,PL,1000000.0
+Still Creek Nature-Based Flood Management Project,2,2027,36,5,FC,1000000.0
+Still Creek Nature-Based Flood Management Project,2,2028,36,5,FC,215000.0
+Coopers Tidal Terrace,1,2026,36,5,PL,2000000.0
+Coopers Tidal Terrace,2,2027,36,5,FC,348635.0
+2023 Tree Pits,1,2026,36,5,PL,557000.0

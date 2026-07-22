@@ -1,0 +1,26 @@
+{
+  "_comment": "IBCS Deneb/Vega theme tokens for finance-powerbi. Paste the object below into Deneb -> Edit -> Settings -> JSON theme (or merge into each spec under a top-level \"config\" key). Encodes the project's IBCS scenario fills + green/red variance semantics so every visual reads the same. See ../ibcs-standards.md.",
+  "_ibcs_semantic_tokens": {
+    "scenario_AC_actual": "#000000",
+    "scenario_PY_prior_year": "#9E9E9E",
+    "scenario_PL_plan": "#FFFFFF (white fill + #000000 stroke = outlined)",
+    "scenario_FC_forecast": "#BDBDBD (grey; use hatch pattern in Power BI where available)",
+    "variance_good_under_plan": "#2E7D32",
+    "variance_bad_over_plan": "#C62828",
+    "variance_neutral_on_plan": "#F5F5F5"
+  },
+  "config": {
+    "background": "#FFFFFF",
+    "font": "Segoe UI, Arial, sans-serif",
+    "view": { "stroke": null },
+    "title": { "anchor": "start", "color": "#111111", "fontSize": 14, "subtitleColor": "#666666", "subtitleFontSize": 10 },
+    "axis": { "grid": false, "labelColor": "#333333", "titleColor": "#333333", "domainColor": "#666666", "tickColor": "#666666", "labelFontSize": 10, "titleFontSize": 10 },
+    "axisX": { "labelAngle": 0 },
+    "legend": { "labelColor": "#333333", "titleColor": "#333333", "labelFontSize": 10, "titleFontSize": 10 },
+    "range": {
+      "category": ["#000000", "#9E9E9E", "#FFFFFF", "#BDBDBD"],
+      "diverging": ["#2E7D32", "#F5F5F5", "#C62828"]
+    },
+    "bar": { "stroke": "#000000", "strokeWidth": 1 }
+  }
+}

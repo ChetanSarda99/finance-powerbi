@@ -1,0 +1,43 @@
+table dim_account
+
+	column account_key
+		dataType: int64
+		isKey
+		sourceColumn: account_key
+		summarizeBy: none
+
+	column account_code
+		dataType: string
+		sourceColumn: account_code
+		summarizeBy: none
+
+	column account_label
+		dataType: string
+		sourceColumn: account_label
+		summarizeBy: none
+
+	column account_default_scenario
+		dataType: string
+		sourceColumn: account_default_scenario
+		summarizeBy: none
+
+	column source_file
+		dataType: string
+		sourceColumn: source_file
+		summarizeBy: none
+
+	partition dim_account = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataFolder & "\dim_account.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				Typed = Table.TransformColumnTypes(Promoted, {
+					{"account_key", Int64.Type},
+					{"account_code", type text},
+					{"account_label", type text},
+					{"account_default_scenario", type text},
+					{"source_file", type text}
+				})
+			in
+				Typed

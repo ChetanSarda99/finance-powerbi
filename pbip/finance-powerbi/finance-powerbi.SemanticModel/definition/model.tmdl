@@ -1,0 +1,15 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+
+	annotation PBI_QueryOrder = ["DataFolder","dim_account","dim_period","dim_costcenter","dim_business_unit","dim_scenario","fact_capital_finance"]
+
+	annotation __PBI_TimeIntelligenceEnabled = 0
+
+ref table fact_capital_finance
+ref table dim_account
+ref table dim_period
+ref table dim_costcenter
+ref table dim_business_unit
+ref table dim_scenario

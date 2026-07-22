@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "IBCS variance heatmap. Service category x year grid coloured by Actual-vs-Plan % variance, green (under plan) -> grey (on plan) -> red (over plan). Single diverging scale, no rainbow. Page 3 (Budget vs Actual). Deneb dataset fields required: service_category_1, year, scenario, amount. NOT PUBLISHED for the City of Vancouver dataset: no fiscal year carries both an Actual and a Plan (AC=2023-25, PL=2026 never overlap), so this renders blank or as a 3yr-vs-1yr artifact here; kept for a source that has same-period AC+PL. See 09-yoy-plan-vs-actual for the honest year-over-year comparison this data supports.",
+  "data": { "name": "dataset" },
+  "title": {
+    "text": "Variance heatmap: which programs drift from plan, and when",
+    "subtitle": "Actual vs Plan %  ·  green = under plan  ·  red = over plan  ·  grey = on plan",
+    "anchor": "start",
+    "fontSize": 13,
+    "subtitleColor": "#666666",
+    "subtitleFontSize": 10
+  },
+  "width": 420,
+  "height": 320,
+  "transform": [
+    { "filter": "datum.scenario === 'AC' || datum.scenario === 'PL'" },
+    { "aggregate": [{ "op": "sum", "field": "amount", "as": "amount" }], "groupby": ["service_category_1", "year", "scenario"] },
+    { "pivot": "scenario", "value": "amount", "groupby": ["service_category_1", "year"] },
+    { "calculate": "datum.PL ? (datum.AC - datum.PL) / datum.PL : null", "as": "var_pct" },
+    { "filter": "datum.var_pct !== null" }
+  ],
+  "mark": { "type": "rect", "stroke": "#FFFFFF", "strokeWidth": 1 },
+  "encoding": {
+    "x": { "field": "year", "type": "ordinal", "title": null, "axis": { "labelAngle": 0 } },
+    "y": { "field": "service_category_1", "type": "nominal", "title": null },
+    "color": {
+      "field": "var_pct",
+      "type": "quantitative",
+      "title": "AC vs PL",
+      "scale": { "domainMid": 0, "range": ["#2E7D32", "#F5F5F5", "#C62828"] },
+      "legend": { "format": ".0%", "orient": "right" }
+    },
+    "tooltip": [
+      { "field": "service_category_1", "title": "Program" },
+      { "field": "year", "title": "Year" },
+      { "field": "var_pct", "title": "Variance", "format": ".1%" },
+      { "field": "AC", "title": "Actual", "format": "$,.0f" },
+      { "field": "PL", "title": "Plan", "format": "$,.0f" }
+    ]
+  }
+}

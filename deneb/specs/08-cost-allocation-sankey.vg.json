@@ -1,0 +1,406 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "IBCS cost-allocation Sankey (Vega, NOT Vega-Lite -- Vega-Lite has no sankey). Cost flows from service_category_1 (left, program) into service_category_2 (right, sub-program); link thickness = sum of amount filtered to scenario AC. Page 4 (Cost-center attribution). Deneb dataset fields required: service_category_1, service_category_2, scenario, amount. IBCS restraint: solid black nodes (#000000), grey links (#BDBDBD), greyscale only.",
+  "width": 560,
+  "height": 720,
+  "padding": 5,
+  "autosize": { "type": "pad", "resize": true },
+  "title": {
+    "text": "How Actual capital cost allocates from program to sub-program",
+    "subtitle": "Flow width = Actual capital $ (sum of amount, scenario AC)  ·  programs on the left feed their sub-programs on the right",
+    "anchor": "start",
+    "color": "#111111",
+    "fontSize": 13,
+    "subtitleColor": "#666666",
+    "subtitleFontSize": 10
+  },
+  "config": {
+    "background": "#FFFFFF",
+    "font": "Segoe UI, Arial, sans-serif",
+    "view": {
+      "stroke": null
+    }
+  },
+  "data": [
+    {
+      "name": "dataset"
+    },
+    {
+      "name": "links",
+      "source": "dataset",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.scenario === 'AC' && datum.service_category_2 != null"
+        },
+        {
+          "type": "aggregate",
+          "groupby": [
+            "service_category_1",
+            "service_category_2"
+          ],
+          "fields": [
+            "amount"
+          ],
+          "ops": [
+            "sum"
+          ],
+          "as": [
+            "value"
+          ]
+        },
+        {
+          "type": "formula",
+          "as": "source",
+          "expr": "datum.service_category_1"
+        },
+        {
+          "type": "formula",
+          "as": "target",
+          "expr": "datum.service_category_2"
+        }
+      ]
+    },
+    {
+      "name": "sourceNodes",
+      "source": "links",
+      "transform": [
+        {
+          "type": "aggregate",
+          "groupby": [
+            "source"
+          ],
+          "fields": [
+            "value"
+          ],
+          "ops": [
+            "sum"
+          ],
+          "as": [
+            "total"
+          ]
+        },
+        {
+          "type": "formula",
+          "as": "name",
+          "expr": "datum.source"
+        },
+        {
+          "type": "formula",
+          "as": "side",
+          "expr": "0"
+        }
+      ]
+    },
+    {
+      "name": "targetNodes",
+      "source": "links",
+      "transform": [
+        {
+          "type": "aggregate",
+          "groupby": [
+            "target"
+          ],
+          "fields": [
+            "value"
+          ],
+          "ops": [
+            "sum"
+          ],
+          "as": [
+            "total"
+          ]
+        },
+        {
+          "type": "formula",
+          "as": "name",
+          "expr": "datum.target"
+        },
+        {
+          "type": "formula",
+          "as": "side",
+          "expr": "1"
+        }
+      ]
+    },
+    {
+      "name": "nodes",
+      "source": [
+        "sourceNodes",
+        "targetNodes"
+      ],
+      "transform": [
+        {
+          "type": "stack",
+          "groupby": [
+            "side"
+          ],
+          "sort": {
+            "field": "total",
+            "order": "descending"
+          },
+          "field": "total",
+          "as": [
+            "y0",
+            "y1"
+          ]
+        },
+        {
+          "type": "formula",
+          "as": "yc",
+          "expr": "(datum.y0 + datum.y1) / 2"
+        }
+      ]
+    },
+    {
+      "name": "labelNodes",
+      "source": "nodes",
+      "transform": [
+        { "type": "filter", "expr": "datum.side === 0 || datum.total >= 40000000" }
+      ]
+    },
+    {
+      "name": "nodeScaleData",
+      "source": "nodes",
+      "transform": [
+        {
+          "type": "aggregate",
+          "fields": [
+            "y1"
+          ],
+          "ops": [
+            "max"
+          ],
+          "as": [
+            "maxY"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sourceStacks",
+      "source": "links",
+      "transform": [
+        {
+          "type": "stack",
+          "groupby": [
+            "source"
+          ],
+          "sort": {
+            "field": "value",
+            "order": "descending"
+          },
+          "field": "value",
+          "as": [
+            "sy0",
+            "sy1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "targetStacks",
+      "source": "sourceStacks",
+      "transform": [
+        {
+          "type": "stack",
+          "groupby": [
+            "target"
+          ],
+          "sort": {
+            "field": "value",
+            "order": "descending"
+          },
+          "field": "value",
+          "as": [
+            "ty0",
+            "ty1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "linkPaths",
+      "source": "targetStacks",
+      "transform": [
+        {
+          "type": "lookup",
+          "from": "nodes",
+          "key": "name",
+          "fields": [
+            "source"
+          ],
+          "as": [
+            "sNode"
+          ]
+        },
+        {
+          "type": "lookup",
+          "from": "nodes",
+          "key": "name",
+          "fields": [
+            "target"
+          ],
+          "as": [
+            "tNode"
+          ]
+        },
+        {
+          "type": "formula",
+          "as": "syc",
+          "expr": "scale('y', datum.sNode.y0 + datum.sy0) + (scale('y', datum.value) - scale('y', 0)) / 2"
+        },
+        {
+          "type": "formula",
+          "as": "tyc",
+          "expr": "scale('y', datum.tNode.y0 + datum.ty0) + (scale('y', datum.value) - scale('y', 0)) / 2"
+        },
+        {
+          "type": "formula",
+          "as": "lw",
+          "expr": "abs(scale('y', datum.value) - scale('y', 0))"
+        },
+        {
+          "type": "linkpath",
+          "orient": "horizontal",
+          "shape": "diagonal",
+          "sourceX": {
+            "expr": "scale('x', 0) + bandwidth('x')"
+          },
+          "sourceY": {
+            "expr": "datum.syc"
+          },
+          "targetX": {
+            "expr": "scale('x', 1)"
+          },
+          "targetY": {
+            "expr": "datum.tyc"
+          }
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "band",
+      "range": "width",
+      "domain": [
+        0,
+        1
+      ],
+      "paddingOuter": 0.05,
+      "paddingInner": 0.92
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "range": "height",
+      "domain": {
+        "data": "nodeScaleData",
+        "field": "maxY"
+      },
+      "nice": false,
+      "zero": true
+    }
+  ],
+  "marks": [
+    {
+      "type": "path",
+      "name": "linkMarks",
+      "from": {
+        "data": "linkPaths"
+      },
+      "encode": {
+        "update": {
+          "stroke": {
+            "value": "#BDBDBD"
+          },
+          "strokeWidth": {
+            "field": "lw"
+          },
+          "strokeOpacity": {
+            "value": 0.55
+          },
+          "path": {
+            "field": "path"
+          }
+        },
+        "hover": {
+          "strokeOpacity": {
+            "value": 0.85
+          }
+        }
+      }
+    },
+    {
+      "type": "rect",
+      "name": "nodeMarks",
+      "from": {
+        "data": "nodes"
+      },
+      "encode": {
+        "update": {
+          "x": {
+            "scale": "x",
+            "field": "side"
+          },
+          "width": {
+            "scale": "x",
+            "band": 1
+          },
+          "y": {
+            "scale": "y",
+            "field": "y0"
+          },
+          "y2": {
+            "scale": "y",
+            "field": "y1"
+          },
+          "fill": {
+            "value": "#000000"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "labelNodes"
+      },
+      "encode": {
+        "update": {
+          "x": {
+            "scale": "x",
+            "field": "side",
+            "offset": {
+              "signal": "datum.side === 0 ? -6 : bandwidth('x') + 6"
+            }
+          },
+          "y": {
+            "scale": "y",
+            "field": "yc"
+          },
+          "text": {
+            "field": "name"
+          },
+          "align": {
+            "signal": "datum.side === 0 ? 'right' : 'left'"
+          },
+          "baseline": {
+            "value": "middle"
+          },
+          "fontSize": {
+            "value": 9
+          },
+          "limit": {
+            "value": 150
+          },
+          "fill": {
+            "value": "#111111"
+          }
+        }
+      }
+    }
+  ]
+}

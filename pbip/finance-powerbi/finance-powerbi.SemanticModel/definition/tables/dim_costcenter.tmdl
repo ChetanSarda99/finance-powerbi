@@ -1,0 +1,43 @@
+table dim_costcenter
+
+	column costcenter_key
+		dataType: int64
+		isKey
+		sourceColumn: costcenter_key
+		summarizeBy: none
+
+	column service_category_1
+		dataType: string
+		sourceColumn: service_category_1
+		summarizeBy: none
+
+	column service_category_2
+		dataType: string
+		sourceColumn: service_category_2
+		summarizeBy: none
+
+	column service_category_3
+		dataType: string
+		sourceColumn: service_category_3
+		summarizeBy: none
+
+	column business_unit_key
+		dataType: int64
+		sourceColumn: business_unit_key
+		summarizeBy: none
+
+	partition dim_costcenter = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataFolder & "\dim_costcenter.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				Typed = Table.TransformColumnTypes(Promoted, {
+					{"costcenter_key", Int64.Type},
+					{"service_category_1", type text},
+					{"service_category_2", type text},
+					{"service_category_3", type text},
+					{"business_unit_key", Int64.Type}
+				})
+			in
+				Typed
