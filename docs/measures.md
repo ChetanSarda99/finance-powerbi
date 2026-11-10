@@ -2,7 +2,7 @@
 
 All measures use the star schema in [`power-query-m.md`](power-query-m.md). Paste into the Power BI Service web model editor (New measure) or Power BI Desktop. Field names match the shipped processed schema in `data/processed/` (dim_period[period_key], dim_costcenter, no Date table). Each measure has a comment line at the top so the next session can grep for purpose.
 
-Last refreshed 2026-06-01 (aligned to the shipped data/processed schema).
+Last refreshed 2026-11-10: 15 measures. Removed two duplicates (`Actual SPLY` was the same as `Prior Year`; `Forecast Accuracy Pct` was the same as `Variance Pct (AC vs PL)`) and renamed `Actual YTD` to `Actual Cumulative`, because it is a running total across years, not a within-year YTD.
 
 ---
 
@@ -40,7 +40,7 @@ Prior Year =
 CALCULATE (
     [Actual],
     FILTER (
-        ALL ( dim_period[period_key] ),
+        ALL ( dim_period ),
         dim_period[period_key] = MAX ( dim_period[period_key] ) - 1
     )
 )
@@ -49,20 +49,12 @@ CALCULATE (
 ## Time-intelligence
 
 ```dax
-// YTD actual - period-to-date sum (mock for the period table; here just sums all years up to and including the selected one)
-Actual YTD =
+// Running total of Actual across fiscal years, up to and including the selected year.
+// Not a within-year YTD: the model is annual grain.
+Actual Cumulative =
 CALCULATE (
     [Actual],
-    FILTER ( ALL ( dim_period[period_key] ), dim_period[period_key] <= MAX ( dim_period[period_key] ) )
-)
-```
-
-```dax
-// Same-period-last-year for the variance pages
-Actual SPLY =
-CALCULATE (
-    [Actual],
-    FILTER ( ALL ( dim_period[period_key] ), dim_period[period_key] = MAX ( dim_period[period_key] ) - 1 )
+    FILTER ( ALL ( dim_period ), dim_period[period_key] <= MAX ( dim_period[period_key] ) )
 )
 ```
 
@@ -145,17 +137,6 @@ RETURN
     DIVIDE ( cumulative, CALCULATE ( [Actual], ALL ( dim_costcenter ) ) )
 ```
 
-## Forecast-accuracy helpers (page 3)
-
-```dax
-// Hindsight check - how close was last cycle's Plan to this cycle's Actual
-Forecast Accuracy Pct =
-VAR plan = [Plan]
-VAR actual = [Actual]
-RETURN
-    DIVIDE ( actual, plan ) - 1
-```
-
 ## Format strings (IBCS-friendly defaults)
 
 | Measure | Format string |
@@ -168,7 +149,8 @@ RETURN
 
 - `Cumulative Share Pct` uses `FILTER ( ALL ( ... ) )` and can be slow on the category cardinality (a few hundred rows). Acceptable on this dataset (~2000 rows after unpivot). If it slows down: replace with `TOPN` + `RANKX` pattern.
 - `Variance Pct` uses `DIVIDE`, which handles divide-by-zero cleanly without IFERROR.
-- `Prior Year` and `Actual SPLY` both use an explicit `FILTER ( ALL ( dim_period[period_key] ) ... )` shift instead of `DATEADD` / `SAMEPERIODLASTYEAR`, because `dim_period` is year-grain only (not a full Date table). If a full Date table is added later, swap both to `SAMEPERIODLASTYEAR ( dim_date[date] )` for cleaner semantics.
+- `Prior Year` and `Actual Cumulative` both use an explicit `FILTER ( ALL ( dim_period ) ... )` shift instead of `DATEADD` / `SAMEPERIODLASTYEAR`, because `dim_period` is year-grain only (not a full Date table). If a full Date table is added later, swap both to `SAMEPERIODLASTYEAR ( dim_date[date] )` for cleaner semantics.
+- The shift clears the whole `dim_period` table (`ALL ( dim_period )`), not just `period_key`. A slicer or axis on `dim_period[label]` filters a different column; clearing only `period_key` would leave `label = "FY2025"` in place and the shifted year would find no rows (blank Prior Year). A marked date table does this for you.
 
 ## Anti-patterns NOT used here
 

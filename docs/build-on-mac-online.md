@@ -1,5 +1,7 @@
 # Build this dashboard on a Mac (no Windows) via the Power BI Service web authoring path
 
+> Update 2026-11-10: the model now has 15 measures. `Actual SPLY` and `Forecast Accuracy Pct` were removed as duplicates and `Actual YTD` was renamed `Actual Cumulative`. Where this guide names those three, use `Prior Year`, `Variance Pct (AC vs PL)` and `Actual Cumulative`.
+
 Power BI Desktop is Windows-only, but you do NOT need it for this project. As of
 2026, **semantic-model editing in the Power BI Service (browser, app.powerbi.com)
 is Generally Available**: in any modern browser on macOS you can create import
@@ -133,7 +135,7 @@ pattern) this schema does not support:
    CALCULATE (
        [Actual],
        FILTER (
-           ALL ( dim_period[period_key] ),
+           ALL ( dim_period ),
            dim_period[period_key] = MAX ( dim_period[period_key] ) - 1
        )
    )
@@ -371,6 +373,10 @@ The web path covers everything this project needs, but if you hit a hard wall
 transforms, or you want to ship the actual `.pbix` source file), run real Power
 BI Desktop without leaving the Mac:
 
+- **The Lenovo Legion, already set up.** Power BI Desktop is installed and the
+  TMDL model + source CSVs are already staged there (see
+  `build-on-lenovo.md`) - this is now the fastest fallback, no VM/cloud
+  spin-up needed. RDP or sit at the console, open the `.pbip`, build the pages.
 - **Parallels Desktop + Windows 11 ARM.** Install Parallels on the Apple-silicon
   Mac, run Windows 11 ARM, install Power BI Desktop (the ARM build runs natively;
   the x64 build runs under Windows-on-ARM emulation). Then follow Option A in

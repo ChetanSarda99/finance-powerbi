@@ -1,7 +1,7 @@
 # finance-powerbi - Power BI Project (PBIP)
 
 This folder is a ready-to-open Power BI Project (PBIP). It ships the full data
-model (six tables, 6 relationships, 17 DAX measures) already built in Tabular
+model (six tables, 6 relationships, 15 DAX measures) already built in Tabular
 Model Definition Language (TMDL). You open it on Windows Power BI Desktop, point
 one parameter at the CSV folder, refresh, and then add visuals yourself.
 
@@ -15,7 +15,7 @@ Included (reliable, machine-built):
   explicit Table.TransformColumnTypes), driven by a single DataFolder parameter.
 - 6 single-direction many-to-one relationships (the dim_costcenter to
   dim_business_unit link is shipped inactive to avoid an ambiguous join path).
-- All 17 DAX measures from `../docs/measures.md`, defined on the
+- All 15 DAX measures from `../docs/measures.md`, defined on the
   fact_capital_finance table with IBCS-friendly format strings.
 
 Not included (you add these in Desktop or the Service):
@@ -80,10 +80,10 @@ python3 -I scripts/validate_report.py finance-powerbi <clone of microsoft/json-s
 - Variance colours: green/red only on the like-for-like Prior Year bars. Actual vs Plan
   bars, cards and matrix variance are neutral, because Actual is 3 years of one account
   (3) and Plan is 1 year that also holds an account-1 budget line (about CAD 894M).
-- Model fix made 2026-11-09: `Prior Year`, `Actual YTD` and `Actual SPLY` now clear
+- Model fix made 2026-11-09: `Prior Year` and `Actual Cumulative` (then named `Actual YTD`) now clear
   `ALL ( dim_period )` instead of `ALL ( dim_period[period_key] )`. With a slicer or axis
   on `dim_period[label]`, the old form left the label filter in place and returned blank.
-  Measure count unchanged (17). Found by review of DAX semantics, not by an observed render.
+  Model cleanup 2026-11-10: removed the duplicates `Actual SPLY` and `Forecast Accuracy Pct` and renamed `Actual YTD` to `Actual Cumulative`. Measure count is now 15.
 - Not built: small multiples, RLS, Deneb visuals.
 - Schema versions used: visualContainer 2.10.0, page 2.1.0, pagesMetadata 1.0.0,
   report 3.0.0, versionMetadata version 2.0.0, .pbip version 1.0. Desktop 26.07 ships
@@ -105,7 +105,7 @@ Three file-format faults were found and fixed on the first real open:
 
 Also verified offline: every report JSON file parses, and all field references match a
 real column or measure in the TMDL. Tabular Editor 2.28 loads the model (6 tables,
-17 measures, 6 relationships, 0 roles).
+15 measures, 6 relationships, 0 roles).
 
 First open on a new machine: set the `DataFolder` parameter to your `data/processed`
 path, then Refresh and Apply changes.
@@ -125,7 +125,7 @@ pbip/finance-powerbi/
       expressions.tmdl            (DataFolder parameter)
       relationships.tmdl          (6 relationships)
       tables/
-        fact_capital_finance.tmdl (columns + 17 measures)
+        fact_capital_finance.tmdl (columns + 15 measures)
         dim_account.tmdl
         dim_period.tmdl
         dim_costcenter.tmdl

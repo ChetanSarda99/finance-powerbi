@@ -2,7 +2,7 @@
 
 *An IBCS-compliant finance dashboard built on real public capital-budget data, so a public-sector finance team can read variance the way the standard intends - not as a rainbow of KPI cards.*
 
-> **Status: two report pages built and running in Power BI Desktop (Nov 2026).** The Python data pipeline, the star-schema model, 17 DAX measures and two native-visual report pages (Budget vs Actual, Cost-center attribution) are built and open from the `pbip/` project. 9 Deneb custom-visual specs are a companion piece. Not yet done: publishing to the Power BI Service, row-level security, and small multiples inside the report.
+> **Status: two report pages built and running in Power BI Desktop (Nov 2026).** The Python data pipeline, the star-schema model, 15 DAX measures and two native-visual report pages (Budget vs Actual, Cost-center attribution) are built and open from the `pbip/` project. 9 Deneb custom-visual specs are a companion piece. Not yet done: publishing to the Power BI Service, row-level security, and small multiples inside the report.
 
 ## The report in Power BI Desktop
 
@@ -42,7 +42,7 @@ The visuals follow IBCS notation: black for Actual, grey for Prior Year, outline
 
 This project deliberately exercises the three hardest Power BI surfaces:
 
-- **DAX** - 17 measures for actual-vs-plan and prior-year variance. Annual grain, no date table yet, so prior year and running totals are explicit `FILTER` shifts on `dim_period` (a marked date table with `SAMEPERIODLASTYEAR` / `DATESYTD` is the planned next step).
+- **DAX** - 15 measures for actual-vs-plan and prior-year variance. Annual grain, no date table yet, so prior year and running totals are explicit `FILTER` shifts on `dim_period` (a marked date table with `SAMEPERIODLASTYEAR` / `DATESYTD` is the planned next step).
 - **Row-Level Security** - `USERPRINCIPALNAME()` + cost-center role pattern, the one healthcare-finance teams actually need.
 - **Custom Deneb visuals** - IBCS variance tables, waterfall bridge, small multiples, and a Vega Sankey, reproduced without a paid visual license.
 

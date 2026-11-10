@@ -64,19 +64,12 @@ table fact_capital_finance
 			)
 		formatString: "$#,0;-$#,0;$0"
 
-	/// YTD actual - period-to-date sum (sums all years up to and including the selected one)
-	measure 'Actual YTD' =
+	/// Running total of Actual across fiscal years, up to and including the selected year.
+	/// Not a within-year YTD: the model is annual grain.
+	measure 'Actual Cumulative' =
 			CALCULATE (
 			    [Actual],
 			    FILTER ( ALL ( dim_period ), dim_period[period_key] <= MAX ( dim_period[period_key] ) )
-			)
-		formatString: "$#,0;-$#,0;$0"
-
-	/// Same-period-last-year for the variance pages
-	measure 'Actual SPLY' =
-			CALCULATE (
-			    [Actual],
-			    FILTER ( ALL ( dim_period ), dim_period[period_key] = MAX ( dim_period[period_key] ) - 1 )
 			)
 		formatString: "$#,0;-$#,0;$0"
 
@@ -127,14 +120,6 @@ table fact_capital_finance
 			    )
 			RETURN
 			    DIVIDE ( cumulative, CALCULATE ( [Actual], ALL ( dim_costcenter ) ) )
-		formatString: "0.0%;-0.0%;0.0%"
-
-	/// Hindsight check - how close was last cycle's Plan to this cycle's Actual
-	measure 'Forecast Accuracy Pct' =
-			VAR plan = [Plan]
-			VAR actual = [Actual]
-			RETURN
-			    DIVIDE ( actual, plan ) - 1
 		formatString: "0.0%;-0.0%;0.0%"
 
 	partition fact_capital_finance = m
