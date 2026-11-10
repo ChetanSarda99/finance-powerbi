@@ -58,7 +58,7 @@ table fact_capital_finance
 			CALCULATE (
 			    [Actual],
 			    FILTER (
-			        ALL ( dim_period[period_key] ),
+			        ALL ( dim_period ),
 			        dim_period[period_key] = MAX ( dim_period[period_key] ) - 1
 			    )
 			)
@@ -68,7 +68,7 @@ table fact_capital_finance
 	measure 'Actual YTD' =
 			CALCULATE (
 			    [Actual],
-			    FILTER ( ALL ( dim_period[period_key] ), dim_period[period_key] <= MAX ( dim_period[period_key] ) )
+			    FILTER ( ALL ( dim_period ), dim_period[period_key] <= MAX ( dim_period[period_key] ) )
 			)
 		formatString: "$#,0;-$#,0;$0"
 
@@ -76,7 +76,7 @@ table fact_capital_finance
 	measure 'Actual SPLY' =
 			CALCULATE (
 			    [Actual],
-			    FILTER ( ALL ( dim_period[period_key] ), dim_period[period_key] = MAX ( dim_period[period_key] ) - 1 )
+			    FILTER ( ALL ( dim_period ), dim_period[period_key] = MAX ( dim_period[period_key] ) - 1 )
 			)
 		formatString: "$#,0;-$#,0;$0"
 

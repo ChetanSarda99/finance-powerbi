@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "budgetVsActual",
+  "displayName": "Budget vs Actual",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "visualInteractions": [
+    {
+      "source": "slicerFiscalYear",
+      "target": "chartActualVsBudgetByYear",
+      "type": "NoFilter"
+    },
+    {
+      "source": "slicerFiscalYear",
+      "target": "chartVarianceByBuPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "slicerFiscalYear",
+      "target": "cardPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "slicerFiscalYear",
+      "target": "cardVarPL",
+      "type": "NoFilter"
+    }
+  ]
+}

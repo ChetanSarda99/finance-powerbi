@@ -18,10 +18,8 @@ relationship b9145cb1-dde6-45c1-9c90-78c82e4ff2f2
 	fromColumn: fact_capital_finance.scenario
 	toColumn: dim_scenario.scenario_code
 
-/// Inactive to avoid an ambiguous path to dim_business_unit. The fact table
-/// already joins dim_business_unit directly; this dim-to-dim link is kept for
-/// reference and can be activated with USERELATIONSHIP if needed.
 relationship 9e9ba4bf-2732-48eb-8ecb-89948d19b501
 	isActive: false
 	fromColumn: dim_costcenter.business_unit_key
 	toColumn: dim_business_unit.business_unit_key
+	annotation Note = "Inactive to avoid an ambiguous path to dim_business_unit. The fact table already joins dim_business_unit directly; this dim-to-dim link is kept for reference and can be activated with USERELATIONSHIP if needed."
