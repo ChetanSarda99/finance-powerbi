@@ -1,0 +1,189 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "denebSmallMultiples",
+  "position": {
+    "x": 592,
+    "y": 56,
+    "z": 310,
+    "height": 590,
+    "width": 672,
+    "tabOrder": 310
+  },
+  "visual": {
+    "visualType": "deneb7E15AEF80B9E4D4F8E12924291ECE89A",
+    "query": {
+      "queryState": {
+        "dataset": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_costcenter"
+                    }
+                  },
+                  "Property": "service_category_1"
+                }
+              },
+              "queryRef": "dim_costcenter.service_category_1",
+              "nativeQueryRef": "service_category_1",
+              "displayName": "service_category_1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_period"
+                    }
+                  },
+                  "Property": "year"
+                }
+              },
+              "queryRef": "dim_period.year",
+              "nativeQueryRef": "year",
+              "displayName": "year"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_capital_finance"
+                    }
+                  },
+                  "Property": "scenario"
+                }
+              },
+              "queryRef": "fact_capital_finance.scenario",
+              "nativeQueryRef": "scenario",
+              "displayName": "scenario"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_capital_finance"
+                    }
+                  },
+                  "Property": "Actual or Plan"
+                }
+              },
+              "queryRef": "fact_capital_finance.Actual or Plan",
+              "nativeQueryRef": "Actual or Plan",
+              "displayName": "amount"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "vega": [
+        {
+          "properties": {
+            "provider": {
+              "expr": {
+                "Literal": {
+                  "Value": "'vegaLite'"
+                }
+              }
+            },
+            "jsonSpec": {
+              "expr": {
+                "Literal": {
+                  "Value": "'{\n  \"$schema\": \"https://vega.github.io/schema/vega-lite/v5.json\",\n  \"description\": \"IBCS small multiples. One mini Actual-vs-Plan column chart per service category, same scale across panels for honest comparison. Page 4 (Cost-center attribution). Deneb dataset fields required: service_category_1, year, scenario, amount.\",\n  \"data\": {\n    \"name\": \"dataset\"\n  },\n  \"title\": {\n    \"text\": \"Actual vs Plan by program, side by side\",\n    \"subtitle\": \"Shared scale across panels  \\u00b7  Actual = black, Plan = outlined\",\n    \"anchor\": \"start\",\n    \"fontSize\": 13,\n    \"subtitleColor\": \"#666666\",\n    \"subtitleFontSize\": 10\n  },\n  \"transform\": [\n    {\n      \"filter\": \"datum.scenario === ''AC'' || datum.scenario === ''PL''\"\n    }\n  ],\n  \"columns\": 4,\n  \"facet\": {\n    \"field\": \"service_category_1\",\n    \"type\": \"nominal\",\n    \"title\": null,\n    \"sort\": {\n      \"op\": \"sum\",\n      \"field\": \"amount\",\n      \"order\": \"descending\"\n    },\n    \"header\": {\n      \"labelFontSize\": 9,\n      \"labelLimit\": 140\n    }\n  },\n  \"spec\": {\n    \"width\": 120,\n    \"height\": 90,\n    \"mark\": {\n      \"type\": \"bar\",\n      \"stroke\": \"#000000\",\n      \"strokeWidth\": 0.5\n    },\n    \"encoding\": {\n      \"x\": {\n        \"field\": \"year\",\n        \"type\": \"ordinal\",\n        \"title\": null,\n        \"axis\": {\n          \"labelAngle\": 0,\n          \"labelFontSize\": 8\n        }\n      },\n      \"xOffset\": {\n        \"field\": \"scenario\",\n        \"type\": \"nominal\",\n        \"sort\": [\n          \"AC\",\n          \"PL\"\n        ]\n      },\n      \"y\": {\n        \"aggregate\": \"sum\",\n        \"field\": \"amount\",\n        \"type\": \"quantitative\",\n        \"title\": null,\n        \"axis\": {\n          \"format\": \"$,.0s\",\n          \"labelFontSize\": 8\n        }\n      },\n      \"color\": {\n        \"field\": \"scenario\",\n        \"type\": \"nominal\",\n        \"scale\": {\n          \"domain\": [\n            \"AC\",\n            \"PL\"\n          ],\n          \"range\": [\n            \"#000000\",\n            \"#FFFFFF\"\n          ]\n        },\n        \"legend\": null\n      },\n      \"tooltip\": [\n        {\n          \"field\": \"service_category_1\",\n          \"title\": \"Program\"\n        },\n        {\n          \"field\": \"year\",\n          \"title\": \"Year\"\n        },\n        {\n          \"field\": \"scenario\",\n          \"title\": \"Scenario\"\n        },\n        {\n          \"aggregate\": \"sum\",\n          \"field\": \"amount\",\n          \"title\": \"Amount\",\n          \"format\": \"$,.0f\"\n        }\n      ]\n    }\n  }\n}'"
+                }
+              }
+            },
+            "jsonConfig": {
+              "expr": {
+                "Literal": {
+                  "Value": "'{}'"
+                }
+              }
+            },
+            "renderMode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'svg'"
+                }
+              }
+            },
+            "enableTooltips": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "enableContextMenu": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "enableHighlight": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "enableSelection": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

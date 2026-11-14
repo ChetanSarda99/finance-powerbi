@@ -1,5 +1,7 @@
 # Build this dashboard on a Mac (no Windows) via the Power BI Service web authoring path
 
+> Update 2026-11-12: this guide describes the earlier two-page version (v2), with the old Plan measure (two budget lines added, 1,591.6M) and the `AC vs PL` / `AC vs PY` measures. The current report is v3: four pages, 14 measures, Plan like-for-like at 697.6M. Current definitions: `docs/measures.md`; current pages: `pbip/README.md`. If v3 will not open, present v2 (`finance-powerbi-v2` on the Lenovo, untouched) before rebuilding by hand.
+
 > Update 2026-11-10: the model now has 15 measures. `Actual SPLY` and `Forecast Accuracy Pct` were removed as duplicates and `Actual YTD` was renamed `Actual Cumulative`. Where this guide names those three, use `Prior Year`, `Variance Pct (AC vs PL)` and `Actual Cumulative`.
 
 Power BI Desktop is Windows-only, but you do NOT need it for this project. As of

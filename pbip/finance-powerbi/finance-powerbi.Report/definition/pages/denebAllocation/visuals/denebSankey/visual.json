@@ -1,0 +1,189 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "denebSankey",
+  "position": {
+    "x": 672,
+    "y": 56,
+    "z": 310,
+    "height": 590,
+    "width": 592,
+    "tabOrder": 310
+  },
+  "visual": {
+    "visualType": "deneb7E15AEF80B9E4D4F8E12924291ECE89A",
+    "query": {
+      "queryState": {
+        "dataset": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_costcenter"
+                    }
+                  },
+                  "Property": "service_category_1"
+                }
+              },
+              "queryRef": "dim_costcenter.service_category_1",
+              "nativeQueryRef": "service_category_1",
+              "displayName": "service_category_1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_costcenter"
+                    }
+                  },
+                  "Property": "service_category_2"
+                }
+              },
+              "queryRef": "dim_costcenter.service_category_2",
+              "nativeQueryRef": "service_category_2",
+              "displayName": "service_category_2"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_capital_finance"
+                    }
+                  },
+                  "Property": "scenario"
+                }
+              },
+              "queryRef": "fact_capital_finance.scenario",
+              "nativeQueryRef": "scenario",
+              "displayName": "scenario"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_capital_finance"
+                    }
+                  },
+                  "Property": "Actual or Plan"
+                }
+              },
+              "queryRef": "fact_capital_finance.Actual or Plan",
+              "nativeQueryRef": "Actual or Plan",
+              "displayName": "amount"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "vega": [
+        {
+          "properties": {
+            "provider": {
+              "expr": {
+                "Literal": {
+                  "Value": "'vega'"
+                }
+              }
+            },
+            "jsonSpec": {
+              "expr": {
+                "Literal": {
+                  "Value": "'{\n  \"$schema\": \"https://vega.github.io/schema/vega/v5.json\",\n  \"description\": \"IBCS cost-allocation Sankey (Vega, NOT Vega-Lite -- Vega-Lite has no sankey). Cost flows from service_category_1 (left, program) into service_category_2 (right, sub-program); link thickness = sum of amount filtered to scenario AC. Page 4 (Cost-center attribution). Deneb dataset fields required: service_category_1, service_category_2, scenario, amount. IBCS restraint: solid black nodes (#000000), grey links (#BDBDBD), greyscale only.\",\n  \"width\": 240,\n  \"height\": 430,\n  \"padding\": 5,\n  \"autosize\": {\n    \"type\": \"pad\",\n    \"resize\": true\n  },\n  \"title\": {\n    \"text\": \"How Actual capital cost allocates from program to sub-program\",\n    \"subtitle\": \"Flow width = Actual capital $ (sum of amount, scenario AC)  \\u00b7  programs on the left feed their sub-programs on the right\",\n    \"anchor\": \"start\",\n    \"color\": \"#111111\",\n    \"fontSize\": 13,\n    \"subtitleColor\": \"#666666\",\n    \"subtitleFontSize\": 10\n  },\n  \"config\": {\n    \"background\": \"#FFFFFF\",\n    \"font\": \"Segoe UI, Arial, sans-serif\",\n    \"view\": {\n      \"stroke\": null\n    }\n  },\n  \"data\": [\n    {\n      \"name\": \"dataset\"\n    },\n    {\n      \"name\": \"links\",\n      \"source\": \"dataset\",\n      \"transform\": [\n        {\n          \"type\": \"filter\",\n          \"expr\": \"datum.scenario === ''AC'' && datum.service_category_2 != null\"\n        },\n        {\n          \"type\": \"aggregate\",\n          \"groupby\": [\n            \"service_category_1\",\n            \"service_category_2\"\n          ],\n          \"fields\": [\n            \"amount\"\n          ],\n          \"ops\": [\n            \"sum\"\n          ],\n          \"as\": [\n            \"value\"\n          ]\n        },\n        {\n          \"type\": \"formula\",\n          \"as\": \"source\",\n          \"expr\": \"datum.service_category_1\"\n        },\n        {\n          \"type\": \"formula\",\n          \"as\": \"target\",\n          \"expr\": \"datum.service_category_2\"\n        }\n      ]\n    },\n    {\n      \"name\": \"sourceNodes\",\n      \"source\": \"links\",\n      \"transform\": [\n        {\n          \"type\": \"aggregate\",\n          \"groupby\": [\n            \"source\"\n          ],\n          \"fields\": [\n            \"value\"\n          ],\n          \"ops\": [\n            \"sum\"\n          ],\n          \"as\": [\n            \"total\"\n          ]\n        },\n        {\n          \"type\": \"formula\",\n          \"as\": \"name\",\n          \"expr\": \"datum.source\"\n        },\n        {\n          \"type\": \"formula\",\n          \"as\": \"side\",\n          \"expr\": \"0\"\n        }\n      ]\n    },\n    {\n      \"name\": \"targetNodes\",\n      \"source\": \"links\",\n      \"transform\": [\n        {\n          \"type\": \"aggregate\",\n          \"groupby\": [\n            \"target\"\n          ],\n          \"fields\": [\n            \"value\"\n          ],\n          \"ops\": [\n            \"sum\"\n          ],\n          \"as\": [\n            \"total\"\n          ]\n        },\n        {\n          \"type\": \"formula\",\n          \"as\": \"name\",\n          \"expr\": \"datum.target\"\n        },\n        {\n          \"type\": \"formula\",\n          \"as\": \"side\",\n          \"expr\": \"1\"\n        }\n      ]\n    },\n    {\n      \"name\": \"nodes\",\n      \"source\": [\n        \"sourceNodes\",\n        \"targetNodes\"\n      ],\n      \"transform\": [\n        {\n          \"type\": \"stack\",\n          \"groupby\": [\n            \"side\"\n          ],\n          \"sort\": {\n            \"field\": \"total\",\n            \"order\": \"descending\"\n          },\n          \"field\": \"total\",\n          \"as\": [\n            \"y0\",\n            \"y1\"\n          ]\n        },\n        {\n          \"type\": \"formula\",\n          \"as\": \"yc\",\n          \"expr\": \"(datum.y0 + datum.y1) / 2\"\n        }\n      ]\n    },\n    {\n      \"name\": \"labelNodes\",\n      \"source\": \"nodes\",\n      \"transform\": [\n        {\n          \"type\": \"filter\",\n          \"expr\": \"datum.side === 0 || datum.total >= 40000000\"\n        }\n      ]\n    },\n    {\n      \"name\": \"nodeScaleData\",\n      \"source\": \"nodes\",\n      \"transform\": [\n        {\n          \"type\": \"aggregate\",\n          \"fields\": [\n            \"y1\"\n          ],\n          \"ops\": [\n            \"max\"\n          ],\n          \"as\": [\n            \"maxY\"\n          ]\n        }\n      ]\n    },\n    {\n      \"name\": \"sourceStacks\",\n      \"source\": \"links\",\n      \"transform\": [\n        {\n          \"type\": \"stack\",\n          \"groupby\": [\n            \"source\"\n          ],\n          \"sort\": {\n            \"field\": \"value\",\n            \"order\": \"descending\"\n          },\n          \"field\": \"value\",\n          \"as\": [\n            \"sy0\",\n            \"sy1\"\n          ]\n        }\n      ]\n    },\n    {\n      \"name\": \"targetStacks\",\n      \"source\": \"sourceStacks\",\n      \"transform\": [\n        {\n          \"type\": \"stack\",\n          \"groupby\": [\n            \"target\"\n          ],\n          \"sort\": {\n            \"field\": \"value\",\n            \"order\": \"descending\"\n          },\n          \"field\": \"value\",\n          \"as\": [\n            \"ty0\",\n            \"ty1\"\n          ]\n        }\n      ]\n    },\n    {\n      \"name\": \"linkPaths\",\n      \"source\": \"targetStacks\",\n      \"transform\": [\n        {\n          \"type\": \"lookup\",\n          \"from\": \"nodes\",\n          \"key\": \"name\",\n          \"fields\": [\n            \"source\"\n          ],\n          \"as\": [\n            \"sNode\"\n          ]\n        },\n        {\n          \"type\": \"lookup\",\n          \"from\": \"nodes\",\n          \"key\": \"name\",\n          \"fields\": [\n            \"target\"\n          ],\n          \"as\": [\n            \"tNode\"\n          ]\n        },\n        {\n          \"type\": \"formula\",\n          \"as\": \"syc\",\n          \"expr\": \"scale(''y'', datum.sNode.y0 + datum.sy0) + (scale(''y'', datum.value) - scale(''y'', 0)) / 2\"\n        },\n        {\n          \"type\": \"formula\",\n          \"as\": \"tyc\",\n          \"expr\": \"scale(''y'', datum.tNode.y0 + datum.ty0) + (scale(''y'', datum.value) - scale(''y'', 0)) / 2\"\n        },\n        {\n          \"type\": \"formula\",\n          \"as\": \"lw\",\n          \"expr\": \"abs(scale(''y'', datum.value) - scale(''y'', 0))\"\n        },\n        {\n          \"type\": \"linkpath\",\n          \"orient\": \"horizontal\",\n          \"shape\": \"diagonal\",\n          \"sourceX\": {\n            \"expr\": \"scale(''x'', 0) + bandwidth(''x'')\"\n          },\n          \"sourceY\": {\n            \"expr\": \"datum.syc\"\n          },\n          \"targetX\": {\n            \"expr\": \"scale(''x'', 1)\"\n          },\n          \"targetY\": {\n            \"expr\": \"datum.tyc\"\n          }\n        }\n      ]\n    }\n  ],\n  \"scales\": [\n    {\n      \"name\": \"x\",\n      \"type\": \"band\",\n      \"range\": \"width\",\n      \"domain\": [\n        0,\n        1\n      ],\n      \"paddingOuter\": 0.05,\n      \"paddingInner\": 0.92\n    },\n    {\n      \"name\": \"y\",\n      \"type\": \"linear\",\n      \"range\": \"height\",\n      \"domain\": {\n        \"data\": \"nodeScaleData\",\n        \"field\": \"maxY\"\n      },\n      \"nice\": false,\n      \"zero\": true\n    }\n  ],\n  \"marks\": [\n    {\n      \"type\": \"path\",\n      \"name\": \"linkMarks\",\n      \"from\": {\n        \"data\": \"linkPaths\"\n      },\n      \"encode\": {\n        \"update\": {\n          \"stroke\": {\n            \"value\": \"#BDBDBD\"\n          },\n          \"strokeWidth\": {\n            \"field\": \"lw\"\n          },\n          \"strokeOpacity\": {\n            \"value\": 0.55\n          },\n          \"path\": {\n            \"field\": \"path\"\n          }\n        },\n        \"hover\": {\n          \"strokeOpacity\": {\n            \"value\": 0.85\n          }\n        }\n      }\n    },\n    {\n      \"type\": \"rect\",\n      \"name\": \"nodeMarks\",\n      \"from\": {\n        \"data\": \"nodes\"\n      },\n      \"encode\": {\n        \"update\": {\n          \"x\": {\n            \"scale\": \"x\",\n            \"field\": \"side\"\n          },\n          \"width\": {\n            \"scale\": \"x\",\n            \"band\": 1\n          },\n          \"y\": {\n            \"scale\": \"y\",\n            \"field\": \"y0\"\n          },\n          \"y2\": {\n            \"scale\": \"y\",\n            \"field\": \"y1\"\n          },\n          \"fill\": {\n            \"value\": \"#000000\"\n          }\n        }\n      }\n    },\n    {\n      \"type\": \"text\",\n      \"from\": {\n        \"data\": \"labelNodes\"\n      },\n      \"encode\": {\n        \"update\": {\n          \"x\": {\n            \"scale\": \"x\",\n            \"field\": \"side\",\n            \"offset\": {\n              \"signal\": \"datum.side === 0 ? -6 : bandwidth(''x'') + 6\"\n            }\n          },\n          \"y\": {\n            \"scale\": \"y\",\n            \"field\": \"yc\"\n          },\n          \"text\": {\n            \"field\": \"name\"\n          },\n          \"align\": {\n            \"signal\": \"datum.side === 0 ? ''right'' : ''left''\"\n          },\n          \"baseline\": {\n            \"value\": \"middle\"\n          },\n          \"fontSize\": {\n            \"value\": 9\n          },\n          \"limit\": {\n            \"value\": 150\n          },\n          \"fill\": {\n            \"value\": \"#111111\"\n          }\n        }\n      }\n    }\n  ]\n}'"
+                }
+              }
+            },
+            "jsonConfig": {
+              "expr": {
+                "Literal": {
+                  "Value": "'{}'"
+                }
+              }
+            },
+            "renderMode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'svg'"
+                }
+              }
+            },
+            "enableTooltips": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "enableContextMenu": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "enableHighlight": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "enableSelection": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

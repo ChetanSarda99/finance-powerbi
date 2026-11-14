@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "Business unit > service category (cost center group) > service category detail. Expand rows with the + icons. Actual black, Plan light.",
+                    "value": "Business unit > service category (cost center group) > service category detail. Expand rows with the + icons. Selected year black, Prior Year grey.",
                     "textStyle": {
                       "fontSize": "10pt",
                       "color": "#605E5C"

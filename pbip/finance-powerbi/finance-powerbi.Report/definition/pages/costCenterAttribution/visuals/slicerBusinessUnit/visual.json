@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "slicerBusinessUnit",
   "position": {
-    "x": 16,
+    "x": 228,
     "y": 72,
-    "z": 200,
+    "z": 210,
     "height": 58,
     "width": 330,
-    "tabOrder": 200
+    "tabOrder": 210
   },
   "visual": {
     "visualType": "slicer",

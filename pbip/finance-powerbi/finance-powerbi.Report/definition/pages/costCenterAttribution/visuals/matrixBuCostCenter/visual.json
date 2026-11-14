@@ -73,11 +73,12 @@
                       "Entity": "fact_capital_finance"
                     }
                   },
-                  "Property": "Actual"
+                  "Property": "Actual or Plan"
                 }
               },
-              "queryRef": "fact_capital_finance.Actual",
-              "nativeQueryRef": "Actual"
+              "queryRef": "fact_capital_finance.Actual or Plan",
+              "nativeQueryRef": "Actual or Plan",
+              "displayName": "Selected FY"
             },
             {
               "field": {
@@ -87,11 +88,11 @@
                       "Entity": "fact_capital_finance"
                     }
                   },
-                  "Property": "Plan"
+                  "Property": "Prior Year"
                 }
               },
-              "queryRef": "fact_capital_finance.Plan",
-              "nativeQueryRef": "Plan"
+              "queryRef": "fact_capital_finance.Prior Year",
+              "nativeQueryRef": "Prior Year"
             },
             {
               "field": {
@@ -101,12 +102,12 @@
                       "Entity": "fact_capital_finance"
                     }
                   },
-                  "Property": "Variance Abs (AC vs PL)"
+                  "Property": "Variance Abs (vs PY)"
                 }
               },
-              "queryRef": "fact_capital_finance.Variance Abs (AC vs PL)",
-              "nativeQueryRef": "Variance Abs (AC vs PL)",
-              "displayName": "Actual minus Plan"
+              "queryRef": "fact_capital_finance.Variance Abs (vs PY)",
+              "nativeQueryRef": "Variance Abs (vs PY)",
+              "displayName": "Change"
             },
             {
               "field": {
@@ -116,12 +117,12 @@
                       "Entity": "fact_capital_finance"
                     }
                   },
-                  "Property": "Variance Pct (AC vs PL)"
+                  "Property": "Variance Pct (vs PY)"
                 }
               },
-              "queryRef": "fact_capital_finance.Variance Pct (AC vs PL)",
-              "nativeQueryRef": "Variance Pct (AC vs PL)",
-              "displayName": "Actual vs Plan %"
+              "queryRef": "fact_capital_finance.Variance Pct (vs PY)",
+              "nativeQueryRef": "Variance Pct (vs PY)",
+              "displayName": "Change %"
             }
           ]
         }
@@ -215,7 +216,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Business unit and cost center: Actual FY23-25, Plan FY26, variance (CAD)'"
+                  "Value": "'Business unit and cost center: selected FY, Prior Year and change (CAD)'"
                 }
               }
             },

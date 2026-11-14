@@ -4,7 +4,7 @@
   "data": { "name": "dataset" },
   "title": {
     "text": "2026 Plan vs 2025 Actual capital, by program",
-    "subtitle": "Actual 2025 = solid black  ·  Plan 2026 = outlined  ·  the 2026 plan is about 2x the 2025 actual run-rate ($1.59B vs $778M)",
+    "subtitle": "Actual 2025 = solid black  ·  Plan 2026 = outlined  ·  same budget line in both years ($698M plan vs $778M actual)",
     "anchor": "start",
     "fontSize": 13,
     "subtitleColor": "#666666",
@@ -12,7 +12,7 @@
   },
   "width": 520,
   "height": 360,
-  "mark": { "type": "bar" },
+  "mark": { "type": "bar", "stroke": "#000000", "strokeWidth": 0.8 },
   "transform": [
     { "filter": "(datum.scenario === 'AC' && datum.year === 2025) || (datum.scenario === 'PL' && datum.year === 2026)" },
     { "aggregate": [{ "op": "sum", "field": "amount", "as": "amount" }], "groupby": ["service_category_1", "scenario"] }

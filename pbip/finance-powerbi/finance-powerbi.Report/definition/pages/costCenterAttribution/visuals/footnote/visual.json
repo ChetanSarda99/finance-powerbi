@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "Cost center = a service category within a business unit (120 cost centers, 13 business units). Actual covers FY2023-25 (3 years) and Plan covers FY2026 (1 year), so the variance columns are not like-for-like and carry no red or green. The top 10 groups cost centers by service category across business units.",
+                    "value": "Cost center = a service category within a business unit (120 cost centers, 13 business units). Selected FY is the capital-plan allocation for the chosen year (Actual for FY2024-25, Plan for FY2026) and Prior Year is Actual for the year before. Change % is the change as a percent of Prior Year. The top 10 groups cost centers by service category across business units.",
                     "textStyle": {
                       "fontSize": "9pt",
                       "color": "#605E5C"

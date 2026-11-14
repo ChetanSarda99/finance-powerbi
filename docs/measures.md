@@ -1,8 +1,10 @@
 # DAX measures - finance-powerbi
 
+> READ FIRST: `INTERVIEW-FINAL.md` (2026-11-12) is the complete, current guide. The report is now v4 (`pbip\finance-powerbi-v4` on the Lenovo): six pages, two of them Deneb custom visuals, 17 measures. Names are consistent everywhere: Actual, Plan, Prior Year, Actual or Plan, Expenditure Budget, Forecast.
+
 All measures use the star schema in [`power-query-m.md`](power-query-m.md). Paste into the Power BI Service web model editor (New measure) or Power BI Desktop. Field names match the shipped processed schema in `data/processed/` (dim_period[period_key], dim_costcenter, no Date table). Each measure has a comment line at the top so the next session can grep for purpose.
 
-Last refreshed 2026-11-10: 15 measures. Removed two duplicates (`Actual SPLY` was the same as `Prior Year`; `Forecast Accuracy Pct` was the same as `Variance Pct (AC vs PL)`) and renamed `Actual YTD` to `Actual Cumulative`, because it is a running total across years, not a within-year YTD.
+Last refreshed 2026-11-12: 17 measures (three added later the same day for page 3: `Forecast FY2027`, `Expenditure Change (FY27 vs FY26)`, `Expenditure Change % (FY27 vs FY26)`, see `pbip/scripts/patch_measures_2.py`). Plan now filters to the capital-plan account so it is like-for-like with Actual; `Actual or Plan`, `Variance Abs (vs PY)`, `Variance Pct (vs PY)` and `Expenditure Budget` were added; the four `AC vs PL` / `AC vs PY` variance measures and `Variance Color (Cost AC vs PL)` were removed (the report colours bars with a rule on `Variance Abs (vs PY)` instead). Earlier, 2026-11-10: 15 measures. Removed two duplicates (`Actual SPLY` was the same as `Prior Year`; `Forecast Accuracy Pct` was the same as `Variance Pct (AC vs PL)`) and renamed `Actual YTD` to `Actual Cumulative`, because it is a running total across years, not a within-year YTD.
 
 ---
 
@@ -21,9 +23,29 @@ CALCULATE ( [Total Amount], dim_scenario[scenario_code] = "AC" )
 ```
 
 ```dax
-// Budget / Plan - filtered to scenario=PL
+// Plan = the FY2026 capital-plan allocation (scenario PL, account city_led_alloc_approved_budget).
+// Same account as Actual, so Plan and Actual compare like-for-like. The separate FY2026 annual
+// expenditure budget is its own measure and is never added in.
 Plan =
-CALCULATE ( [Total Amount], dim_scenario[scenario_code] = "PL" )
+CALCULATE (
+    [Total Amount],
+    dim_scenario[scenario_code] = "PL",
+    dim_account[account_code] = "city_led_alloc_approved_budget"
+)
+```
+
+```dax
+// Approved capital-plan budget for the year: Actual for elapsed years (FY2023-25), Plan for FY2026.
+// One account in every year, so any two years compare like-for-like.
+Actual or Plan =
+[Actual] + [Plan]
+```
+
+```dax
+// FY2026 annual capital expenditure budget (capital project budget dataset). A different budget line
+// from the capital-plan allocation; shown on its own page with the FY2027-30 forecast.
+Expenditure Budget =
+CALCULATE ( [Total Amount], dim_account[account_code] = "annual_capital_expenditure_budget" )
 ```
 
 ```dax
@@ -61,43 +83,42 @@ CALCULATE (
 ## Variance measures (the IBCS / Zebra-BI grammar)
 
 ```dax
-// Actual minus Plan (absolute variance). Sign is the actual difference.
-Variance Abs (AC vs PL) =
-[Actual] - [Plan]
-```
-
-```dax
-// Relative variance Actual vs Plan, percent.
-Variance Pct (AC vs PL) =
-DIVIDE ( [Actual] - [Plan], [Plan] )
-```
-
-```dax
-// Actual minus Prior Year (absolute, year-over-year)
-Variance Abs (AC vs PY) =
-[Actual] - [Prior Year]
-```
-
-```dax
-// Same but relative
-Variance Pct (AC vs PY) =
-DIVIDE ( [Actual] - [Prior Year], [Prior Year] )
-```
-
-## Variance color flag (IBCS green/red rule, direction-aware)
-
-```dax
-// Returns "good" or "bad" based on variance direction AND metric polarity.
-// For capital expenditure, UNDER budget = good (less spent). Color the bar
-// green when variance < 0 (spent less), red when > 0 (spent more).
-// For revenue (not applicable in capital plan but pattern reusable): inverted.
-Variance Color (Cost AC vs PL) =
-VAR v = [Variance Abs (AC vs PL)]
+// Actual or Plan minus Prior Year. Blank when the year before has no approved budget at all.
+Variance Abs (vs PY) =
+VAR c = [Actual or Plan]
+VAR p = [Prior Year]
+VAR pyExists = NOT ISBLANK ( CALCULATE ( [Prior Year], ALL ( dim_business_unit ), ALL ( dim_costcenter ) ) )
 RETURN
-    IF ( v < 0, "good", IF ( v > 0, "bad", "neutral" ) )
+    IF ( pyExists && NOT ( ISBLANK ( c ) && ISBLANK ( p ) ), c - p )
 ```
 
-Wire this in conditional formatting: column "Color" = Field value, "Variance Color (Cost AC vs PL)", map `good -> green`, `bad -> red`, `neutral -> grey`.
+```dax
+// Same change as a percent of Prior Year.
+Variance Pct (vs PY) =
+DIVIDE ( [Actual or Plan] - [Prior Year], [Prior Year] )
+```
+
+```dax
+// Forecast for FY2027 only: the city's published FY2027 expected spending.
+Forecast FY2027 =
+CALCULATE ( [Forecast], dim_period[period_key] = 2027 )
+```
+
+```dax
+// FY2027 forecast minus FY2026 expenditure budget (both expected spending on approved projects).
+Expenditure Change (FY27 vs FY26) =
+[Forecast FY2027] - [Expenditure Budget]
+```
+
+```dax
+// Same change as a percent of the FY2026 expenditure budget.
+Expenditure Change % (FY27 vs FY26) =
+DIVIDE ( [Forecast FY2027] - [Expenditure Budget], [Expenditure Budget] )
+```
+
+## Variance colour (IBCS green/red rule)
+
+There is no colour measure any more. The report colours the variance bars with a rule on `Variance Abs (vs PY)`: below zero green (lower than prior year), above zero red (higher). Cost polarity, per IBCS.
 
 ## Page-1 income-statement helpers
 
@@ -143,7 +164,6 @@ RETURN
 |---|---|
 | All amount measures | `"$#,0;-$#,0;$0"` (comma thousands, parentheses-free negatives so the green/red bar carries the sign) |
 | All Pct measures | `"0.0%;-0.0%;0.0%"` |
-| Variance Color | `"0"` (text - leave default) |
 
 ## Performance notes
 
@@ -156,7 +176,7 @@ RETURN
 
 - No DAX iterators wrapped around full table scans (SUMX over fact_capital_finance with no filter is anti-pattern)
 - No CALCULATETABLE materializing intermediate row sets the engine could fold
-- No nested IF chains for variance direction - use the `Variance Color` measure
+- No nested IF chains for variance direction - use the colour rule on `Variance Abs (vs PY)`
 - No measure dependencies > 3 levels deep (current max: Variance Pct -> Variance Abs -> Plan + Actual = 3)
 
 ## See also

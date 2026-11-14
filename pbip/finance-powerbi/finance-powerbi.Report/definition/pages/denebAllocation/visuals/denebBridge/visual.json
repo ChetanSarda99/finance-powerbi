@@ -1,0 +1,189 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "denebBridge",
+  "position": {
+    "x": 16,
+    "y": 56,
+    "z": 300,
+    "height": 590,
+    "width": 640,
+    "tabOrder": 300
+  },
+  "visual": {
+    "visualType": "deneb7E15AEF80B9E4D4F8E12924291ECE89A",
+    "query": {
+      "queryState": {
+        "dataset": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_costcenter"
+                    }
+                  },
+                  "Property": "service_category_1"
+                }
+              },
+              "queryRef": "dim_costcenter.service_category_1",
+              "nativeQueryRef": "service_category_1",
+              "displayName": "service_category_1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_period"
+                    }
+                  },
+                  "Property": "year"
+                }
+              },
+              "queryRef": "dim_period.year",
+              "nativeQueryRef": "year",
+              "displayName": "year"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_capital_finance"
+                    }
+                  },
+                  "Property": "scenario"
+                }
+              },
+              "queryRef": "fact_capital_finance.scenario",
+              "nativeQueryRef": "scenario",
+              "displayName": "scenario"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_capital_finance"
+                    }
+                  },
+                  "Property": "Actual or Plan"
+                }
+              },
+              "queryRef": "fact_capital_finance.Actual or Plan",
+              "nativeQueryRef": "Actual or Plan",
+              "displayName": "amount"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "vega": [
+        {
+          "properties": {
+            "provider": {
+              "expr": {
+                "Literal": {
+                  "Value": "'vegaLite'"
+                }
+              }
+            },
+            "jsonSpec": {
+              "expr": {
+                "Literal": {
+                  "Value": "'{\n  \"$schema\": \"https://vega.github.io/schema/vega-lite/v5.json\",\n  \"description\": \"IBCS bridge / waterfall. Builds the total Actual capital budget up from each service category''s contribution (opening 0 -> +cat -> ... -> total). Page 1 (net-income / budget progression). Deneb dataset fields required: service_category_1, scenario, amount. Filtered to Actual.\",\n  \"data\": {\n    \"name\": \"dataset\"\n  },\n  \"title\": {\n    \"text\": \"How each program builds the Actual capital total (2023-2025)\",\n    \"subtitle\": \"Floating bars = each program''s contribution  \\u00b7  connectors trace the running total\",\n    \"anchor\": \"start\",\n    \"fontSize\": 13,\n    \"subtitleColor\": \"#666666\",\n    \"subtitleFontSize\": 10\n  },\n  \"width\": 520,\n  \"height\": 360,\n  \"transform\": [\n    {\n      \"filter\": \"datum.scenario === ''AC''\"\n    },\n    {\n      \"aggregate\": [\n        {\n          \"op\": \"sum\",\n          \"field\": \"amount\",\n          \"as\": \"amount\"\n        }\n      ],\n      \"groupby\": [\n        \"service_category_1\"\n      ]\n    },\n    {\n      \"window\": [\n        {\n          \"op\": \"sum\",\n          \"field\": \"amount\",\n          \"as\": \"sum\"\n        }\n      ],\n      \"sort\": [\n        {\n          \"field\": \"amount\",\n          \"order\": \"descending\"\n        }\n      ]\n    },\n    {\n      \"window\": [\n        {\n          \"op\": \"lead\",\n          \"field\": \"service_category_1\",\n          \"as\": \"lead\"\n        }\n      ],\n      \"sort\": [\n        {\n          \"field\": \"amount\",\n          \"order\": \"descending\"\n        }\n      ]\n    },\n    {\n      \"calculate\": \"datum.lead === null ? datum.service_category_1 : datum.lead\",\n      \"as\": \"lead\"\n    },\n    {\n      \"calculate\": \"datum.sum - datum.amount\",\n      \"as\": \"previous_sum\"\n    },\n    {\n      \"calculate\": \"(datum.sum + datum.previous_sum) / 2\",\n      \"as\": \"center\"\n    },\n    {\n      \"calculate\": \"datum.amount > 1000000 ? format(datum.amount / 1000000, ''.0f'') + ''M'' : format(datum.amount / 1000, ''.0f'') + ''K''\",\n      \"as\": \"label\"\n    }\n  ],\n  \"encoding\": {\n    \"x\": {\n      \"field\": \"service_category_1\",\n      \"type\": \"ordinal\",\n      \"sort\": null,\n      \"title\": null,\n      \"axis\": {\n        \"labelAngle\": -40\n      },\n      \"scale\": {\n        \"domain\": [\n          \"Water, sewers & drainage\",\n          \"Streets\",\n          \"Housing\",\n          \"Arts, culture & heritage\",\n          \"Parks & public open spaces\",\n          \"Public Safety\",\n          \"Community facilities\",\n          \"Waste collection, diversion & dispos\",\n          \"Technology\",\n          \"Civic facilities & equipment\",\n          \"Emerging priorities, contingency & p\",\n          \"Renewable energy\",\n          \"Childcare\"\n        ]\n      }\n    }\n  },\n  \"layer\": [\n    {\n      \"mark\": {\n        \"type\": \"bar\",\n        \"size\": 38,\n        \"color\": \"#000000\"\n      },\n      \"encoding\": {\n        \"y\": {\n          \"field\": \"previous_sum\",\n          \"type\": \"quantitative\",\n          \"title\": \"Cumulative capital $ (CAD)\",\n          \"axis\": {\n            \"format\": \"$,.2s\"\n          }\n        },\n        \"y2\": {\n          \"field\": \"sum\"\n        }\n      }\n    },\n    {\n      \"mark\": {\n        \"type\": \"rule\",\n        \"color\": \"#9E9E9E\",\n        \"strokeWidth\": 1,\n        \"xOffset\": -19,\n        \"x2Offset\": 19\n      },\n      \"encoding\": {\n        \"x2\": {\n          \"field\": \"lead\"\n        },\n        \"y\": {\n          \"field\": \"sum\",\n          \"type\": \"quantitative\"\n        }\n      }\n    },\n    {\n      \"mark\": {\n        \"type\": \"text\",\n        \"dy\": -6,\n        \"fontSize\": 9,\n        \"color\": \"#333333\"\n      },\n      \"encoding\": {\n        \"y\": {\n          \"field\": \"sum\",\n          \"type\": \"quantitative\"\n        },\n        \"text\": {\n          \"field\": \"label\"\n        }\n      }\n    }\n  ]\n}'"
+                }
+              }
+            },
+            "jsonConfig": {
+              "expr": {
+                "Literal": {
+                  "Value": "'{}'"
+                }
+              }
+            },
+            "renderMode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'svg'"
+                }
+              }
+            },
+            "enableTooltips": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "enableContextMenu": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "enableHighlight": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "enableSelection": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

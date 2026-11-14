@@ -1,14 +1,15 @@
 # Finance Power BI: BC Public-Sector Capital Budget Analytics (IBCS)
 
+
 *An IBCS-compliant finance dashboard built on real public capital-budget data, so a public-sector finance team can read variance the way the standard intends - not as a rainbow of KPI cards.*
 
-> **Status: two report pages built and running in Power BI Desktop (Nov 2026).** The Python data pipeline, the star-schema model, 15 DAX measures and two native-visual report pages (Budget vs Actual, Cost-center attribution) are built and open from the `pbip/` project. 9 Deneb custom-visual specs are a companion piece. Not yet done: publishing to the Power BI Service, row-level security, and small multiples inside the report.
+> **Status: six report pages built in the `pbip/` project (Nov 2026).** The Python data pipeline, the star-schema model, 17 DAX measures, four native-visual report pages (Plan vs Prior Year, Cost-center attribution, Expenditure outlook, Change bridge) and two Deneb pages are built. Two further pages use Deneb custom visuals (outlined Plan bars, small multiples, bridge, Sankey). 9 Deneb custom-visual specs are a companion piece. Not yet done: publishing to the Power BI Service, row-level security, and small multiples inside the report.
 
 ## The report in Power BI Desktop
 
-![Page 1 - Budget vs Actual](screenshots/page1-budget-vs-actual.png)
+![Page 1 - Plan vs Prior Year](screenshots/page1-plan-vs-prior-year.png)
 
-Page 1 answers "are we up or down, and against what". Actual is black, Prior Year grey, Plan light. Green and red appear only on the like-for-like Prior Year comparison. Actual vs Plan compares three years with one plan year, so it stays neutral grey and the page says why.
+Page 1 answers "are we up or down, and against what". Actual is black, Prior Year grey, Plan light. Green and red appear only on the change against Prior Year. Plan uses the same budget line as the Actual years, so FY2026 Plan compares like-for-like with FY2025; a second FY2026 budget line from a different dataset is kept on its own page.
 
 ![Page 2 - Cost-center attribution](screenshots/page2-cost-center-attribution.png)
 
@@ -42,7 +43,7 @@ The visuals follow IBCS notation: black for Actual, grey for Prior Year, outline
 
 This project deliberately exercises the three hardest Power BI surfaces:
 
-- **DAX** - 15 measures for actual-vs-plan and prior-year variance. Annual grain, no date table yet, so prior year and running totals are explicit `FILTER` shifts on `dim_period` (a marked date table with `SAMEPERIODLASTYEAR` / `DATESYTD` is the planned next step).
+- **DAX** - 17 measures for actual, plan and prior-year variance. Annual grain, no date table yet, so prior year and running totals are explicit `FILTER` shifts on `dim_period` (a marked date table with `SAMEPERIODLASTYEAR` / `DATESYTD` is the planned next step).
 - **Row-Level Security** - `USERPRINCIPALNAME()` + cost-center role pattern, the one healthcare-finance teams actually need.
 - **Custom Deneb visuals** - IBCS variance tables, waterfall bridge, small multiples, and a Vega Sankey, reproduced without a paid visual license.
 

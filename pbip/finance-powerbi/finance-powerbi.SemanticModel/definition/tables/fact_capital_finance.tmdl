@@ -43,8 +43,15 @@ table fact_capital_finance
 	measure Actual = CALCULATE ( [Total Amount], dim_scenario[scenario_code] = "AC" )
 		formatString: "$#,0;-$#,0;$0"
 
-	/// Budget / Plan - filtered to scenario=PL
-	measure Plan = CALCULATE ( [Total Amount], dim_scenario[scenario_code] = "PL" )
+	/// Plan = the FY2026 capital-plan allocation (scenario PL, account city_led_alloc_approved_budget).
+	/// Same account as Actual, so Plan and Actual compare like-for-like. The separate FY2026 annual
+	/// expenditure budget is its own measure and is never added in.
+	measure Plan =
+			CALCULATE (
+			    [Total Amount],
+			    dim_scenario[scenario_code] = "PL",
+			    dim_account[account_code] = "city_led_alloc_approved_budget"
+			)
 		formatString: "$#,0;-$#,0;$0"
 
 	/// Forecast - filtered to scenario=FC
@@ -73,29 +80,43 @@ table fact_capital_finance
 			)
 		formatString: "$#,0;-$#,0;$0"
 
-	/// Actual minus Plan (absolute variance). Sign is the actual difference.
-	measure 'Variance Abs (AC vs PL)' = [Actual] - [Plan]
+	/// The capital-plan allocation for the year: Actual for elapsed years (FY2023-25), Plan for FY2026.
+	/// One account in every year, so any two years compare like-for-like.
+	measure 'Actual or Plan' = [Actual] + [Plan]
 		formatString: "$#,0;-$#,0;$0"
 
-	/// Relative variance Actual vs Plan, percent.
-	measure 'Variance Pct (AC vs PL)' = DIVIDE ( [Actual] - [Plan], [Plan] )
-		formatString: "0.0%;-0.0%;0.0%"
-
-	/// Actual minus Prior Year (absolute, year-over-year)
-	measure 'Variance Abs (AC vs PY)' = [Actual] - [Prior Year]
-		formatString: "$#,0;-$#,0;$0"
-
-	/// Same but relative
-	measure 'Variance Pct (AC vs PY)' = DIVIDE ( [Actual] - [Prior Year], [Prior Year] )
-		formatString: "0.0%;-0.0%;0.0%"
-
-	/// Returns "good" or "bad" based on variance direction AND metric polarity.
-	/// For capital expenditure, UNDER budget = good (less spent). Color the bar
-	/// green when variance < 0 (spent less), red when > 0 (spent more).
-	measure 'Variance Color (Cost AC vs PL)' =
-			VAR v = [Variance Abs (AC vs PL)]
+	/// Actual or Plan minus Prior Year. Blank when the year before has no approved budget at all.
+	measure 'Variance Abs (vs PY)' =
+			VAR c = [Actual or Plan]
+			VAR p = [Prior Year]
+			VAR pyExists = NOT ISBLANK ( CALCULATE ( [Prior Year], ALL ( dim_business_unit ), ALL ( dim_costcenter ) ) )
 			RETURN
-			    IF ( v < 0, "good", IF ( v > 0, "bad", "neutral" ) )
+			    IF ( pyExists && NOT ( ISBLANK ( c ) && ISBLANK ( p ) ), c - p )
+		formatString: "$#,0;-$#,0;$0"
+
+	/// Same change as a percent of Prior Year.
+	measure 'Variance Pct (vs PY)' = DIVIDE ( [Actual or Plan] - [Prior Year], [Prior Year] )
+		formatString: "0.0%;-0.0%;0.0%"
+
+	/// FY2026 annual capital expenditure budget (capital project budget dataset). A different budget line
+	/// from the capital-plan allocation; shown on its own page with the FY2027-30 forecast.
+	measure 'Expenditure Budget' =
+			CALCULATE ( [Total Amount], dim_account[account_code] = "annual_capital_expenditure_budget" )
+		formatString: "$#,0;-$#,0;$0"
+
+	/// Forecast for FY2027 only: the city's published FY2027 expected spending. Compared with the FY2026
+	/// expenditure budget, one year on one year.
+	measure 'Forecast FY2027' =
+			CALCULATE ( [Forecast], dim_period[period_key] = 2027 )
+		formatString: "$#,0;-$#,0;$0"
+
+	/// FY2027 forecast minus FY2026 expenditure budget (both expected spending on approved projects).
+	measure 'Expenditure Change (FY27 vs FY26)' = [Forecast FY2027] - [Expenditure Budget]
+		formatString: "$#,0;-$#,0;$0"
+
+	/// Same change as a percent of the FY2026 expenditure budget.
+	measure 'Expenditure Change % (FY27 vs FY26)' = DIVIDE ( [Forecast FY2027] - [Expenditure Budget], [Expenditure Budget] )
+		formatString: "0.0%;-0.0%;0.0%"
 
 	/// Year label for axis (so we can show "FY2026" not just "2026")
 	measure 'Year Label' = SELECTEDVALUE ( dim_period[label] )
